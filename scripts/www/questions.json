@@ -1,0 +1,7596 @@
+[
+ {
+  "id": "1-1",
+  "section": 1,
+  "number": 1,
+  "type": "judge",
+  "stem": "任何表达式语句都是表达式加分号组成的。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-2",
+  "section": 1,
+  "number": 2,
+  "type": "judge",
+  "stem": "增1减1运算符的前缀运算和后缀运算的表达式值是相同的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": 1.0
+ },
+ {
+  "id": "1-3",
+  "section": 1,
+  "number": 3,
+  "type": "judge",
+  "stem": "C语言程序是从源文件的第一条语句开始执行的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": 1.0
+ },
+ {
+  "id": "1-4",
+  "section": 1,
+  "number": 4,
+  "type": "judge",
+  "stem": "语句printf(\"%.2f\",1.0/3); 输出为0.33。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-5",
+  "section": 1,
+  "number": 5,
+  "type": "judge",
+  "stem": "C语言源代码可以不经过编译而被计算机直接运行。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": 2.0
+ },
+ {
+  "id": "1-6",
+  "section": 1,
+  "number": 6,
+  "type": "judge",
+  "stem": "C语言中，当int 型与double型数据进行算术运算时，数据类型由double型向int型转换。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-8",
+  "section": 1,
+  "number": 8,
+  "type": "judge",
+  "stem": "执行以下程序段后，k的值为4。",
+  "code": [
+   "int k =3;\nsizeof(++k);"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": 1.0
+ },
+ {
+  "id": "1-9",
+  "section": 1,
+  "number": 9,
+  "type": "judge",
+  "stem": "实型数据可以进行求余数运算%。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-10",
+  "section": 1,
+  "number": 10,
+  "type": "judge",
+  "stem": "运行包含以下代码段的程序将可能进入死循环。",
+  "code": [
+   "int i=1;\nwhile(i>0){i++;printf(\"%d\",i);}"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-11",
+  "section": 1,
+  "number": 11,
+  "type": "judge",
+  "stem": "已知字符B的ASCII码是66,那么也可以通过转义符，用'\\66'来表示字符常量B。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-12",
+  "section": 1,
+  "number": 12,
+  "type": "judge",
+  "stem": "假设有变量定义语句float f =1234567890123.123456;, 打印语句printf(\"f =%f\", f); 的输出是f= 1234567954432.000000。 那么可以这样解释这种想象：因为float 类型的数据精度是十进制7~8位，第9位以后的数据是随机的，即下次再输出这个数 时，第9位以后的数据可能会不一样。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-13",
+  "section": 1,
+  "number": 13,
+  "type": "judge",
+  "stem": "判断两个浮点数是否相同的运算虽然符合C语言规则，但是应该尽量避免。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-14",
+  "section": 1,
+  "number": 14,
+  "type": "judge",
+  "stem": "C语言程序不区分大小写。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-15",
+  "section": 1,
+  "number": 15,
+  "type": "judge",
+  "stem": "C语言中的转义字符'\\n' 表示的功能是换行。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-16",
+  "section": 1,
+  "number": 16,
+  "type": "judge",
+  "stem": "C语言标识符中，大小写字母没有区别。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-17",
+  "section": 1,
+  "number": 17,
+  "type": "judge",
+  "stem": "在C语言中，单精度的浮点类型用double表示。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-18",
+  "section": 1,
+  "number": 18,
+  "type": "judge",
+  "stem": "C语言中的转义字符'\\t’表示的功能是换行。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-19",
+  "section": 1,
+  "number": 19,
+  "type": "judge",
+  "stem": "C语言标识符中，大小写字母是有区别的。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-20",
+  "section": 1,
+  "number": 20,
+  "type": "judge",
+  "stem": "在if 语句的三种形式中，如果要想在满足条件时执行一组(多个)语句，则必须把这一组语句用}括起来组成一个复合语句。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-21",
+  "section": 1,
+  "number": 21,
+  "type": "judge",
+  "stem": "在switch 语句中，每一个的case常量表达式的值可以相同。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-22",
+  "section": 1,
+  "number": 22,
+  "type": "judge",
+  "stem": "case语句后如没有break, 顺序向下执行。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-23",
+  "section": 1,
+  "number": 23,
+  "type": "judge",
+  "stem": "if(a=5) 是允许的。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-25",
+  "section": 1,
+  "number": 25,
+  "type": "judge",
+  "stem": "在switch语句中，可以根据需要使用或不使用break语句。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-26",
+  "section": 1,
+  "number": 26,
+  "type": "judge",
+  "stem": "在if 语句中，必须出现else。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-27",
+  "section": 1,
+  "number": 27,
+  "type": "judge",
+  "stem": "判断字符串a和b是否相等的表达式为if(a==b)。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-28",
+  "section": 1,
+  "number": 28,
+  "type": "judge",
+  "stem": "else总是与它上面最近的且尚未配对的if 配对。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-30",
+  "section": 1,
+  "number": 30,
+  "type": "judge",
+  "stem": "continue 不是结束本次循环，而是终止整个循环的执行。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-31",
+  "section": 1,
+  "number": 31,
+  "type": "judge",
+  "stem": "do-while 循环的while 后的分号可以省略。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-32",
+  "section": 1,
+  "number": 32,
+  "type": "judge",
+  "stem": "do-while循环至少要执行一次循环语句。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-33",
+  "section": 1,
+  "number": 33,
+  "type": "judge",
+  "stem": "C语言的三种循环不可以互相嵌套。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "adjudicated",
+  "points": null
+ },
+ {
+  "id": "1-35",
+  "section": 1,
+  "number": 35,
+  "type": "judge",
+  "stem": "在多层循环中，一个break语句只向外跳一层。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-36",
+  "section": 1,
+  "number": 36,
+  "type": "judge",
+  "stem": "for循环的三个表达式都可以省略。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-37",
+  "section": 1,
+  "number": 37,
+  "type": "judge",
+  "stem": "while循环的条件满足的时候循环继续，而do-while的条件满足的时候循环就结束了。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-38",
+  "section": 1,
+  "number": 38,
+  "type": "judge",
+  "stem": "for语句的一般形式如下，其中的表达式1只执行一次。",
+  "code": [
+   "for(表达式1;表达式2;表达式3) 循环体语句"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-39",
+  "section": 1,
+  "number": 39,
+  "type": "judge",
+  "stem": "for 语句的一般形式如下，若表达式2的值为“真”,则先执行循环体语句，再计算表达式3,然后继续循环。",
+  "code": [
+   "for(表达式1;表达式2;表达式3) 循环体语句"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-40",
+  "section": 1,
+  "number": 40,
+  "type": "judge",
+  "stem": "循环体如包括有一个以上的语句，则必须用一对大括号{括起来，组成复合语句，复合语句在语法上被认为是一条语句。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-41",
+  "section": 1,
+  "number": 41,
+  "type": "judge",
+  "stem": "执行以下程序段， sum的值是55。",
+  "code": [
+   "int i,sum;\nfor(i=1;i<=10;i++){ sum =sum +i;\n}"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": 1.0
+ },
+ {
+  "id": "1-42",
+  "section": 1,
+  "number": 42,
+  "type": "judge",
+  "stem": "以下程序段的功能是计算20的阶乘。",
+  "code": [
+   "int i;\ndouble product;\nproduct =0;\nfor(i=1;i<=20;i++){\nproduct =product *i;\n}"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-43",
+  "section": 1,
+  "number": 43,
+  "type": "judge",
+  "stem": "执行以下程序段， sum的值是1.5。",
+  "code": [
+   "int i,sum;\nsum =0;\nfor(i =1;i<=2;i++){ sum =sum +1.0/i;\n}"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-44",
+  "section": 1,
+  "number": 44,
+  "type": "judge",
+  "stem": "执行以下程序段， sum的值是0.75。",
+  "code": [
+   "int i;\ndouble sum;\nsum =0;\nfor(i=2;i<=4;i=i+2){\nsum =sum +1/i;\n}"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-45",
+  "section": 1,
+  "number": 45,
+  "type": "judge",
+  "stem": "break statement can be only used in loop body.",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-46",
+  "section": 1,
+  "number": 46,
+  "type": "judge",
+  "stem": "while 语句的一般形式如下，当表达式的值为“真”时，循环执行，直到表达式的值为“假”,循环中止并继续执行while的下一条语句。",
+  "code": [
+   "while(表达式) 循环体语句"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "adjudicated",
+  "points": null
+ },
+ {
+  "id": "1-47",
+  "section": 1,
+  "number": 47,
+  "type": "judge",
+  "stem": "while语句的一般形式如下，其中的循环体语句只能是一条语句。",
+  "code": [
+   "while(表达式) 循环体语句"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-48",
+  "section": 1,
+  "number": 48,
+  "type": "judge",
+  "stem": "若变量已正确定义，以下while循环结束时， i的值为11。",
+  "code": [
+   "i=1;\nwhile(i<=10){\nprintf(\"%d\\n\",i); }"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-49",
+  "section": 1,
+  "number": 49,
+  "type": "judge",
+  "stem": "若变量已正确定义，执行以下while语句将陷入死循环。",
+  "code": [
+   "i=1;\nwhile(i<=10); i++;"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-50",
+  "section": 1,
+  "number": 50,
+  "type": "judge",
+  "stem": "如果for的循环体语句中没有使用continue语句，则以下for语句和while语句等价。",
+  "code": [
+   "for(表达式1;表达式2;表达式3) for的循环体语句",
+   "表达式1;\nwhile(表达式2){\nfor的循环体语句; 表达式3;\n}"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-51",
+  "section": 1,
+  "number": 51,
+  "type": "judge",
+  "stem": "若变量已正确定义，执行以下程序段，输入负数时，循环结束。",
+  "code": [
+   "total =0;",
+   "scanf(\"%d\",&score); while(score >=0){",
+   "total =total+score;",
+   "scanf(\"%d\",&score);",
+   "}"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-53",
+  "section": 1,
+  "number": 53,
+  "type": "judge",
+  "stem": "do-while 语句的一般形式如下，第一次进入循环时，首先执行循环体语句，然后再检查循环控制条件，即计算表达式，若值为“真”,继续循环，直到表达式的值为“假”,循环结束，执行do-while的下一条语句。",
+  "code": [
+   "do{\n循环体语句"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-54",
+  "section": 1,
+  "number": 54,
+  "type": "judge",
+  "stem": "do-while语句的一般形式如下，其中的循环体语句至少执行一次。",
+  "code": [
+   "do{\n循环体语句\n}while(表达式);"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-55",
+  "section": 1,
+  "number": 55,
+  "type": "judge",
+  "stem": "while语句和do-while 语句的一般形式分别如下，其主要区别是：while 语句先判断循环条件，只有条件满足才进入循环，如果一开始条件就不满足，则循环一次都不执行。而do-while 语句先执行循环体，后判断循环条件，所以无论循环条件的值如何，至少会执行一次循环体。",
+  "code": [
+   "while(表达式) 循环体语句 do{\n循环体语句 }while(表达式);"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-56",
+  "section": 1,
+  "number": 56,
+  "type": "judge",
+  "stem": "以下程序段中，当i大于10或者s大于20时，循环结束。",
+  "code": [
+   "s =0;\ni=1;\nwhile(i<=10){ s =s+i;\nif(s >20){\nbreak; }",
+   "i++; }"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-57",
+  "section": 1,
+  "number": 57,
+  "type": "judge",
+  "stem": "在循环中使用break语句或者continue语句，其作用是相同的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-58",
+  "section": 1,
+  "number": 58,
+  "type": "judge",
+  "stem": "执行以下while语句，将出现死循环。",
+  "code": [
+   "s =0;\ni =1;\nwhile(1){\nif(i>10){\ncontinue; }\ns =S+i; i++;\n}"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-59",
+  "section": 1,
+  "number": 59,
+  "type": "judge",
+  "stem": "以下两个程序段不等价，执行程序段B将陷入死循环。",
+  "code": [
+   "/*程序段A*/ s =0;\nfor(i =1;i<=10;i++){ if(i%2 ==0){\ncontinue; }\ns =s+i;\n} /*程序段B*/ s =0;\ni=1;",
+   "while(i<=10){\nif(i%2 ==0){\ncontinue; }\ns =s+i; i++;\n}"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-60",
+  "section": 1,
+  "number": 60,
+  "type": "judge",
+  "stem": "在以下程序段中，若变量已正确赋值，当条件i<=Limit 不满足(即i>Limit) 或者条件m%i==0满足时，循环结束。",
+  "code": [
+   "int i,limit,m;\nfor(i=2;i<=limit;i++){\nif(m %i==0){\nbreak;\n}\n}"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-61",
+  "section": 1,
+  "number": 61,
+  "type": "judge",
+  "stem": "以下程序段中，break语句只执行一次。",
+  "code": [
+   "n =9;\nfor(i =1;i<=n;i++){\nfor(j =1;j<=n;j++){\nif(i!=1 &&j>i){\nbreak;\n}\nprintf(\"%4d\",i*j); }\nprintf(\"\\n\"); }"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-62",
+  "section": 1,
+  "number": 62,
+  "type": "judge",
+  "stem": "在嵌套循环(多层循环)中，每一层循环都应该使用自己的循环变量，以免互相干扰。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-63",
+  "section": 1,
+  "number": 63,
+  "type": "judge",
+  "stem": "执行以下程序段，将出现死循环。",
+  "code": [
+   "for(i =11;i<=20;i++){\nfor(i =1;i<=10;i++){ printf(\"%4d\",i);\n}\nprintf(\"\\n\");"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-64",
+  "section": 1,
+  "number": 64,
+  "type": "judge",
+  "stem": "在嵌套循环(多层循环)中，每一层循环中都不应该改变其他层使用的循环变量的值，以免互相干扰。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-65",
+  "section": 1,
+  "number": 65,
+  "type": "judge",
+  "stem": "以下程序段的功能是输出1～100之间每个整数的各位数字之和。",
+  "code": [
+   "for(num =1;num<=100;num++){ s =0;\ndo{\nS =S+num %10;\nnum =num/10; }while(num!=0);\nprintf(\"%d\\n\",s); }"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-66",
+  "section": 1,
+  "number": 66,
+  "type": "judge",
+  "stem": "执行以下程序段，将输出10。",
+  "code": [
+   "int i=10;\nwhile(i<10){\nprintf(\"%d\\n\",i); }"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-67",
+  "section": 1,
+  "number": 67,
+  "type": "judge",
+  "stem": "下面这段程序中的循环将是无限循环，程序将始终运行、无法结束(假设运行该程序的计算机系统永远不会发生意外情况而崩溃或断电)。",
+  "code": [
+   "#include \"stdio.h\" int main(){\nfor(Long num=1;num>0;num++)\nprintf(\"%Ld\\n\",num); return 0;\n}"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-68",
+  "section": 1,
+  "number": 68,
+  "type": "judge",
+  "stem": "下面这段程序，将循环有限次，在打印输出有限行之后，程序将正常结束。 do while while",
+  "code": [
+   "#include \"stdio.h\" int main(){\nfor(Long num=1;num>0;num++)\nprintf(\"%Ld\\n\",num); return 0;\n}"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "adjudicated",
+  "points": 2.0
+ },
+ {
+  "id": "1-70",
+  "section": 1,
+  "number": 70,
+  "type": "judge",
+  "stem": "All the three expressions in for statement could be omitted in c.",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-71",
+  "section": 1,
+  "number": 71,
+  "type": "judge",
+  "stem": "while循环的循环体最少要执行一次。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-72",
+  "section": 1,
+  "number": 72,
+  "type": "judge",
+  "stem": "对for(表达式1;;表达式3)可理解为for (表达式1;1;表达式3)。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-73",
+  "section": 1,
+  "number": 73,
+  "type": "judge",
+  "stem": "c语言中三种循环语句可以相互嵌套。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-75",
+  "section": 1,
+  "number": 75,
+  "type": "judge",
+  "stem": "循环体中若有多条语句，应构成一条复合语句。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-76",
+  "section": 1,
+  "number": 76,
+  "type": "judge",
+  "stem": "在C语言中，for、while、do-while 三种循环可以互相嵌套。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-77",
+  "section": 1,
+  "number": 77,
+  "type": "judge",
+  "stem": "在C语言的嵌套循环结构中，任何一层循环中的brea语句都可以结束整个嵌套循环的执行。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-78",
+  "section": 1,
+  "number": 78,
+  "type": "judge",
+  "stem": "语句for(i=1,j=10;i<j;++i,j--); 执行之后i,j的值均为5。",
+  "code": [
+   "item =1.0;\ndenominator =1;\nsum =0.0;\nwhile(item >0.01) {\nitem =1.0/denominator; sum +=item;\ndenominator +=2; }"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-80",
+  "section": 1,
+  "number": 80,
+  "type": "judge",
+  "stem": "下面这段程序，若scanf输入k 的值为50,则程序将循环有限次，在打印输出有限行之后，程序将正常结束。",
+  "code": [
+   "#include <stdio.h>\nint main(){\nint k;\nscanf(\"%d\",&k);\nint i=100;\nwhile(i>k){\nprintf(\"%d\",i); i++;\n}\nreturn 0; }"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-81",
+  "section": 1,
+  "number": 81,
+  "type": "judge",
+  "stem": "下面这段程序，若scanf输入k 的值为50,则是无限循环，程序将始终运行、无法结束(假设运行该程序的计算机系统永远不会发生意外情况而崩溃或断电)。",
+  "code": [
+   "#include <stdio.h>\nint main(){\nint k;\nscanf(\"%d\",&k);\nint i=100;\nwhile(i>k){\nprintf(\"%d\",i);\ni++;\n}\nreturn 0;",
+   "}"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-82",
+  "section": 1,
+  "number": 82,
+  "type": "judge",
+  "stem": "for语句循环体可能一次也不执行。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-83",
+  "section": 1,
+  "number": 83,
+  "type": "judge",
+  "stem": "在循环结构中使用break 语句或者continue 语句，其作用是相同的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-84",
+  "section": 1,
+  "number": 84,
+  "type": "judge",
+  "stem": "在定义c语言的变量时，不能用关键字作为自定义的标识符",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-85",
+  "section": 1,
+  "number": 85,
+  "type": "judge",
+  "stem": "在for(表达式1;表达式2;表达式3)中，如果表达式2为空，表示循环条件默认为真。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-86",
+  "section": 1,
+  "number": 86,
+  "type": "judge",
+  "stem": "在while语句的循环体中，可以再嵌套do-while语句。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-87",
+  "section": 1,
+  "number": 87,
+  "type": "judge",
+  "stem": "在for语句的循环体中，还可以再嵌套for语句。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-88",
+  "section": 1,
+  "number": 88,
+  "type": "judge",
+  "stem": "C语言函数返回类型的默认定义类型是void。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-89",
+  "section": 1,
+  "number": 89,
+  "type": "judge",
+  "stem": "函数形参的存储单元是动态分配的。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-90",
+  "section": 1,
+  "number": 90,
+  "type": "judge",
+  "stem": "函数的实参可以是常量，变量或表达式。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-91",
+  "section": 1,
+  "number": 91,
+  "type": "judge",
+  "stem": "如果函数定义出现在函数调用之前，可以不必加函数原型声明。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-92",
+  "section": 1,
+  "number": 92,
+  "type": "judge",
+  "stem": "C 语言程序中可以有多个函数，但只能有一个主函数。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-93",
+  "section": 1,
+  "number": 93,
+  "type": "judge",
+  "stem": "函数返回值的类型是由在定义函数时所指定的函数类型。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-94",
+  "section": 1,
+  "number": 94,
+  "type": "judge",
+  "stem": "局部变量如果没有指定初值，则其初值不确定。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-95",
+  "section": 1,
+  "number": 95,
+  "type": "judge",
+  "stem": "寄存器类变量的作用域和寿命与自动类变量的相同。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-96",
+  "section": 1,
+  "number": 96,
+  "type": "judge",
+  "stem": "在一个函数内部调用另一个函数的调用方式称为嵌套调用。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-97",
+  "section": 1,
+  "number": 97,
+  "type": "judge",
+  "stem": "函数形参的存储单元是动态分配的。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-98",
+  "section": 1,
+  "number": 98,
+  "type": "judge",
+  "stem": "静态变量的作用域是整个文件。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-99",
+  "section": 1,
+  "number": 99,
+  "type": "judge",
+  "stem": "当变量的存储类型定义缺省时，系统默认为变量的存储类型为auto 类型，分配在静态区。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-100",
+  "section": 1,
+  "number": 100,
+  "type": "judge",
+  "stem": "可以用一个指针变量指向一个函数，然后通过该指针变量调用此函数。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "adjudicated",
+  "points": null
+ },
+ {
+  "id": "1-102",
+  "section": 1,
+  "number": 102,
+  "type": "judge",
+  "stem": "实参向形参进行数值传递时，数值传递的方向是单向的，即形参变量值的改变不影响实参变量的值。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-103",
+  "section": 1,
+  "number": 103,
+  "type": "judge",
+  "stem": "定义一个函数指针变量就相当于定义了一个“容器”,用于存放一段代码的起始地址。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-104",
+  "section": 1,
+  "number": 104,
+  "type": "judge",
+  "stem": "注册回调函数就相当于是定义回调函数。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-105",
+  "section": 1,
+  "number": 105,
+  "type": "judge",
+  "stem": "C语言程序一定是从源文件的第一条语句开始执行的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-106",
+  "section": 1,
+  "number": 106,
+  "type": "judge",
+  "stem": "在C程序中，main函数必须位于源程序的最前面",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-107",
+  "section": 1,
+  "number": 107,
+  "type": "judge",
+  "stem": "在C程序中，函数可以嵌套定义，但不可以嵌套调用。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-108",
+  "section": 1,
+  "number": 108,
+  "type": "judge",
+  "stem": "一个C语言程序中可以有多个main函数(主函数)。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-109",
+  "section": 1,
+  "number": 109,
+  "type": "judge",
+  "stem": "C语言程序中，在函数内定义的变量称为全局变量。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-110",
+  "section": 1,
+  "number": 110,
+  "type": "judge",
+  "stem": "在C程序中，函数可以嵌套调用，但不可以嵌套定义。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-111",
+  "section": 1,
+  "number": 111,
+  "type": "judge",
+  "stem": "C语言程序中，在函数内定义的变量称为局部变量。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-112",
+  "section": 1,
+  "number": 112,
+  "type": "judge",
+  "stem": "在对数组全部元素赋初值时，不可以省略行数，但能省略列数。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-113",
+  "section": 1,
+  "number": 113,
+  "type": "judge",
+  "stem": "数组定义中，数组名后是用方括号括起来的常量表达式，不能用圆括号。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-114",
+  "section": 1,
+  "number": 114,
+  "type": "judge",
+  "stem": "函数strcmp 从头至尾顺序地将其对应字符比较，遇到两个字符不等时，两个字符相减得到一个int 型值，两个字符串完全相同时，则返回0。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-115",
+  "section": 1,
+  "number": 115,
+  "type": "judge",
+  "stem": "指向数组元素的指针只可指向数组的首元素。 0",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-116",
+  "section": 1,
+  "number": 116,
+  "type": "judge",
+  "stem": "对于已正确定义的二维数组a,*(a[i]+j)与a[i][j] 的含义相同。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-117",
+  "section": 1,
+  "number": 117,
+  "type": "judge",
+  "stem": "如果strcmp(s1,s2)返回的结果为0,表示字符串s1和s2不相同。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-118",
+  "section": 1,
+  "number": 118,
+  "type": "judge",
+  "stem": "c语言的数组下标从0开始。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-119",
+  "section": 1,
+  "number": 119,
+  "type": "judge",
+  "stem": "数组初始化时，初始值个数小于数组元素的个数， C语言自动将剩余的元素初始化为初始化列表中的最后一个初始值。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-120",
+  "section": 1,
+  "number": 120,
+  "type": "judge",
+  "stem": "对于定义int a[5];可以通过语句scanf(\"%d\",a);输入全部元素的值。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-121",
+  "section": 1,
+  "number": 121,
+  "type": "judge",
+  "stem": "char s1[80],s2[80];s1=s2;这样赋值是正确的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-122",
+  "section": 1,
+  "number": 122,
+  "type": "judge",
+  "stem": "数组定义后，数组名表示该数组所分配连续内存空间中第一个单元的地址，即首地址，是一个常量，不能被修改。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-123",
+  "section": 1,
+  "number": 123,
+  "type": "judge",
+  "stem": "一个数组中的每个成员都必须具有相同的数据类型，用数组名加不同的序号即下标来区分数组中的各元素。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-124",
+  "section": 1,
+  "number": 124,
+  "type": "judge",
+  "stem": "C语言里，一维数组元素的下标是从0开始的。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-125",
+  "section": 1,
+  "number": 125,
+  "type": "judge",
+  "stem": "C语言里数组元素的下标是从1开始的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-126",
+  "section": 1,
+  "number": 126,
+  "type": "judge",
+  "stem": "直接访问就是直接利用变量的地址直接进行访问。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-127",
+  "section": 1,
+  "number": 127,
+  "type": "judge",
+  "stem": "可以用一个指针变量指向一个函数，然后通过该指针变量调用此函数。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-128",
+  "section": 1,
+  "number": 128,
+  "type": "judge",
+  "stem": "指向结构体变量的指针可以作函数参数，实现传址调用。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-129",
+  "section": 1,
+  "number": 129,
+  "type": "judge",
+  "stem": "结构体成员的类型必须是基本数据类型。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-130",
+  "section": 1,
+  "number": 130,
+  "type": "judge",
+  "stem": "在C语言中，数组名是不可改变的，不能对它进行赋值运算。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-131",
+  "section": 1,
+  "number": 131,
+  "type": "judge",
+  "stem": "链表是动态存储分配的数据结构。根据需要动态地开辟内存空间，可以比较自由方便地插入新元素(结点),支持随机访问，故使用链表可以节省内存，操作效率高。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-132",
+  "section": 1,
+  "number": 132,
+  "type": "judge",
+  "stem": "专门存放地址的变量，称为指针变量。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-133",
+  "section": 1,
+  "number": 133,
+  "type": "judge",
+  "stem": "结构体类型可用于表示复杂构造类型，假设想要跟踪图书馆中书本的动态，需要跟踪每本书的某些属性：",
+  "code": [
+   "BookID、Title、Author、Price,可定义Book结构体类型用来封装这些属性： struct Book{ int id;\nchar title[50];\nchar author[20];\ndouble price;\n};\n下面定义该类型的变量或数组是否正确? struct Book b1,b2,c[10];"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-134",
+  "section": 1,
+  "number": 134,
+  "type": "judge",
+  "stem": "typedef可以简化声明：比如定义 typedef unsigned long long*Ulp t;之后 unsigned long Long*a,b;可以简写成 uLp t a,b;",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-135",
+  "section": 1,
+  "number": 135,
+  "type": "judge",
+  "stem": "文件指针和位置指针都是随着文件的读写操作在不断改变。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-136",
+  "section": 1,
+  "number": 136,
+  "type": "judge",
+  "stem": "随机操作只适用于文本文件。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-137",
+  "section": 1,
+  "number": 137,
+  "type": "judge",
+  "stem": "随机操作只适用于二进制文件。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-138",
+  "section": 1,
+  "number": 138,
+  "type": "judge",
+  "stem": "以“a”方式打开一个文件时，文件指针指向文件首。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-139",
+  "section": 1,
+  "number": 139,
+  "type": "judge",
+  "stem": "文件的读函数是从输入文件中读取信息，并存放在内存中。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-140",
+  "section": 1,
+  "number": 140,
+  "type": "judge",
+  "stem": "一般不能用任何一个文本编辑器打开二进制文件进行阅读。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-141",
+  "section": 1,
+  "number": 141,
+  "type": "judge",
+  "stem": "二进制文件名不能用.txt 作为扩展名，否则二进制文件读写函数fread和fwrite 将出错。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-142",
+  "section": 1,
+  "number": 142,
+  "type": "judge",
+  "stem": "假设运算符'*和'%'都是右结合的，则表达式 (3*5%3) 的值为6。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-143",
+  "section": 1,
+  "number": 143,
+  "type": "judge",
+  "stem": "增1减1运算符的前缀运算和后缀运算的表达式值是相同的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-144",
+  "section": 1,
+  "number": 144,
+  "type": "judge",
+  "stem": "关系运算符“<“优先级高于关系运算符”==”。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-146",
+  "section": 1,
+  "number": 146,
+  "type": "judge",
+  "stem": "C语言中，大于运算符的优先级比赋值运算符的优先级高",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-147",
+  "section": 1,
+  "number": 147,
+  "type": "judge",
+  "stem": "执行语句putchar('S'); 后，在屏幕上显示的输出结果是'S'。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-149",
+  "section": 1,
+  "number": 149,
+  "type": "judge",
+  "stem": "下面这段代码，用%.2f格式打印输出int 型变量，不会进行类型转换，打印输出的结果不会是2019.00。",
+  "code": [
+   "#include <stdio.h> int main(){\nint k=2019;\nprintf(\"%.2f\",k);",
+   "return 0;",
+   "}"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-150",
+  "section": 1,
+  "number": 150,
+  "type": "judge",
+  "stem": "下面这段代码，打印输出变量e的值，将会进行取整，输出为2。",
+  "code": [
+   "#include <stdio.h> int main(){\ndouble e =2.71828; printf(\"%d\",e);\nreturn ; }"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-151",
+  "section": 1,
+  "number": 151,
+  "type": "judge",
+  "stem": "printf 函数输出数据时会根据格式控制符自动进行数据类型转换。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-152",
+  "section": 1,
+  "number": 152,
+  "type": "judge",
+  "stem": "C语言中，字符型数据可以和整型数据进行相互转换。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-153",
+  "section": 1,
+  "number": 153,
+  "type": "judge",
+  "stem": "省略else的if 语句的一般形式如下，若表达式的值为“真”,则执行语句1;否则，就什么也不做。",
+  "code": [
+   "if(表达式) 语句1"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-154",
+  "section": 1,
+  "number": 154,
+  "type": "judge",
+  "stem": "为了检查以下嵌套的if 语句的三个分支是否正确，至少需要设计3组测试用例，即",
+  "code": [
+   "yournumber的取值至少有3组(等于mynumber、大于mynumber、小于mynumber)。 if(yournumber ==mynumber){\nprintf(\"Good Guess!\\n\");\n}else if(yournumber>mynumber ){ printf(\"Too big!\\n\");\n}else{\nprintf(\"Too small!\\n\");\n}"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-155",
+  "section": 1,
+  "number": 155,
+  "type": "judge",
+  "stem": "C语言中在else之后可以直接跟条件。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-156",
+  "section": 1,
+  "number": 156,
+  "type": "judge",
+  "stem": "在c程序中，else的个数不能多于if的个数。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-157",
+  "section": 1,
+  "number": 157,
+  "type": "judge",
+  "stem": "switch 语句中，switch(E) 中的表达式E没有数据类型限制。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-158",
+  "section": 1,
+  "number": 158,
+  "type": "judge",
+  "stem": "使用switch语句时，各case和default子句的先后顺序可以变动，而不会影响程序执行结果。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-159",
+  "section": 1,
+  "number": 159,
+  "type": "judge",
+  "stem": "switch语句中的case标签可以是任意字符串。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-160",
+  "section": 1,
+  "number": 160,
+  "type": "judge",
+  "stem": "C程序使用switch 语句实现多分支选择结构时，必须包含default 标号。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-161",
+  "section": 1,
+  "number": 161,
+  "type": "judge",
+  "stem": "break语句可以用在循环体和switch语句中，但continue语句只可以用在循环体中。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-162",
+  "section": 1,
+  "number": 162,
+  "type": "judge",
+  "stem": "对于for(表达式1;表达式2;表达式3)语句来说，若循环体有continue 语句且执行，意味着跳过循环体余下语句转去执行表达式3。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-163",
+  "section": 1,
+  "number": 163,
+  "type": "judge",
+  "stem": "for循环语句只能用于循环次数已知的情况。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-164",
+  "section": 1,
+  "number": 164,
+  "type": "judge",
+  "stem": "以下for(;;) 循环书写错误。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-165",
+  "section": 1,
+  "number": 165,
+  "type": "judge",
+  "stem": "while 循环和for 循环的执行次数时没有限制的，需要手动用break 语句来结束循环。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-166",
+  "section": 1,
+  "number": 166,
+  "type": "judge",
+  "stem": "for 循环的三个表达式都必须要明确的写出来。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-167",
+  "section": 1,
+  "number": 167,
+  "type": "judge",
+  "stem": "continue语句一般放在条件语句中，条件成立时结束本次循环，直接进入下一次循环。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-168",
+  "section": 1,
+  "number": 168,
+  "type": "judge",
+  "stem": "while循环条件将会比循环体多执行一次。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-169",
+  "section": 1,
+  "number": 169,
+  "type": "judge",
+  "stem": "break和continue都可以从循环中退出",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-170",
+  "section": 1,
+  "number": 170,
+  "type": "judge",
+  "stem": "在嵌套循环语句中，里层的循环语句里有break语句，那执行该语句时，是跳出全部循环。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-171",
+  "section": 1,
+  "number": 171,
+  "type": "judge",
+  "stem": "sizeof() 是 C语言的一个函数，可以计算参量所占内存的字节数。如sizeof(int) 可计算整型所占的内存字节数。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-172",
+  "section": 1,
+  "number": 172,
+  "type": "judge",
+  "stem": "C语言中，通过函数调用只能获得一个返回值。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-173",
+  "section": 1,
+  "number": 173,
+  "type": "judge",
+  "stem": "指向结构体变量的指针可以作函数参数，实现传址调用。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-174",
+  "section": 1,
+  "number": 174,
+  "type": "judge",
+  "stem": "在代码中，对于某个自己设计的函数，那么该函数声明、函数调用、函数定义(亦称函数的实现)三者在代码中的先后位置关系通常为：“函数声明”先于“函数调用”,“函数调用”先于“函数定义”。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-175",
+  "section": 1,
+  "number": 175,
+  "type": "judge",
+  "stem": "函数一次可以返回两个以上的值。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-176",
+  "section": 1,
+  "number": 176,
+  "type": "judge",
+  "stem": "函数可以嵌套调用但不能嵌套定义。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-178",
+  "section": 1,
+  "number": 178,
+  "type": "judge",
+  "stem": "c语言每个函数的返回值都是int 型的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-179",
+  "section": 1,
+  "number": 179,
+  "type": "judge",
+  "stem": "函数的递归调用是嵌套调用的特例。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-180",
+  "section": 1,
+  "number": 180,
+  "type": "judge",
+  "stem": "语句是C 语言程序的基本结构模块。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-181",
+  "section": 1,
+  "number": 181,
+  "type": "judge",
+  "stem": "函数声明时，可以不声明形参的变量名，但不能不声明类型。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-182",
+  "section": 1,
+  "number": 182,
+  "type": "judge",
+  "stem": "sizeof() 不是函数。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-183",
+  "section": 1,
+  "number": 183,
+  "type": "judge",
+  "stem": "函数的形参必须为变量，而实参可以是变量，常量或表达式，且实参和形参可以同名。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-184",
+  "section": 1,
+  "number": 184,
+  "type": "judge",
+  "stem": "对于用户自己定义的函数，在使用前必须加以说明。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-185",
+  "section": 1,
+  "number": 185,
+  "type": "judge",
+  "stem": "调用函数时，只能把实参的值传送给形参，形参的值不能传送给实参",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-186",
+  "section": 1,
+  "number": 186,
+  "type": "judge",
+  "stem": "C程序在调用有参数函数时，既可以将实参的值传递给形参，也可以反过来将形参的值传递给实参。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-187",
+  "section": 1,
+  "number": 187,
+  "type": "judge",
+  "stem": "自动变量如果没有赋值，其值被自动赋为0。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-188",
+  "section": 1,
+  "number": 188,
+  "type": "judge",
+  "stem": "静态局部变量如果没有赋值，其存储单元中将是随机值。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-189",
+  "section": 1,
+  "number": 189,
+  "type": "judge",
+  "stem": "C语言中定义的局部变量存放在堆区，动态分配的内存空间位于栈区。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-190",
+  "section": 1,
+  "number": 190,
+  "type": "judge",
+  "stem": "下面这段代码，打印输出的结果是k=3,k=4,",
+  "code": [
+   "#include <stdio.h> void hoho(){\nstatic int k =2; k++;\nprintf(\"k=%d,\",k); }\nint main(){\nhoho();\nhoho();\nreturn 0; }"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": 2.0
+ },
+ {
+  "id": "1-191",
+  "section": 1,
+  "number": 191,
+  "type": "judge",
+  "stem": "全局变量不可以和函数内的局部变量同名。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": 1.0
+ },
+ {
+  "id": "1-192",
+  "section": 1,
+  "number": 192,
+  "type": "judge",
+  "stem": "以下代码中，参量n 与变量t、sum 都是函数hehe() 的局部变量。函数hehe() 执行",
+  "code": [
+   "结束后,释放变量n、t、sum的内存空间。 #include <stdio.h>\nvoid hehe(int n){\nstatic int t;\nint sum=0;\nsum =t+n;\nprintf(\"%d%d%d\\n\",sum,t,n);\n}\nint main(){ hehe(5);\nprintf(\"Good Day!\\n\");\nreturn 0; }"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": 2.0
+ },
+ {
+  "id": "1-193",
+  "section": 1,
+  "number": 193,
+  "type": "judge",
+  "stem": "以下这段代码有编译错误，因为C语言不允许重复定义同名变量，两处int k的定义是冲突的。",
+  "code": [
+   "#include <stdio.h>\nint main(){ int k=3;\nint i=1;\nwhile(i<5){ int k;\nk =i+5;\ni++;\nprintf(\"%d\",k); }\nprintf(\"%d\\n\",k); return 0;\n}"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-194",
+  "section": 1,
+  "number": 194,
+  "type": "judge",
+  "stem": "当一个C语言程序由多个文件模块组成时，整个程序可以包含多个main() 函数。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-195",
+  "section": 1,
+  "number": 195,
+  "type": "judge",
+  "stem": "宏名必须用大写字母表示。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-196",
+  "section": 1,
+  "number": 196,
+  "type": "judge",
+  "stem": "函数内部定义了一个与全局变量同名的局部变量，该局部变量会变更全局变量的值。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-197",
+  "section": 1,
+  "number": 197,
+  "type": "judge",
+  "stem": "函数执行完以后，其内部定义的静态变量不会被回收。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-198",
+  "section": 1,
+  "number": 198,
+  "type": "judge",
+  "stem": "递归调用算法与相同功能的非递归算法相比，主要问题在于重复计算太多，而且调用本身需要分配额外的空间、传递数据和控制，所以时间和空间开销通常都比较大。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-199",
+  "section": 1,
+  "number": 199,
+  "type": "judge",
+  "stem": "函数递归调用自身时，每次调用都会得到一个与以前的变量集合不同的新的变量集合。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-200",
+  "section": 1,
+  "number": 200,
+  "type": "judge",
+  "stem": "递归的执行速度并不快，但递归代码比较紧凑，并且比相应的非递归代码更易于编写与理解。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-201",
+  "section": 1,
+  "number": 201,
+  "type": "judge",
+  "stem": "递归并不节省存储器的开销，因为递归调用过程中必须在某个地方维护一个存储处理值的栈。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-202",
+  "section": 1,
+  "number": 202,
+  "type": "judge",
+  "stem": "二维数组定义的一般形式如下，其中的行长度和列长度都是整型常量表达式。",
+  "code": [
+   "类型名数组名[行长度][列长度];"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-203",
+  "section": 1,
+  "number": 203,
+  "type": "judge",
+  "stem": "以下定义了一个三维数组array day 。",
+  "code": [
+   "int array_day[10][10][10];"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "1-204",
+  "section": 1,
+  "number": 204,
+  "type": "judge",
+  "stem": "引用二维数组的元素要指定两个下标，即行下标和列下标， 一般形式如下。 数组名[列下标][行下标]",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-205",
+  "section": 1,
+  "number": 205,
+  "type": "judge",
+  "stem": "char s[80],*p=s;p=\"hello\";这样赋值是可以的。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-206",
+  "section": 1,
+  "number": 206,
+  "type": "judge",
+  "stem": "语句char*pstr=\"lalala!\"的含义是将字符串存入到变量pstr中。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-207",
+  "section": 1,
+  "number": 207,
+  "type": "judge",
+  "stem": "字符串比较的规则是对两个字符串自左至右逐个字符相比(按ASCII码值大小比较), 直到出现不同的字符或遇到'\\ '为止。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-208",
+  "section": 1,
+  "number": 208,
+  "type": "judge",
+  "stem": "已知'A'的ASCII代码值为65,则'D' 的ASCII代码值为68",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-209",
+  "section": 1,
+  "number": 209,
+  "type": "judge",
+  "stem": "判断字符串a是否大于b, 可以表示为 if(strcmp(a,b)>0)",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-210",
+  "section": 1,
+  "number": 210,
+  "type": "judge",
+  "stem": "\"a\" 和 'a'是等价的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-211",
+  "section": 1,
+  "number": 211,
+  "type": "judge",
+  "stem": "语句printf(\"%d\",strlen(\"China\");的输出结果为6",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-212",
+  "section": 1,
+  "number": 212,
+  "type": "judge",
+  "stem": "char*str; 一定是表示定义一个字符串。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-214",
+  "section": 1,
+  "number": 214,
+  "type": "judge",
+  "stem": "以下定义了一个一维数组str,该数组可以存放81个字符型数据。",
+  "code": [
+   "char str[81];"
+  ],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-215",
+  "section": 1,
+  "number": 215,
+  "type": "judge",
+  "stem": "数组定义后，数组名表示该数组所分配连续内存空间中第一个单元的地址，即首地址。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-216",
+  "section": 1,
+  "number": 216,
+  "type": "judge",
+  "stem": "数组定义后，数组名的值是一个地址，可以被修改。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-217",
+  "section": 1,
+  "number": 217,
+  "type": "judge",
+  "stem": "在对全部数组元素赋初值时，可以不指定数组长度。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-218",
+  "section": 1,
+  "number": 218,
+  "type": "judge",
+  "stem": "如果使用数组时，元素下标出现越界。例如定义了有n个元素的整型数组s, 赋初值为全0,在程序中有s[n]=5的语句，编译环境就会检查出来并且报错。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-219",
+  "section": 1,
+  "number": 219,
+  "type": "judge",
+  "stem": "对于一维数组，例如： int arr[3];则arr[3] 表示数组的第3个元素。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-220",
+  "section": 1,
+  "number": 220,
+  "type": "judge",
+  "stem": "若有说明：int a[3][4]=o);数组a 中每个元素均可得到初值0。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-221",
+  "section": 1,
+  "number": 221,
+  "type": "judge",
+  "stem": "数组的下标可以是一个表达式，但是表达式计算得到的值必须是一个整数。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-222",
+  "section": 1,
+  "number": 222,
+  "type": "judge",
+  "stem": "c语言对数组下标越界不作检查。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-224",
+  "section": 1,
+  "number": 224,
+  "type": "judge",
+  "stem": "在C语言中，函数的参数可以是数组名，表示在函数中新建一个数组，并完成值的传递。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-225",
+  "section": 1,
+  "number": 225,
+  "type": "judge",
+  "stem": "函数名代表该函数的入口地址。因此，可用函数名给指向函数的指针变量赋值。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-226",
+  "section": 1,
+  "number": 226,
+  "type": "judge",
+  "stem": "执行语句int *p; 后 ，指针变量p 只能指向int 类型的变量。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-227",
+  "section": 1,
+  "number": 227,
+  "type": "judge",
+  "stem": "只要将多个指针作为函数的参数，函数就一定会返回多个值。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-228",
+  "section": 1,
+  "number": 228,
+  "type": "judge",
+  "stem": "对于定义int a[10],*p=a; 语句 p=a+1;和 a=a+1;都是合法的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-229",
+  "section": 1,
+  "number": 229,
+  "type": "judge",
+  "stem": "字符串常量在内存中的存放位置由系统自动安排。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-230",
+  "section": 1,
+  "number": 230,
+  "type": "judge",
+  "stem": "字符串常量实质上是一个指向该字符串首字符的指针常量。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-231",
+  "section": 1,
+  "number": 231,
+  "type": "judge",
+  "stem": "调用printf 函数，%s的格式输出字符串时，字符数组名、字符指针和字符串常量都可以作为输出参数。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-232",
+  "section": 1,
+  "number": 232,
+  "type": "judge",
+  "stem": "语句 int *p[5]; 定义了一个指针数组p, 用于指向一个有5个元素的数组。 233",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-234",
+  "section": 1,
+  "number": 234,
+  "type": "judge",
+  "stem": "关于C语言指针的运算：指针只有加减操作，没有乘除操作。指针可以加常数、减常数；相同类型的指针可以相减，不可以相加。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-235",
+  "section": 1,
+  "number": 235,
+  "type": "judge",
+  "stem": "可以将一个整型数据赋给一个指针变量，如p=3000。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-236",
+  "section": 1,
+  "number": 236,
+  "type": "judge",
+  "stem": "指针变量中保存的肯定是一个地址。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-237",
+  "section": 1,
+  "number": 237,
+  "type": "judge",
+  "stem": "对于定义int a[5],*p=a;后 ，*(p+1) 和 *(a+1) 的值是相同的。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-238",
+  "section": 1,
+  "number": 238,
+  "type": "judge",
+  "stem": "它表示p是一个指针数组，它包含4个指针变量元素。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": 1.0
+ },
+ {
+  "id": "1-239",
+  "section": 1,
+  "number": 239,
+  "type": "judge",
+  "stem": "定义指针函数变量后，将一个函数名赋值该指针变量，要求函数的参数个数、类型一致。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-240",
+  "section": 1,
+  "number": 240,
+  "type": "judge",
+  "stem": "不同类型的指针变量是可以直接相互赋值的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-241",
+  "section": 1,
+  "number": 241,
+  "type": "judge",
+  "stem": "在用数组名作函数参数时，下面两种函数声明是有区别的。",
+  "code": [
+   "①void fun(int arr[],int n);",
+   "②void fun(int *arr,int n);"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-242",
+  "section": 1,
+  "number": 242,
+  "type": "judge",
+  "stem": "执行语句char *cp ;后，指针变量cp只能指向char 类型的变量。 的指针变量。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-244",
+  "section": 1,
+  "number": 244,
+  "type": "judge",
+  "stem": "语句int(*pb)[6]; 定义了一个指针变量pb, 它是一个指向数组的指针，指向的是长度为6的int 型数组。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-245",
+  "section": 1,
+  "number": 245,
+  "type": "judge",
+  "stem": "语句int*p[5]; 定义了一个指针数组p, 用于指向一个有5个元素的数组。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-246",
+  "section": 1,
+  "number": 246,
+  "type": "judge",
+  "stem": "执行语句int *p=1000;后，指针变量p指向地址为1000的变量。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-247",
+  "section": 1,
+  "number": 247,
+  "type": "judge",
+  "stem": "若有定义char*p=\"computer\" ; 则表示p的值是字符串\"computer\"。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-249",
+  "section": 1,
+  "number": 249,
+  "type": "judge",
+  "stem": "执行代码段 int a=2,*p1=&a,*p2=&a;(*p2)++;a=*p1**p2;后 ，a中的值为6。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-250",
+  "section": 1,
+  "number": 250,
+  "type": "judge",
+  "stem": "char str[10]={“china”};等价于char str[10];str[]={“china”};",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-251",
+  "section": 1,
+  "number": 251,
+  "type": "judge",
+  "stem": "指针变量的使用方法与普通变量一致，都可以进行赋值和取值操作。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-252",
+  "section": 1,
+  "number": 252,
+  "type": "judge",
+  "stem": "指针变量可以用来存储数组的地址，通过指针变量可以访问和操作数组元素。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-253",
+  "section": 1,
+  "number": 253,
+  "type": "judge",
+  "stem": "这样对数组访问是否正确：",
+  "code": [
+   "int a[3]={1,2,3},b[2],*p; p=a+1;\nb=p;"
+  ],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-254",
+  "section": 1,
+  "number": 254,
+  "type": "judge",
+  "stem": "可以用一个函数指针变量指向一个函数，然后通过该指针变量调用此函数。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-255",
+  "section": 1,
+  "number": 255,
+  "type": "judge",
+  "stem": "结构体类型本身不占用内存空间，结构体变量占用内存空间。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-256",
+  "section": 1,
+  "number": 256,
+  "type": "judge",
+  "stem": "结构是变量的集合，可以按照对同类型变量的操作方法单独使用其成员变量。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-257",
+  "section": 1,
+  "number": 257,
+  "type": "judge",
+  "stem": "一个结构类型变量所占的内存空间是其各个成员所占内存空间之和。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-259",
+  "section": 1,
+  "number": 259,
+  "type": "judge",
+  "stem": "对于结构数组s, 既可以引用数组的元素s[i], 也可以引用s[i] 中的结构成员。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-260",
+  "section": 1,
+  "number": 260,
+  "type": "judge",
+  "stem": "结构指针就是指向结构类型变量的指针。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-261",
+  "section": 1,
+  "number": 261,
+  "type": "judge",
+  "stem": "C语言中的结构体类型属于一种构造类型。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-262",
+  "section": 1,
+  "number": 262,
+  "type": "judge",
+  "stem": "一个结构体类型中的各个成员的类型必须是相同的。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-264",
+  "section": 1,
+  "number": 264,
+  "type": "judge",
+  "stem": "结构体变量不能进行整体输入输出。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-265",
+  "section": 1,
+  "number": 265,
+  "type": "judge",
+  "stem": "在对结构变量操作时， .被称为成员或者分量运算符。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-266",
+  "section": 1,
+  "number": 266,
+  "type": "judge",
+  "stem": "在使用结构指针时，->被称为指向运算符。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-267",
+  "section": 1,
+  "number": 267,
+  "type": "judge",
+  "stem": "结构体类型中的成员，可以是基本类型，也可以时候结构体类型。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-268",
+  "section": 1,
+  "number": 268,
+  "type": "judge",
+  "stem": "对于结构数组s, 可以引用数组的元素s[i], 但不可以引用s[i]中的结构成员。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-269",
+  "section": 1,
+  "number": 269,
+  "type": "judge",
+  "stem": "结构体中的成员变量可以是数组。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-270",
+  "section": 1,
+  "number": 270,
+  "type": "judge",
+  "stem": "结构体成员的类型可以不是基本数据类型。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-271",
+  "section": 1,
+  "number": 271,
+  "type": "judge",
+  "stem": "对于缓冲文件系统，在进行文件操作时，系统自动为每一个文件分配一块文件内存缓冲区(内存单元)。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-272",
+  "section": 1,
+  "number": 272,
+  "type": "judge",
+  "stem": "close(fp);表示关闭指针fp所指向的那个文件。",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "1-273",
+  "section": 1,
+  "number": 273,
+  "type": "judge",
+  "stem": "C系统的标准输出文件stdout是指显示器。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-274",
+  "section": 1,
+  "number": 274,
+  "type": "judge",
+  "stem": "有时候，打开文件方式\"w+\"和\"r+\"具有同样的作用。",
+  "code": [],
+  "options": [],
+  "answer": "T",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "1-275",
+  "section": 1,
+  "number": 275,
+  "type": "judge",
+  "stem": "从文件中读字符串的函数 fgets(), 是从当前文件位置指针开始读取字符，直到读到字符'\\0'或EOF为止。 单选题",
+  "code": [],
+  "options": [],
+  "answer": "F",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "2-1",
+  "section": 2,
+  "number": 1,
+  "type": "choice",
+  "stem": "C 语言程序中可以对程序进行注释，注释部分必须用什么符号括起来?",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "'{ 和‘}"
+   },
+   {
+    "key": "B",
+    "text": "[ ' 和'了"
+   },
+   {
+    "key": "C",
+    "text": "/* 和*/'"
+   },
+   {
+    "key": "D",
+    "text": "'*/'和/*'"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-2",
+  "section": 2,
+  "number": 2,
+  "type": "choice",
+  "stem": "已知字符'a' 的ASCII码为97,执行下列语句的输出是 302分 2分",
+  "code": [
+   "printf(\"%d,%c\",'b','b¹+1);"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "98,b"
+   },
+   {
+    "key": "B",
+    "text": "语法不合法"
+   },
+   {
+    "key": "C",
+    "text": "98,99"
+   },
+   {
+    "key": "D",
+    "text": "98,c"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-3",
+  "section": 2,
+  "number": 3,
+  "type": "choice",
+  "stem": "表达式 strcmp(\"box\",\"boss\") 的值是一个",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "正数"
+   },
+   {
+    "key": "B",
+    "text": "负数"
+   },
+   {
+    "key": "C",
+    "text": "0"
+   },
+   {
+    "key": "D",
+    "text": "不确定的数"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-4",
+  "section": 2,
+  "number": 4,
+  "type": "choice",
+  "stem": "要调用数学函数时，在#include 命令行中应包含",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "\"stdio.h\""
+   },
+   {
+    "key": "B",
+    "text": "\"string.h\""
+   },
+   {
+    "key": "C",
+    "text": "\"math.h\""
+   },
+   {
+    "key": "D",
+    "text": "\"ctype.h\""
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-5",
+  "section": 2,
+  "number": 5,
+  "type": "choice",
+  "stem": "判断 i 和j 至少有一个值为非0的表达式是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "i!= 0&& j!=0"
+   },
+   {
+    "key": "B",
+    "text": "i+j!=0"
+   },
+   {
+    "key": "C",
+    "text": "illj"
+   },
+   {
+    "key": "D",
+    "text": "i&&j"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-6",
+  "section": 2,
+  "number": 6,
+  "type": "choice",
+  "stem": "若a是基本整型变量， c 是单精度实型变量，输入语句 是错误的。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "scanf(\"%d,%f\",&a,&c);"
+   },
+   {
+    "key": "B",
+    "text": "scanf(\"d=%d,c=%f\",&a,&c);"
+   },
+   {
+    "key": "C",
+    "text": "scanf(\"%d%f\",&a,&c);"
+   },
+   {
+    "key": "D",
+    "text": "scanf(\"%d%f\",a,c);"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-8",
+  "section": 2,
+  "number": 8,
+  "type": "choice",
+  "stem": "若变量已正确定义并赋值，符合C语言语法的表达式是_.",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "a=2++"
+   },
+   {
+    "key": "B",
+    "text": "a=3,5"
+   },
+   {
+    "key": "C",
+    "text": "a=a+1=3"
+   },
+   {
+    "key": "D",
+    "text": "12.3%4"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-9",
+  "section": 2,
+  "number": 9,
+  "type": "choice",
+  "stem": "表达式_不能用于判断“x和y不同时为零”。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "x!=OIly!=0"
+   },
+   {
+    "key": "B",
+    "text": "xlly"
+   },
+   {
+    "key": "C",
+    "text": "!(x==0lly==0)"
+   },
+   {
+    "key": "D",
+    "text": "!(x==0 &&y==0)"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-10",
+  "section": 2,
+  "number": 10,
+  "type": "choice",
+  "stem": "表达式5>3>1值是_.",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "0"
+   },
+   {
+    "key": "B",
+    "text": "1"
+   },
+   {
+    "key": "C",
+    "text": "3"
+   },
+   {
+    "key": "D",
+    "text": "表达式语法错误"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-11",
+  "section": 2,
+  "number": 11,
+  "type": "choice",
+  "stem": "若a 是基本整型变量，c 是单精度实型变量，则输入语句()是错误的。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "scanf(\"%d,%f\",&a,&c);"
+   },
+   {
+    "key": "B",
+    "text": "scanf(\"d=%d,c=%f\",&a,&c);"
+   },
+   {
+    "key": "C",
+    "text": "scanf(\"%d%f\",&a,&c);"
+   },
+   {
+    "key": "D",
+    "text": "scanf(\"%d%f\",a,c);"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-12",
+  "section": 2,
+  "number": 12,
+  "type": "choice",
+  "stem": "以下选项中不正确的整型常量是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "12L"
+   },
+   {
+    "key": "B",
+    "text": "-10"
+   },
+   {
+    "key": "C",
+    "text": "012"
+   },
+   {
+    "key": "D",
+    "text": "2,900"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-13",
+  "section": 2,
+  "number": 13,
+  "type": "choice",
+  "stem": "若变量已正确定义并赋值，表达式()不符合C语言语法。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "5&&3"
+   },
+   {
+    "key": "B",
+    "text": "int(5.5)"
+   },
+   {
+    "key": "C",
+    "text": "+a"
+   },
+   {
+    "key": "D",
+    "text": "a=b=c=3"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-14",
+  "section": 2,
+  "number": 14,
+  "type": "choice",
+  "stem": "若变量已正确定义并赋值，表达式-k++ 等价于 ( ) 。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "-(k++)"
+   },
+   {
+    "key": "B",
+    "text": "-(k+1)"
+   },
+   {
+    "key": "C",
+    "text": "- (++k)"
+   },
+   {
+    "key": "D",
+    "text": "(-k)++"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-16",
+  "section": 2,
+  "number": 16,
+  "type": "choice",
+  "stem": "下列选项中用于判断ch是否是字符的表达式是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "('a'<= ch<= 'z')I('A'<= ch<= 'Z')"
+   },
+   {
+    "key": "B",
+    "text": "('a'<= ch<=Iz')&&('A'<= ch<= IZ')"
+   },
+   {
+    "key": "C",
+    "text": "(ch >= 'a!&& ch<='z')&&(ch >= 'A'&& ch <='Z')"
+   },
+   {
+    "key": "D",
+    "text": "(ch >= 'a!&& ch<= 'z')I(ch >= 'A'&& ch<= 'Z')"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-17",
+  "section": 2,
+  "number": 17,
+  "type": "choice",
+  "stem": "以下标识符中，不合法的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "4d"
+   },
+   {
+    "key": "B",
+    "text": "_8_d"
+   },
+   {
+    "key": "C",
+    "text": "Int"
+   },
+   {
+    "key": "D",
+    "text": "key"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-18",
+  "section": 2,
+  "number": 18,
+  "type": "choice",
+  "stem": "为表示关系x≥y≥z, 应使用C语言表达式()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "(x>=y)&&(y>=z)"
+   },
+   {
+    "key": "B",
+    "text": "(x>=y)AND(y>=z)"
+   },
+   {
+    "key": "C",
+    "text": "(x>=y>=z)"
+   },
+   {
+    "key": "D",
+    "text": "(x>=y)&(y>=z)"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-19",
+  "section": 2,
+  "number": 19,
+  "type": "choice",
+  "stem": "已知int i,a; 执行语句i=(a=2*3,a*5),a+6; 后，变量i 的值是 ( ) 。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "6"
+   },
+   {
+    "key": "B",
+    "text": "12"
+   },
+   {
+    "key": "C",
+    "text": "30"
+   },
+   {
+    "key": "D",
+    "text": "36"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-20",
+  "section": 2,
+  "number": 20,
+  "type": "choice",
+  "stem": "在C语言中，要求运算数必须是整型的运算符是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "%"
+   },
+   {
+    "key": "B",
+    "text": "/"
+   },
+   {
+    "key": "C",
+    "text": "<"
+   },
+   {
+    "key": "D",
+    "text": "!"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-21",
+  "section": 2,
+  "number": 21,
+  "type": "choice",
+  "stem": "表达式()的值是0。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "3/5"
+   },
+   {
+    "key": "B",
+    "text": "3<5"
+   },
+   {
+    "key": "C",
+    "text": "3%5"
+   },
+   {
+    "key": "D",
+    "text": "3/5.0"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-22",
+  "section": 2,
+  "number": 22,
+  "type": "choice",
+  "stem": "在C语言中，数字029是一个()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "八进制数"
+   },
+   {
+    "key": "B",
+    "text": "十进制数"
+   },
+   {
+    "key": "C",
+    "text": "十六进制数"
+   },
+   {
+    "key": "D",
+    "text": "非法数"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-23",
+  "section": 2,
+  "number": 23,
+  "type": "choice",
+  "stem": "表达式8>6>3值是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "0"
+   },
+   {
+    "key": "B",
+    "text": "1"
+   },
+   {
+    "key": "C",
+    "text": "3"
+   },
+   {
+    "key": "D",
+    "text": "表达式语法错"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-25",
+  "section": 2,
+  "number": 25,
+  "type": "choice",
+  "stem": "以下scanf函数调用语句中不正确的是_。",
+  "code": [
+   "struct pupil{ char name[20]; int age;\nint sex;\n}pup[5],*p=pup;"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "scanf(\"%s\", pup[0].n ame);"
+   },
+   {
+    "key": "B",
+    "text": "scanf(\"%d\",&pup[0].age);"
+   },
+   {
+    "key": "C",
+    "text": "scanf(\"%d\",p->age);"
+   },
+   {
+    "key": "D",
+    "text": "scanf(\"%d\",&(p->sex));"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-26",
+  "section": 2,
+  "number": 26,
+  "type": "choice",
+  "stem": "若a 为int 类型、且其值为3.则执行完表达式a+=a-=a*a 后 ，a 的值是 。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "-3"
+   },
+   {
+    "key": "B",
+    "text": "9"
+   },
+   {
+    "key": "C",
+    "text": "-12"
+   },
+   {
+    "key": "D",
+    "text": "6"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-27",
+  "section": 2,
+  "number": 27,
+  "type": "choice",
+  "stem": "设 x、y、t 均为int 型变量，则执行语句：x=y=3;t=++x l++y;后 ，y 的值为 o",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "不定值"
+   },
+   {
+    "key": "B",
+    "text": "3"
+   },
+   {
+    "key": "C",
+    "text": "4"
+   },
+   {
+    "key": "D",
+    "text": "1"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-28",
+  "section": 2,
+  "number": 28,
+  "type": "choice",
+  "stem": "以下名字，不能作为C语言标识符的是：",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "ThislsQingdaoUniversity"
+   },
+   {
+    "key": "B",
+    "text": "$$"
+   },
+   {
+    "key": "C",
+    "text": "monkey~1"
+   },
+   {
+    "key": "D",
+    "text": "_"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-29",
+  "section": 2,
+  "number": 29,
+  "type": "choice",
+  "stem": "要定义一个做减法运算的宏，以下最恰当的是：",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "#define SUB(X,Y) X-Y"
+   },
+   {
+    "key": "B",
+    "text": "#define SUB(X,Y) (X-Y)"
+   },
+   {
+    "key": "C",
+    "text": "#define SUB(X,Y) (X)-(Y)"
+   },
+   {
+    "key": "D",
+    "text": "#define SUB(X,Y) ((X)-(Y))"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-30",
+  "section": 2,
+  "number": 30,
+  "type": "choice",
+  "stem": "对下列代码的描述： 正确的是：",
+  "code": [
+   "#include \"stdio.h\" int main(){\nlong num=1;\nwhile(num++>0)for(Long i=num;i>=0;i-- )printf(\"i:=\\n \\t %Ld \\n\" ,i);\nreturn 0; }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "程序有编译错误，不能执行"
+   },
+   {
+    "key": "B",
+    "text": "循环条件永为真，循环无限次，程序根本停不下来，打印输出无限行"
+   },
+   {
+    "key": "C",
+    "text": "循环有限次，程序正常结束，打印输出有限行"
+   },
+   {
+    "key": "D",
+    "text": "程序运行过程必定会出错(崩溃),结果打印输出有限行"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-31",
+  "section": 2,
+  "number": 31,
+  "type": "choice",
+  "stem": "定义变量 int a;. 则表达式 a =3,5;执行过后 .a 的值和表达式的值分别是：",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "3,5"
+   },
+   {
+    "key": "B",
+    "text": "5,3"
+   },
+   {
+    "key": "C",
+    "text": "3,3"
+   },
+   {
+    "key": "D",
+    "text": "5,5"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-32",
+  "section": 2,
+  "number": 32,
+  "type": "choice",
+  "stem": "假设有变量定义如下 int a,k; 则以下哪条语句不能确保将变量k 变为0:",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "k=a +~a +1;"
+   },
+   {
+    "key": "B",
+    "text": "k^=k;"
+   },
+   {
+    "key": "C",
+    "text": "k =k>>(sizeof(int)*8-1);"
+   },
+   {
+    "key": "D",
+    "text": "k=k&~k;"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-33",
+  "section": 2,
+  "number": 33,
+  "type": "choice",
+  "stem": "下面程序段的输出结果是",
+  "code": [
+   "int a=-5,b=-3,c;",
+   "c = a/b;",
+   "printf(\"%d\\n\",c);"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "1"
+   },
+   {
+    "key": "B",
+    "text": "-1"
+   },
+   {
+    "key": "C",
+    "text": "2"
+   },
+   {
+    "key": "D",
+    "text": "-2"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-34",
+  "section": 2,
+  "number": 34,
+  "type": "choice",
+  "stem": "输出整数 printf 函数输出整数时不能使用. 格式限定符。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "%d"
+   },
+   {
+    "key": "B",
+    "text": "%X"
+   },
+   {
+    "key": "C",
+    "text": "%f"
+   },
+   {
+    "key": "D",
+    "text": "%o"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-35",
+  "section": 2,
+  "number": 35,
+  "type": "choice",
+  "stem": "输入整数 scanf 函数输入整数时可使用格式限定符。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "%c"
+   },
+   {
+    "key": "B",
+    "text": "%d"
+   },
+   {
+    "key": "C",
+    "text": "%e"
+   },
+   {
+    "key": "D",
+    "text": "%s"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-36",
+  "section": 2,
+  "number": 36,
+  "type": "choice",
+  "stem": "设变量已正确定义并赋值，以下正确的表达式是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "x=y*5=x+Z"
+   },
+   {
+    "key": "B",
+    "text": "int(15.8%5)"
+   },
+   {
+    "key": "C",
+    "text": "x= 25%5.0"
+   },
+   {
+    "key": "D",
+    "text": "x=y+z+5,++y"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-37",
+  "section": 2,
+  "number": 37,
+  "type": "choice",
+  "stem": "若有说明语句：char s='\\42'; 则变量 s",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "包含一个字符"
+   },
+   {
+    "key": "B",
+    "text": "包含两个字符"
+   },
+   {
+    "key": "C",
+    "text": "包含三个字符"
+   },
+   {
+    "key": "D",
+    "text": "说明不合法，s的值不确定"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-38",
+  "section": 2,
+  "number": 38,
+  "type": "choice",
+  "stem": "若a是整型变量，c 是浮点型变量，则输入语句()是不安全的。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "scanf(\"%d%f\",a,c);"
+   },
+   {
+    "key": "B",
+    "text": "scanf(\"a=%d,c=%f\",&a,&c);"
+   },
+   {
+    "key": "C",
+    "text": "scanf(\"%d,%f\",&a,&c);"
+   },
+   {
+    "key": "D",
+    "text": "scanf(\"%d%f\",&a,&c);"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-40",
+  "section": 2,
+  "number": 40,
+  "type": "choice",
+  "stem": "为表示x≥y≥z, 须用的C语言表达式为()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "(x>=y)&&(y>=z)"
+   },
+   {
+    "key": "B",
+    "text": "(x>=y)AND(y>=x)"
+   },
+   {
+    "key": "C",
+    "text": "x>=y>=z"
+   },
+   {
+    "key": "D",
+    "text": "(x≥y)&&(y≥z)"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-41",
+  "section": 2,
+  "number": 41,
+  "type": "choice",
+  "stem": "函数调用语句function((a,b),c)中含有的实参个数为()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "1"
+   },
+   {
+    "key": "B",
+    "text": "3"
+   },
+   {
+    "key": "C",
+    "text": "2"
+   },
+   {
+    "key": "D",
+    "text": "语法有误"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-43",
+  "section": 2,
+  "number": 43,
+  "type": "choice",
+  "stem": "以下运算符优先级按从高到低排列正确的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "算术运算、赋值运算、关系运算"
+   },
+   {
+    "key": "B",
+    "text": "关系运算、赋值运算、算术运算"
+   },
+   {
+    "key": "C",
+    "text": "算术运算、关系运算、赋值运算"
+   },
+   {
+    "key": "D",
+    "text": "关系运算、算术运算、赋值运算"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-44",
+  "section": 2,
+  "number": 44,
+  "type": "choice",
+  "stem": "判断a、b中有且仅有1个值为0的表达式是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "!(a*b)&&a+b"
+   },
+   {
+    "key": "B",
+    "text": "(a*b)&&a+b"
+   },
+   {
+    "key": "C",
+    "text": "a*b==0"
+   },
+   {
+    "key": "D",
+    "text": "a!=0&&!b"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-45",
+  "section": 2,
+  "number": 45,
+  "type": "choice",
+  "stem": "根据下面的定义，能打印出字母M的语句是()。",
+  "code": [
+   "Struct person{",
+   "Char name[10];",
+   "int age;}",
+   "c[10]={\"John\",17,\"Paul\",19,\"Mary\",18,\"Adam\",16};"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "printf(“%c”,c[3].name);"
+   },
+   {
+    "key": "B",
+    "text": "printf(“%c”,c[3].name[1]);"
+   },
+   {
+    "key": "C",
+    "text": "printf(“%c”,c[2].name[0]);"
+   },
+   {
+    "key": "D",
+    "text": "printf(“%c”,c[2].name[1]);"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-46",
+  "section": 2,
+  "number": 46,
+  "type": "choice",
+  "stem": "下述代码执行后，a,b的值各为多少?",
+  "code": [
+   "int a =0,b=0; a =(b++,4);"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "a=4,b=1"
+   },
+   {
+    "key": "B",
+    "text": "a=0,b=1"
+   },
+   {
+    "key": "C",
+    "text": "a=1,b=1"
+   },
+   {
+    "key": "D",
+    "text": "a=4,b=0"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-47",
+  "section": 2,
+  "number": 47,
+  "type": "choice",
+  "stem": "scanf()函数在读不到数据时返回 ()",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "NULL"
+   },
+   {
+    "key": "B",
+    "text": "0"
+   },
+   {
+    "key": "C",
+    "text": "EOF"
+   },
+   {
+    "key": "D",
+    "text": "1"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-49",
+  "section": 2,
+  "number": 49,
+  "type": "choice",
+  "stem": "能正确表示逻辑关系：“10≤x≤20” 的C语言表达式是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "x>=10 and x<=20"
+   },
+   {
+    "key": "B",
+    "text": "x>=10 or x<=20"
+   },
+   {
+    "key": "C",
+    "text": "x>=10 &&x<=20"
+   },
+   {
+    "key": "D",
+    "text": "x>=10 x<= 20"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-50",
+  "section": 2,
+  "number": 50,
+  "type": "choice",
+  "stem": "若有变量定义： char c;int i;double x;则表达式c+5*i-x 的最终计算结果为()类型。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "char"
+   },
+   {
+    "key": "B",
+    "text": "int"
+   },
+   {
+    "key": "C",
+    "text": "float"
+   },
+   {
+    "key": "D",
+    "text": "double"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-51",
+  "section": 2,
+  "number": 51,
+  "type": "choice",
+  "stem": "下列程序执行后的输出结果是",
+  "code": [
+   "main() {\nint x='f';\nprintf(\"%c \\n\",'A'+(x-'a'+1)); }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "G"
+   },
+   {
+    "key": "B",
+    "text": "H"
+   },
+   {
+    "key": "C",
+    "text": "I"
+   },
+   {
+    "key": "D",
+    "text": "J"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-52",
+  "section": 2,
+  "number": 52,
+  "type": "choice",
+  "stem": "putchar()函数的功能是向终端输出",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "多个字符"
+   },
+   {
+    "key": "B",
+    "text": "一个字符"
+   },
+   {
+    "key": "C",
+    "text": "一个实型变量值"
+   },
+   {
+    "key": "D",
+    "text": "一个整型变量表达式"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-53",
+  "section": 2,
+  "number": 53,
+  "type": "choice",
+  "stem": "设有定义“int a=1,b=2,c=3,d=4,m=2,n=2;”,则执行表达式“(m=a>b)&& (n=c>d)”后，n的值为()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "1"
+   },
+   {
+    "key": "B",
+    "text": "2"
+   },
+   {
+    "key": "C",
+    "text": "3"
+   },
+   {
+    "key": "D",
+    "text": "0"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-54",
+  "section": 2,
+  "number": 54,
+  "type": "choice",
+  "stem": "已知字符“A”的 ASCII代码值是65,字符变量c1的值是“A”,c2的值是“D”。执行语句“printf(\"%d,%d\",cl,c2-2);” 后，输出结果是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "A,B"
+   },
+   {
+    "key": "B",
+    "text": "A,68"
+   },
+   {
+    "key": "C",
+    "text": "65,66"
+   },
+   {
+    "key": "D",
+    "text": "65,68"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-55",
+  "section": 2,
+  "number": 55,
+  "type": "choice",
+  "stem": "在以下一组运算符中，优先级最高的运算符是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "<="
+   },
+   {
+    "key": "B",
+    "text": "="
+   },
+   {
+    "key": "C",
+    "text": "%"
+   },
+   {
+    "key": "D",
+    "text": "&&"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-57",
+  "section": 2,
+  "number": 57,
+  "type": "choice",
+  "stem": "在嵌套使用if 语句时，C语言规定else总是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "和之前与其具有相同缩进位置的if 配对"
+   },
+   {
+    "key": "B",
+    "text": "和之前与其最近的if 配对"
+   },
+   {
+    "key": "C",
+    "text": "和之前与其最近的且不带else的if 配对"
+   },
+   {
+    "key": "D",
+    "text": "和之前的第一个if 配对"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-58",
+  "section": 2,
+  "number": 58,
+  "type": "choice",
+  "stem": "下列叙述中正确的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "break语句只能用于switch语句"
+   },
+   {
+    "key": "B",
+    "text": "在switch语句中必须使用default"
+   },
+   {
+    "key": "C",
+    "text": "break 语句必须与switch语句中的case配对使用"
+   },
+   {
+    "key": "D",
+    "text": "在switch语句中，不一定使用break语句"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-59",
+  "section": 2,
+  "number": 59,
+  "type": "choice",
+  "stem": "下列程序段的输出结果是()。",
+  "code": [
+   "int main(void)",
+   "{",
+   "int a =2,b=-1,c =2;",
+   "if(a<b)",
+   "if(b<0)",
+   "else c++;",
+   "printf(\"%d\\n\",c);",
+   "return 0; }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "0"
+   },
+   {
+    "key": "B",
+    "text": "1"
+   },
+   {
+    "key": "C",
+    "text": "2"
+   },
+   {
+    "key": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-60",
+  "section": 2,
+  "number": 60,
+  "type": "choice",
+  "stem": "下列程序段的输出结果是()。",
+  "code": [
+   "int main(void) {\nint x=1,a =0,b=0;\nswitch(x)\n{\ncase 0: b++;\ncase 1: a++;\ncase 2: a++;b++; }\nprintf(\"a=%d,b=%d\\n\",a,b);\nreturn 0; }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "a=2,b=1"
+   },
+   {
+    "key": "B",
+    "text": "a=1,b=1"
+   },
+   {
+    "key": "C",
+    "text": "a=1,b=0"
+   },
+   {
+    "key": "D",
+    "text": "a=2,b=2"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-61",
+  "section": 2,
+  "number": 61,
+  "type": "choice",
+  "stem": "能正确表示逻辑关系\"a≥10 或 a≤0\"的C语言表达式是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "a>=10 or a<=0"
+   },
+   {
+    "key": "B",
+    "text": "a>=0 a<=10"
+   },
+   {
+    "key": "C",
+    "text": "a>=10&&a<=0"
+   },
+   {
+    "key": "D",
+    "text": "a>=10 a<=0"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-62",
+  "section": 2,
+  "number": 62,
+  "type": "choice",
+  "stem": "能正确表示“当x的取值在[-58,-40]和[40,58]范围内为真，否则为假”的表达式是 ()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "(x>=-58)&&(x<=-40)&&(x>=40)&&(x<=58)"
+   },
+   {
+    "key": "B",
+    "text": "(x>=-58)II(x<=-40)Ⅱ(x>=40)I(x<=58)"
+   },
+   {
+    "key": "C",
+    "text": "(x>=-58)&&(x<=-40)II(x>=40)&&(x<=58)"
+   },
+   {
+    "key": "D",
+    "text": "(x>=-58) I(x<=-40)&&(x>=40)II(x<=58)"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-63",
+  "section": 2,
+  "number": 63,
+  "type": "choice",
+  "stem": "已知int a=7,b=9,c=6;则c的结果是().",
+  "code": [
+   "{\nif(a<b)\nif(b<0)c=0; else c+=1;",
+   "printf(\"%d\\n\",c);",
+   "}"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "9"
+   },
+   {
+    "key": "B",
+    "text": "6"
+   },
+   {
+    "key": "C",
+    "text": "0"
+   },
+   {
+    "key": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-64",
+  "section": 2,
+  "number": 64,
+  "type": "choice",
+  "stem": "当字符型变量ch 取何值(或何范围)时输出“YES”",
+  "code": [
+   "char ch;\nscanf(\"%C\",&ch);\nif(ch<='A'&&ch>='Z') printf(\"NO\");\nelse printf(\"YES\");"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "大写字母A~Z"
+   },
+   {
+    "key": "B",
+    "text": "任何字符"
+   },
+   {
+    "key": "C",
+    "text": "除大写字母以外"
+   },
+   {
+    "key": "D",
+    "text": "大写字母B~Y"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": 2.0
+ },
+ {
+  "id": "2-65",
+  "section": 2,
+  "number": 65,
+  "type": "choice",
+  "stem": "当字符型变量ch取何值(或何范围)时输出“YES”",
+  "code": [
+   "char ch;\nscanf(\"%c\",&ch);\nif(ch>='A'&&ch<='Z')\nif(ch!='I'&&ch!='K')printf(\"NO\"); else printf(\"YES\");"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "I 和K"
+   },
+   {
+    "key": "B",
+    "text": "除l和K以外的大写字母"
+   },
+   {
+    "key": "C",
+    "text": "除大写字母外的其他字符"
+   },
+   {
+    "key": "D",
+    "text": "大写字母"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": 2.0
+ },
+ {
+  "id": "2-66",
+  "section": 2,
+  "number": 66,
+  "type": "choice",
+  "stem": "若int i=10;执行下列程序后，变量i的正确结果是()。",
+  "code": [
+   "switch(i){\ncase 9:i+=1;\ncase 10:i+=1;\ncase 11:i+=1;\ndefault :i+=1; }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "10"
+   },
+   {
+    "key": "B",
+    "text": "11"
+   },
+   {
+    "key": "C",
+    "text": "12"
+   },
+   {
+    "key": "D",
+    "text": "13"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-67",
+  "section": 2,
+  "number": 67,
+  "type": "choice",
+  "stem": "有以下程序： 程序运行时，输入的值在哪个范围才会有输出结果()",
+  "code": [
+   "void main()\n{int x,t=1;\nscanf(\"%d\",&x);\nif(x<=5)t++;\nelse if(x!=20)\nprintf(\"%d\\n\",x); }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "不等于20的整数"
+   },
+   {
+    "key": "B",
+    "text": "6"
+   },
+   {
+    "key": "C",
+    "text": "大于5或等于20的整数 main() {\nint x;\nscanf(\"%d\",&x);\nif(x++>5)printf(\"%d\\n\",x); else printf(\"%d\\n\",x--);\n}"
+   },
+   {
+    "key": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": 2.0
+ },
+ {
+  "id": "2-69",
+  "section": 2,
+  "number": 69,
+  "type": "choice",
+  "stem": "在嵌套使用if 语句时，C语言规定else总是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "和之前与其具有相同缩进位置的if配对"
+   },
+   {
+    "key": "B",
+    "text": "和之前与其最近的if 配对"
+   },
+   {
+    "key": "C",
+    "text": "和之前与其最近的且不带else的if 配对"
+   },
+   {
+    "key": "D",
+    "text": "和之前的第一个if 配对"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-70",
+  "section": 2,
+  "number": 70,
+  "type": "choice",
+  "stem": "下列程序段执行后s的值为()。",
+  "code": [
+   "int i=5,s=0;\nwhile(i--)\nif(i%2)continue; else s+=i;"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "15"
+   },
+   {
+    "key": "B",
+    "text": "10"
+   },
+   {
+    "key": "C",
+    "text": "9"
+   },
+   {
+    "key": "D",
+    "text": "6"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-72",
+  "section": 2,
+  "number": 72,
+  "type": "choice",
+  "stem": "C语言中while和do-while循环的主要区别是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "do-while 的循环体至少无条件执行一次"
+   },
+   {
+    "key": "B",
+    "text": "while 的循环控制条件比do-while 的循环控制条件严格"
+   },
+   {
+    "key": "C",
+    "text": "do-while 允许从外部转到循环体内"
+   },
+   {
+    "key": "D",
+    "text": "do-while 的循环体不能是复合语句"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-73",
+  "section": 2,
+  "number": 73,
+  "type": "choice",
+  "stem": "执行以下循环语句时，下列说法正确的是()。",
+  "code": [
+   "x = -1;",
+   "do {",
+   "x = x * x;",
+   "} while (x == 0);"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "循环体将执行一次"
+   },
+   {
+    "key": "B",
+    "text": "循环体将执行两次"
+   },
+   {
+    "key": "C",
+    "text": "循环体将执行无限次"
+   },
+   {
+    "key": "D",
+    "text": "系统将提示有语法错误"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-74",
+  "section": 2,
+  "number": 74,
+  "type": "choice",
+  "stem": "运行以下程序后，如果从键盘上输入 65 14<回车>,则输出结果为()。",
+  "code": [
+   "int main(void)",
+   "{",
+   "int m,n;",
+   "printf(\"Enter m,n;\");",
+   "scanf(\"%d%d\",&m,&n);",
+   "while(m !=n)",
+   "{ while(m >n) m =m-n;",
+   "while(n>m) n =n -m;",
+   "}",
+   "printf(\"m=%d\\n\",m);",
+   "return 0; }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "m=3"
+   },
+   {
+    "key": "B",
+    "text": "m=2"
+   },
+   {
+    "key": "C",
+    "text": "m=1"
+   },
+   {
+    "key": "D",
+    "text": "m=0"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-76",
+  "section": 2,
+  "number": 76,
+  "type": "choice",
+  "stem": "下列程序段执行后s值为_。",
+  "code": [
+   "int i=5,s=0; while(--i!=0){ if(i%2==1)",
+   "continue; S+=i;\n}"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "15"
+   },
+   {
+    "key": "B",
+    "text": "9"
+   },
+   {
+    "key": "C",
+    "text": "6"
+   },
+   {
+    "key": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": 2.0
+ },
+ {
+  "id": "2-77",
+  "section": 2,
+  "number": 77,
+  "type": "choice",
+  "stem": "下列程序段中，非死循环的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "int i=100;\nwhile(1)\n{i=i%100+1;\nif(i>=100)\nbreak; }"
+   },
+   {
+    "key": "B",
+    "text": "int k=0; do{\n++k;\n}while(k>=0);"
+   },
+   {
+    "key": "C",
+    "text": "int s=10;\nwhile(s)\nS++;"
+   },
+   {
+    "key": "D",
+    "text": "for( ; ; )"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "table",
+  "points": 2.0
+ },
+ {
+  "id": "2-78",
+  "section": 2,
+  "number": 78,
+  "type": "choice",
+  "stem": "下面有关for循环的正确描述是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "for 循环只能用于循环次数确定的情况"
+   },
+   {
+    "key": "B",
+    "text": "for 循环先执行循环体语句，后判断循环条件"
+   },
+   {
+    "key": "C",
+    "text": "在for 循环中，不能用break 语句跳出循环体"
+   },
+   {
+    "key": "D",
+    "text": "for 循环的循环体可以包含多条语句，但多条语句必须构成复合语句"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": 2.0
+ },
+ {
+  "id": "2-79",
+  "section": 2,
+  "number": 79,
+  "type": "choice",
+  "stem": "当执行以下程序段时，以下答案正确的是?",
+  "code": [
+   "x=-1; do {\nx=x*x;\n}while(!x);"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "循环体将执行一次"
+   },
+   {
+    "key": "B",
+    "text": "循环体将执行两次"
+   },
+   {
+    "key": "C",
+    "text": "循环体将执行无限次"
+   },
+   {
+    "key": "D",
+    "text": "系统将提示有语法错误"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-81",
+  "section": 2,
+  "number": 81,
+  "type": "choice",
+  "stem": "下面程序计算100之内能被3整除的整数之和。阅读程序，从4个选项中选出合适的选项填到【1】处，使程序功能完整。",
+  "code": [
+   "#include <stdio.h>",
+   "int main()",
+   "{",
+   "int i,sum =0;",
+   "for(i =1;i<100;i++)",
+   "{",
+   "if(i%3)",
+   "【1】;",
+   "sum +=i;",
+   "}",
+   "printf(\"%d\\n\",sum);",
+   "}"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "break"
+   },
+   {
+    "key": "B",
+    "text": "return"
+   },
+   {
+    "key": "C",
+    "text": "continue"
+   },
+   {
+    "key": "D",
+    "text": "return 0"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-82",
+  "section": 2,
+  "number": 82,
+  "type": "choice",
+  "stem": "阅读下面程序，从给出的4个选项中选出程序的运行结果。",
+  "code": [
+   "#include <stdio.h> int main()\n{\nint k =1,m =0;\ndo{\nk +=2;\nm +=k;\nif(m >50)",
+   "break; }while(1);\nprintf(\"sum=%d\\n\",m); return 0;\n}"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "m=48"
+   },
+   {
+    "key": "B",
+    "text": "sum=63"
+   },
+   {
+    "key": "C",
+    "text": "sum=48"
+   },
+   {
+    "key": "D",
+    "text": "m=63"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-83",
+  "section": 2,
+  "number": 83,
+  "type": "choice",
+  "stem": "以下有关C语言while 循环和do-while 循环的描述中正确的是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "while 和do-while结束循环只能靠break语句"
+   },
+   {
+    "key": "B",
+    "text": "do-while 的循环控制条件比while 的循环控制条件严格"
+   },
+   {
+    "key": "C",
+    "text": "do-while 的循环体可以无条件执行一次"
+   },
+   {
+    "key": "D",
+    "text": "在任何情况下，while 循环的程序都不能用do-while 循环来实现"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-84",
+  "section": 2,
+  "number": 84,
+  "type": "choice",
+  "stem": "以下程序段的输出结果是()。",
+  "code": [
+   "int i,j;",
+   "for(i=1;i<4;i++)",
+   "{for( j=i;j<4;j++)printf(\"%d*%d=%d\",i ,j,i*j); printf(\"\\n\");}"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "1*1=11*2=21*3=3 2*1=22*2=4 3*1=3"
+   },
+   {
+    "key": "B",
+    "text": "1*1=11*2=21*3=3 2*2=42*3=6 3*3=9"
+   },
+   {
+    "key": "C",
+    "text": "1*1=1 1*2=22*2=4 1*3=32*3=63*3=9"
+   },
+   {
+    "key": "D",
+    "text": "1*1=1 2*1=22*2=4 3*1=33*2=63*3=9"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-85",
+  "section": 2,
+  "number": 85,
+  "type": "choice",
+  "stem": "C语言中函数返回值的类型是由()决定的。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "return 语句中的表达式类型"
+   },
+   {
+    "key": "B",
+    "text": "调用该函数的主调函数的类型"
+   },
+   {
+    "key": "C",
+    "text": "调用函数时临时决定"
+   },
+   {
+    "key": "D",
+    "text": "定义函数时所指定的函数类型"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-86",
+  "section": 2,
+  "number": 86,
+  "type": "choice",
+  "stem": "在一个被调用函数中，关于 return 语句使用的描述，错误的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "被调用函数中可以不用return 语句"
+   },
+   {
+    "key": "B",
+    "text": "被调用函数中可以使用多个 return 语句"
+   },
+   {
+    "key": "C",
+    "text": "被调用函数中，如果有返回值，就一定要有return 语句"
+   },
+   {
+    "key": "D",
+    "text": "被调用函数中，一个return 语句可以返回多个值给调用函数"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-87",
+  "section": 2,
+  "number": 87,
+  "type": "choice",
+  "stem": "将两个字符串连接起来组成一个字符串时，选用函数()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "strlen()"
+   },
+   {
+    "key": "B",
+    "text": "strcpy()"
+   },
+   {
+    "key": "C",
+    "text": "strcat()"
+   },
+   {
+    "key": "D",
+    "text": "strcmp()"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-88",
+  "section": 2,
+  "number": 88,
+  "type": "choice",
+  "stem": "对于以下递归函数f,调用f(4),其返回值为()。",
+  "code": [
+   "int {\n} f(int n)\nif(n)return f(n -1)+n; else return n;"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "10"
+   },
+   {
+    "key": "B",
+    "text": "4"
+   },
+   {
+    "key": "C",
+    "text": "0"
+   },
+   {
+    "key": "D",
+    "text": "以上均不是"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-89",
+  "section": 2,
+  "number": 89,
+  "type": "choice",
+  "stem": "数组名作为参数时，以下叙述正确的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "函数调用时是将实参数组的所有元素值传给形参。"
+   },
+   {
+    "key": "B",
+    "text": "函数调用时是将实参数组的第一个元素值传给形参。"
+   },
+   {
+    "key": "C",
+    "text": "函数调用时是将实参数组的首地址传给形参。"
+   },
+   {
+    "key": "D",
+    "text": "函数调用时是将实参数组的所有元素的地址传给形参。"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-90",
+  "section": 2,
+  "number": 90,
+  "type": "choice",
+  "stem": "关于递归函数以下叙述错误的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "递归函数是自己调用自己。"
+   },
+   {
+    "key": "B",
+    "text": "递归函数的运行速度很快。"
+   },
+   {
+    "key": "C",
+    "text": "递归函数占用较多的存储空间。"
+   },
+   {
+    "key": "D",
+    "text": "递归函数的运行速度一般比较慢。"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-92",
+  "section": 2,
+  "number": 92,
+  "type": "choice",
+  "stem": "以下程序的运行结果是()。",
+  "code": [
+   "int x=5,y =6;\nvoid incxy() {\nX++;\ny++;\n}\nint main(void) {\nint x=3;\nincxy();\nprintf(\"%d,%d\\n\",x,y);\nreturn 0; }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "3,6"
+   },
+   {
+    "key": "B",
+    "text": "4,7"
+   },
+   {
+    "key": "C",
+    "text": "3,7"
+   },
+   {
+    "key": "D",
+    "text": "6,7"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": 1.0
+ },
+ {
+  "id": "2-93",
+  "section": 2,
+  "number": 93,
+  "type": "choice",
+  "stem": "函数调用程序如下： 相关说法错误的是：",
+  "code": [
+   "void f(int a[],int n) {\nint i;\nfor(i=0;i<n;i++)\na[i]=i; }",
+   "int main()\n{\nint a[100],n=30; f(a,n); }",
+   "将 f(a,n);改为f(p,n);, 效果完全一样。"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "f 函数头改为int f(int*a,int n),无需其它改变，效果完全一样。"
+   },
+   {
+    "key": "B",
+    "text": "main函数中增加int*p=a;"
+   },
+   {
+    "key": "C",
+    "text": "用数组名作f()的参数，则main() 中的数组与f() 中的数组是同一数组。"
+   },
+   {
+    "key": "D",
+    "text": "用数组名作f()的参数，实现了实参与形参双向的值传递。"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": 2.0
+ },
+ {
+  "id": "2-94",
+  "section": 2,
+  "number": 94,
+  "type": "choice",
+  "stem": "不正确的赋值或赋初值的方式是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "char str[]=\"string\";"
+   },
+   {
+    "key": "B",
+    "text": "char str[7]={'s','t','r',i, 'n','g'};"
+   },
+   {
+    "key": "C",
+    "text": "char str[10];str=\"string\";"
+   },
+   {
+    "key": "D",
+    "text": "char str[7]={'s','t','r',i,'n','g','IO'};"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-95",
+  "section": 2,
+  "number": 95,
+  "type": "choice",
+  "stem": "以下数组定义中错误的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "i nt x[][3]={0};"
+   },
+   {
+    "key": "B",
+    "text": "int x[2][3]={{1,2},{3,4},{5,6)};"
+   },
+   {
+    "key": "C",
+    "text": "int x[][3]={{1,2,3},(4,5,6)};"
+   },
+   {
+    "key": "D",
+    "text": "int x[2][3]={1,2,3,4,5,6};"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-96",
+  "section": 2,
+  "number": 96,
+  "type": "choice",
+  "stem": "数组定义为 int a[3][2]={1,2,3,4,5,6}, 数组元素()的值为6。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "a[3][2]"
+   },
+   {
+    "key": "B",
+    "text": "a[2][1]"
+   },
+   {
+    "key": "C",
+    "text": "a[1][2]"
+   },
+   {
+    "key": "D",
+    "text": "a[2][3]"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-97",
+  "section": 2,
+  "number": 97,
+  "type": "choice",
+  "stem": "以下不正确的赋值或赋初值的方式是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "char str[]=\"string\";"
+   },
+   {
+    "key": "B",
+    "text": "char str[7]={'s','t','r','i','n','g'};"
+   },
+   {
+    "key": "C",
+    "text": "char str[10];str=\"string\";"
+   },
+   {
+    "key": "D",
+    "text": "char str[7]={'s','t','r','i','n','g',\\0'};"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-98",
+  "section": 2,
+  "number": 98,
+  "type": "choice",
+  "stem": "假设scanf 语句执行时输入ABCDE<回车> . 能使puts(s) 语句正确输出ABCDE字符串的 2分程序段是 。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "char s[5]={\"ABCDE\"};puts(s);"
+   },
+   {
+    "key": "B",
+    "text": "char s[5]={'A','B','C','D','E'};puts(s);"
+   },
+   {
+    "key": "C",
+    "text": "char *s;scanf(\"%s\",s);puts(s);"
+   },
+   {
+    "key": "D",
+    "text": "char *s;s=\"ABCDE\";puts(s);"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-99",
+  "section": 2,
+  "number": 99,
+  "type": "choice",
+  "stem": "有说明语句int a[4][5];,则a[2]+3 表示_ 。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "a 数组行下标为2、列下标为3的元素的地址"
+   },
+   {
+    "key": "B",
+    "text": "a 数组行下标为2、列下标为3的元素的值"
+   },
+   {
+    "key": "C",
+    "text": "a 数组第2行的首地址"
+   },
+   {
+    "key": "D",
+    "text": "a 数组第3行的首地址"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": 2.0
+ },
+ {
+  "id": "2-101",
+  "section": 2,
+  "number": 101,
+  "type": "choice",
+  "stem": "对于定义 char str[]=\"abc\\00Odef\\n\" ( 注：其中0为数字零),求字符串str的长度len和数组str的大小size,len 和size分别是：",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "12,13"
+   },
+   {
+    "key": "B",
+    "text": "3,11"
+   },
+   {
+    "key": "C",
+    "text": "3,9"
+   },
+   {
+    "key": "D",
+    "text": "3,4"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-102",
+  "section": 2,
+  "number": 102,
+  "type": "choice",
+  "stem": "下面描述正确的是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "两个字符串所包含的字符个数相同时才能比较字符串"
+   },
+   {
+    "key": "B",
+    "text": "字符个数多的字符串比字符个数少的字符串大"
+   },
+   {
+    "key": "C",
+    "text": "字符串“STOP”和“STOP”相等"
+   },
+   {
+    "key": "D",
+    "text": "字符串“That” 小于字符串“The”"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-103",
+  "section": 2,
+  "number": 103,
+  "type": "choice",
+  "stem": "有两个字符数组a,b, 则以下正确的输入语句是()",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "qets(a,b);"
+   },
+   {
+    "key": "B",
+    "text": "scanf(\"%s%s\",a,b);"
+   },
+   {
+    "key": "C",
+    "text": "scanf(\"%s%s\",&a,&b);"
+   },
+   {
+    "key": "D",
+    "text": "gets(\"a\"),gets(\"b\");"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "2-104",
+  "section": 2,
+  "number": 104,
+  "type": "choice",
+  "stem": "若有以下定义： 则不能代表字符o 的表达式是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "ps+2"
+   },
+   {
+    "key": "B",
+    "text": "s[2]"
+   },
+   {
+    "key": "C",
+    "text": "ps[2]"
+   },
+   {
+    "key": "D",
+    "text": "ps+=2,*ps"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-105",
+  "section": 2,
+  "number": 105,
+  "type": "choice",
+  "stem": "以下能正确定义数组并正确赋初值的语句是()。注：C语言编译器为c99以前的版本。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "int N=5,b[N][N];"
+   },
+   {
+    "key": "B",
+    "text": "int a[1][2]={{1},{3}};"
+   },
+   {
+    "key": "C",
+    "text": "int c[2][]={{1,2},{3,4}};"
+   },
+   {
+    "key": "D",
+    "text": "int d[3][2]={{1,2},{34}};"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-106",
+  "section": 2,
+  "number": 106,
+  "type": "choice",
+  "stem": "以下对一维数组a的正确说明是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "char a(10);"
+   },
+   {
+    "key": "B",
+    "text": "int a[];"
+   },
+   {
+    "key": "C",
+    "text": "int k=5,a[k];"
+   },
+   {
+    "key": "D",
+    "text": "char a[3]={'a',’b’,'c’};"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-107",
+  "section": 2,
+  "number": 107,
+  "type": "choice",
+  "stem": "下列数据中属于C语言的“字符串常量”的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "“a”"
+   },
+   {
+    "key": "B",
+    "text": "{ABC}"
+   },
+   {
+    "key": "C",
+    "text": "‘abc\\0'"
+   },
+   {
+    "key": "D",
+    "text": "'a'"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-108",
+  "section": 2,
+  "number": 108,
+  "type": "choice",
+  "stem": "以下程序的执行功能是()。",
+  "code": [
+   "void main() {\nint a[5]={66,78,82,53,91},b[5]={70,58,81,65,90},i,n=0; for(i=0;i<5;i++)\n{\nif(a[i]>b[i])\nn++;\n}",
+   "printf(\"n=%d\\n\",n); }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "统计数组a各元素值等于数组b 对应元素值的个数"
+   },
+   {
+    "key": "B",
+    "text": "统计数组a各元素值小于数组b对应元素值的个数"
+   },
+   {
+    "key": "C",
+    "text": "统计数组a各元素值大于60的个数"
+   },
+   {
+    "key": "D",
+    "text": "统计数组a各元素值大于数组b对应元素值的个数"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-109",
+  "section": 2,
+  "number": 109,
+  "type": "choice",
+  "stem": "下列定义数组正确的是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "double a[6]=(1,2,3,4,5,6);"
+   },
+   {
+    "key": "B",
+    "text": "int b[5]={0};"
+   },
+   {
+    "key": "C",
+    "text": "float c[5]={1,2,3,4,5,6};"
+   },
+   {
+    "key": "D",
+    "text": "char d[5]={\"China\"};"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-110",
+  "section": 2,
+  "number": 110,
+  "type": "choice",
+  "stem": "以下叙述错误的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "指针可以进行加、减等算术运算；"
+   },
+   {
+    "key": "B",
+    "text": "指针中存放的是地址值"
+   },
+   {
+    "key": "C",
+    "text": "指针是一个变量"
+   },
+   {
+    "key": "D",
+    "text": "指针变量不占用存储空间"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-111",
+  "section": 2,
+  "number": 111,
+  "type": "choice",
+  "stem": "下列程序的执行结果是()。",
+  "code": [
+   "void fun(int *p) {(*p)++;\n}\nmain()\n{int a=5;\nfun(&a);\nprintf(\"%d\",a);\n}"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "5"
+   },
+   {
+    "key": "B",
+    "text": "a"
+   },
+   {
+    "key": "C",
+    "text": "6"
+   },
+   {
+    "key": "D",
+    "text": "程序有误"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-112",
+  "section": 2,
+  "number": 112,
+  "type": "choice",
+  "stem": "若有定义int a[4][5]:下列语句中()是存在语法错误的。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "*a"
+   },
+   {
+    "key": "B",
+    "text": "*(*(a+2)+3)"
+   },
+   {
+    "key": "C",
+    "text": "&a[2][3]"
+   },
+   {
+    "key": "D",
+    "text": "++a"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "table",
+  "points": null
+ },
+ {
+  "id": "2-113",
+  "section": 2,
+  "number": 113,
+  "type": "choice",
+  "stem": "执行下面程序段后，变量a的值为()。",
+  "code": [
+   "int a=10,b=1; int *p=&a;\na=*p+b;"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "12"
+   },
+   {
+    "key": "B",
+    "text": "11"
+   },
+   {
+    "key": "C",
+    "text": "10"
+   },
+   {
+    "key": "D",
+    "text": "编译错误"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-114",
+  "section": 2,
+  "number": 114,
+  "type": "choice",
+  "stem": "下列语句定义px为指向int类型变量x的指针，正确的是()",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "int x,*px=x;"
+   },
+   {
+    "key": "B",
+    "text": "int x,*px=&x;"
+   },
+   {
+    "key": "C",
+    "text": "int*px=&x,x;"
+   },
+   {
+    "key": "D",
+    "text": "int x,px=x;"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-115",
+  "section": 2,
+  "number": 115,
+  "type": "choice",
+  "stem": "有以下程序段： 输出结果为()。",
+  "code": [
+   "int a[]={10,9,8,7,6,5,4,3,2,1},*p;\np=a;\nprintf(\"%d,%d\",*p+9,*(p+9));"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "1,1"
+   },
+   {
+    "key": "B",
+    "text": "19,10"
+   },
+   {
+    "key": "C",
+    "text": "19,1"
+   },
+   {
+    "key": "D",
+    "text": "19,19"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-116",
+  "section": 2,
+  "number": 116,
+  "type": "choice",
+  "stem": "定义下列结构体数组： 执行语句printf(\"%d,%s\",a[2].age,a[1].name)的输出结果为()。",
+  "code": [
+   "struct stu\n{char name[10];\nint age;\n}a[5]={\"ZHA0\",14,\"WANG\",15,\"LIU\",16,\"ZHANG\",17};"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "15,ZHAO"
+   },
+   {
+    "key": "B",
+    "text": "16,WANG"
+   },
+   {
+    "key": "C",
+    "text": "17,LIU"
+   },
+   {
+    "key": "D",
+    "text": "17,ZHAO"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-117",
+  "section": 2,
+  "number": 117,
+  "type": "choice",
+  "stem": "直接使文件指针重新定位到文件读写的首地址的函数是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "ftell()函数"
+   },
+   {
+    "key": "B",
+    "text": "fseek() 函数"
+   },
+   {
+    "key": "C",
+    "text": "rewind()函数"
+   },
+   {
+    "key": "D",
+    "text": "ferror() 函数"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-118",
+  "section": 2,
+  "number": 118,
+  "type": "choice",
+  "stem": "函数fgetc 的作用是从指定文件读入一个字符，该文件的打开方式可以是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "只写"
+   },
+   {
+    "key": "B",
+    "text": "追加"
+   },
+   {
+    "key": "C",
+    "text": "读或读写"
+   },
+   {
+    "key": "D",
+    "text": "和C都正确"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "adjudicated",
+  "points": null
+ },
+ {
+  "id": "2-120",
+  "section": 2,
+  "number": 120,
+  "type": "choice",
+  "stem": "假设已经定义了文件指针 FILE*fp, 并指向了temp.txt文件，即： 下列可以实现将“China”这一字符串写入到temp.txt文件的语句是",
+  "code": [
+   "FILE*fp=fopen(\"temp.txt\",\"w\");"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "fscanf(fp,\"%s\",\"China\");"
+   },
+   {
+    "key": "B",
+    "text": "fprintf(fp,\"%s\",\"China\");"
+   },
+   {
+    "key": "C",
+    "text": "fscanf(\"%s\",\"China\",fp);"
+   },
+   {
+    "key": "D",
+    "text": "fprintf(\"%s\",\"China\",fp);"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-121",
+  "section": 2,
+  "number": 121,
+  "type": "choice",
+  "stem": "以下声明与()中的声明等价。",
+  "code": [
+   "int *p[4];"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "int p[4];"
+   },
+   {
+    "key": "B",
+    "text": "int*p;"
+   },
+   {
+    "key": "C",
+    "text": "int*(p[4]);"
+   },
+   {
+    "key": "D",
+    "text": "int(*p)[4];"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-123",
+  "section": 2,
+  "number": 123,
+  "type": "choice",
+  "stem": "下列程序的运行结果是()。",
+  "code": [
+   "#include<stdio.h>\nvoid ast(int x,int y,int *cp,int *dp) {\n*cp=x+y;*dp=x-y;\n}\nint main() {\nint a=4,b=3,c,d;\nast(a,b,&c,&d);\nprintf(\"%d,%d\\n\",c,d);\nreturn 0; }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "7,1"
+   },
+   {
+    "key": "B",
+    "text": "1,7"
+   },
+   {
+    "key": "C",
+    "text": "7,- 1"
+   },
+   {
+    "key": "D",
+    "text": "c、d 未赋值，编译出错"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-124",
+  "section": 2,
+  "number": 124,
+  "type": "choice",
+  "stem": "设有如下语句： 则()是对 a 数组元素的不正确引用，其中0≤i<10。",
+  "code": [
+   "int a[10]={0,1,2,3,4,5,6,7,8,9},*p=a;"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "a [p-a]"
+   },
+   {
+    "key": "B",
+    "text": "*(&a [i])"
+   },
+   {
+    "key": "C",
+    "text": "p[i]"
+   },
+   {
+    "key": "D",
+    "text": "*(*(a+i))"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-125",
+  "section": 2,
+  "number": 125,
+  "type": "choice",
+  "stem": "以下几段代码中，按照C标准可以预测运行结果的是：",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "int a=0;printf(\"%d %d\\n\",++a,++a);"
+   },
+   {
+    "key": "B",
+    "text": "int a=0,*b=&a,*c=b+1;printf(\"%d\\n\",*(c-1));"
+   },
+   {
+    "key": "C",
+    "text": "int f(){printf(\"hello world\\n\");}int main(){f();return 0;}"
+   },
+   {
+    "key": "D",
+    "text": "int a=1,b=2;printf(\"%d\\n\",b/--a);"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-126",
+  "section": 2,
+  "number": 126,
+  "type": "choice",
+  "stem": "若有声明“char*p=\"123\";int c;\", 则执行语句“c=sizeof(p);”后 ，c的值是。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "1"
+   },
+   {
+    "key": "B",
+    "text": "2"
+   },
+   {
+    "key": "C",
+    "text": "3"
+   },
+   {
+    "key": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-127",
+  "section": 2,
+  "number": 127,
+  "type": "choice",
+  "stem": "若有声明\"int x[10]={0,1,2,3,4,5,6,7,8,9},*p;\",则值不为4的表达式是。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "p=x,*(p+4)"
+   },
+   {
+    "key": "B",
+    "text": "p=x+4,*p++"
+   },
+   {
+    "key": "C",
+    "text": "p=x+3,*(p++)"
+   },
+   {
+    "key": "D",
+    "text": "p=x+3,*++p"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-128",
+  "section": 2,
+  "number": 128,
+  "type": "choice",
+  "stem": "已有声明\"int a[5];\",以下表达式中不能正确取得a[1]指针的是。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "&a[1]"
+   },
+   {
+    "key": "B",
+    "text": "++a"
+   },
+   {
+    "key": "C",
+    "text": "&a[0]+1"
+   },
+   {
+    "key": "D",
+    "text": "a+l"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-129",
+  "section": 2,
+  "number": 129,
+  "type": "choice",
+  "stem": "若有函数定义为“int f(int x,int*y){return x/*y;}”,下面声明该函数的正确形式是。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "void f(int,int);"
+   },
+   {
+    "key": "B",
+    "text": "int *f(int,int*);"
+   },
+   {
+    "key": "C",
+    "text": "int f(int*,int*);"
+   },
+   {
+    "key": "D",
+    "text": "int f(int,int*);"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-130",
+  "section": 2,
+  "number": 130,
+  "type": "choice",
+  "stem": "如有语句\"int x,y=0,z,*p[3];p[0]=&x;p[1]=&y;p[2]=&z;\", 以下表达式中有语法错误的是。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "y++"
+   },
+   {
+    "key": "B",
+    "text": "(*p[0])++"
+   },
+   {
+    "key": "C",
+    "text": "(**(p+1))++"
+   },
+   {
+    "key": "D",
+    "text": "p++"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-131",
+  "section": 2,
+  "number": 131,
+  "type": "choice",
+  "stem": "若有函数int func(int a,int b),函数指针变量p已经指向func函数，那么下列用指针方式调用函数的正确方法是( )。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "(*p)func(2,3);"
+   },
+   {
+    "key": "B",
+    "text": "*func(2,3);"
+   },
+   {
+    "key": "C",
+    "text": "p(2,3);"
+   },
+   {
+    "key": "D",
+    "text": "*p(2,3);"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-132",
+  "section": 2,
+  "number": 132,
+  "type": "choice",
+  "stem": "在 int a=3,*p=&a;中 ， *p 的值是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "&a"
+   },
+   {
+    "key": "B",
+    "text": "无意义"
+   },
+   {
+    "key": "C",
+    "text": "&p"
+   },
+   {
+    "key": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-133",
+  "section": 2,
+  "number": 133,
+  "type": "choice",
+  "stem": "若有以下定义语句，则引用方式错误的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "s.no"
+   },
+   {
+    "key": "B",
+    "text": "(*p).no"
+   },
+   {
+    "key": "C",
+    "text": "p->no"
+   },
+   {
+    "key": "D",
+    "text": "s->no"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-134",
+  "section": 2,
+  "number": 134,
+  "type": "choice",
+  "stem": "若有定义char s1[]=\"string1\",s2[8],*s3,*s4=\"string2\";则对库函数strcpy 错误调用的是 ( ) 。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "strcpy(s1,\"string2\");"
+   },
+   {
+    "key": "B",
+    "text": "strcpy(s2,\"string1\");"
+   },
+   {
+    "key": "C",
+    "text": "strcpy(s3,\"string1\");"
+   },
+   {
+    "key": "D",
+    "text": "strcpy(s2,s1);"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-135",
+  "section": 2,
+  "number": 135,
+  "type": "choice",
+  "stem": "若有定义char s[6],*ps=s;则正确的赋值语句是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "s=\"12345\";"
+   },
+   {
+    "key": "B",
+    "text": "*s=\"12345\";"
+   },
+   {
+    "key": "C",
+    "text": "ps=\"12345\";"
+   },
+   {
+    "key": "D",
+    "text": "*ps=\"12345\";"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-136",
+  "section": 2,
+  "number": 136,
+  "type": "choice",
+  "stem": "对于以下结构定义，p->str++中的++加在()。",
+  "code": [
+   "struct {int len;char*str;}*p;"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "指针str 上"
+   },
+   {
+    "key": "B",
+    "text": "指针p上"
+   },
+   {
+    "key": "C",
+    "text": "str 指针指向的内容上"
+   },
+   {
+    "key": "D",
+    "text": "语法错误"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-137",
+  "section": 2,
+  "number": 137,
+  "type": "choice",
+  "stem": "若有函数max(a,b) . 并且已使函数指针变量p 指向函数max, 当调用函数时，正确的调用方法是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "(*p)max(a+b);"
+   },
+   {
+    "key": "B",
+    "text": "*pmax(a,b);"
+   },
+   {
+    "key": "C",
+    "text": "(*p)(a,b);"
+   },
+   {
+    "key": "D",
+    "text": "*p(a,b);"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-138",
+  "section": 2,
+  "number": 138,
+  "type": "choice",
+  "stem": "程序中已构成如下图所示的单向链表结构，指针变量s、p、q均已正确定义，并用于指向链表结点，指针变量s总是作为头指针指向链表的第一个结点。 若有下列程序段：",
+  "code": [
+   "q=s;s=s->next;p=s;",
+   "while(p->next)p=p->next;",
+   "p->next =q;q->next =NULL; 该程序段实现的功能是()。"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "首结点成为尾结点"
+   },
+   {
+    "key": "B",
+    "text": "尾结点成为首结点"
+   },
+   {
+    "key": "C",
+    "text": "删除首结点"
+   },
+   {
+    "key": "D",
+    "text": "删除尾结点"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-139",
+  "section": 2,
+  "number": 139,
+  "type": "choice",
+  "stem": "设有如下函数定义：",
+  "code": [
+   "int fun(char*str) {char*p=str;",
+   "while(*p!='\\0')p++; return(p-str);",
+   "}",
+   "则以下语句执行后的输出结果是()。 printf(\"%d\\n\",fun(\"Student\");"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "7"
+   },
+   {
+    "key": "B",
+    "text": "8"
+   },
+   {
+    "key": "C",
+    "text": "9"
+   },
+   {
+    "key": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-140",
+  "section": 2,
+  "number": 140,
+  "type": "choice",
+  "stem": "变量的指针 ， 其含义是指该变量的 o",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "值"
+   },
+   {
+    "key": "B",
+    "text": "地址"
+   },
+   {
+    "key": "C",
+    "text": "名"
+   },
+   {
+    "key": "D",
+    "text": "一个标志"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-141",
+  "section": 2,
+  "number": 141,
+  "type": "choice",
+  "stem": "对于基类型相同的两个指针变量，不能进行的运算是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "<"
+   },
+   {
+    "key": "B",
+    "text": "="
+   },
+   {
+    "key": "C",
+    "text": "+"
+   },
+   {
+    "key": "D",
+    "text": "-"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-142",
+  "section": 2,
+  "number": 142,
+  "type": "choice",
+  "stem": "如果所有的变量按照下面的程序进行定义和声明，那么在main() 函数中所有可用的变量为()。",
+  "code": [
+   "void fun(int x) {\nstatic int y; return; }\nint z;\nvoid main() {\nint a,b; fun(a); }"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "X,y"
+   },
+   {
+    "key": "B",
+    "text": "x,y,Z"
+   },
+   {
+    "key": "C",
+    "text": "a,b,z"
+   },
+   {
+    "key": "D",
+    "text": "a,b,x,y,Z"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-143",
+  "section": 2,
+  "number": 143,
+  "type": "choice",
+  "stem": "在函数内，定义变量时存储类型符可省略的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "auto"
+   },
+   {
+    "key": "B",
+    "text": "static"
+   },
+   {
+    "key": "C",
+    "text": "extern"
+   },
+   {
+    "key": "D",
+    "text": "register"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-144",
+  "section": 2,
+  "number": 144,
+  "type": "choice",
+  "stem": "下面程序a,b值为()",
+  "code": [
+   "#include <stdio.h> int main(void)\n{\nint a;\na =1;\n{\nint b=2;\nb=a +b;\na =a +b; }\nprintf(\"%d,%d\",a,b); return 0;\n}"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "1,2"
+   },
+   {
+    "key": "B",
+    "text": "1,0"
+   },
+   {
+    "key": "C",
+    "text": "1, 不认识b"
+   },
+   {
+    "key": "D",
+    "text": "4, 不认识b"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": 2.0
+ },
+ {
+  "id": "2-148",
+  "section": 2,
+  "number": 148,
+  "type": "choice",
+  "stem": "以下错误的字符数组的赋值方式是：",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "char string[]=“Iam a student.”;"
+   },
+   {
+    "key": "B",
+    "text": "const char*p=“I am a student”;"
+   },
+   {
+    "key": "C",
+    "text": "char str[20];str=“I am a student.”;"
+   },
+   {
+    "key": "D",
+    "text": "strcpy(str,\"I am a student.\");"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-149",
+  "section": 2,
+  "number": 149,
+  "type": "choice",
+  "stem": "判断字符串ca和字符串cb是否相等，应当使用()",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "if(ca==cb)"
+   },
+   {
+    "key": "B",
+    "text": "if(ca=cb)"
+   },
+   {
+    "key": "C",
+    "text": "if(strcpy(ca,cb))"
+   },
+   {
+    "key": "D",
+    "text": "if(strcmp(ca,cb)==0)"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-150",
+  "section": 2,
+  "number": 150,
+  "type": "choice",
+  "stem": "有两个字符数组char a[50],b[50];则以下正确的输入语句是()",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "scanf(\"%s%s\",a,b);"
+   },
+   {
+    "key": "B",
+    "text": "scanf(“%s%s”,&a,&b);"
+   },
+   {
+    "key": "C",
+    "text": "gets(a,b);"
+   },
+   {
+    "key": "D",
+    "text": "gets(“a”),gets(“b”);"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-151",
+  "section": 2,
+  "number": 151,
+  "type": "choice",
+  "stem": "下列属于字符串常量的是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "\"a\""
+   },
+   {
+    "key": "B",
+    "text": "{ABC}"
+   },
+   {
+    "key": "C",
+    "text": "'abc\\0'"
+   },
+   {
+    "key": "D",
+    "text": "'a'"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-152",
+  "section": 2,
+  "number": 152,
+  "type": "choice",
+  "stem": "判断字符串s1的长度是否大于字符串s2的长度，应使用 0",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "if(s1>s2)"
+   },
+   {
+    "key": "B",
+    "text": "if(strcmp(s1,s2))"
+   },
+   {
+    "key": "C",
+    "text": "if(strlen(s1)>strlen(s2))"
+   },
+   {
+    "key": "D",
+    "text": "if(strcat(s1)>strcat(s2))"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-153",
+  "section": 2,
+  "number": 153,
+  "type": "choice",
+  "stem": "对两个数组a和b进行如下初始化： 则以下叙述正确的是 o",
+  "code": [
+   "char a[]=\"abcd\";",
+   "char b[]={'a','b','c','d'};"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "a 与b 数组完全相同"
+   },
+   {
+    "key": "B",
+    "text": "数组a比数组b长度大"
+   },
+   {
+    "key": "C",
+    "text": "a 与b中存放的都是字符串"
+   },
+   {
+    "key": "D",
+    "text": "a 与b长度相同"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-154",
+  "section": 2,
+  "number": 154,
+  "type": "choice",
+  "stem": "若有定义\"char s1[50],s2[50];\",则以下函数调用中，正确的是 _o",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "scanf(\"%s%s\",&s1,&s2);"
+   },
+   {
+    "key": "B",
+    "text": "gets(s1, s2);"
+   },
+   {
+    "key": "C",
+    "text": "scanf(\"%s%s\",s1,s2);"
+   },
+   {
+    "key": "D",
+    "text": "gets(\"%s%s\",s1,s2);"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-155",
+  "section": 2,
+  "number": 155,
+  "type": "choice",
+  "stem": "以下不能正确赋值的语句是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "char str[8]=“good!”;"
+   },
+   {
+    "key": "B",
+    "text": "char str[5]=\"good!\";"
+   },
+   {
+    "key": "C",
+    "text": "char str[]=\"good!\";"
+   },
+   {
+    "key": "D",
+    "text": "char str[5]={‘g’,'o’,'o’,'d'};"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-156",
+  "section": 2,
+  "number": 156,
+  "type": "choice",
+  "stem": "已知 char x[]=\"hello\", y[]={'h','e','a','b','e'};,则关于两个数组长度的正确描述是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "相同"
+   },
+   {
+    "key": "B",
+    "text": "x大于y"
+   },
+   {
+    "key": "C",
+    "text": "x小于y"
+   },
+   {
+    "key": "D",
+    "text": "以上答案都不对"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-157",
+  "section": 2,
+  "number": 157,
+  "type": "choice",
+  "stem": "按如下方式定义字符数组并初始化： 则数组s1和s2所占用的存储空间分别为()。",
+  "code": [
+   "char s1[] =\"Hello!\";\nchar s2[10]=\"Hello!\";"
+  ],
+  "options": [
+   {
+    "key": "A",
+    "text": "66"
+   },
+   {
+    "key": "B",
+    "text": "610"
+   },
+   {
+    "key": "C",
+    "text": "77"
+   },
+   {
+    "key": "D",
+    "text": "710"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-158",
+  "section": 2,
+  "number": 158,
+  "type": "choice",
+  "stem": "若有说明：int a[][3]={{1,2,3},{4,5},{6,7}};则数组a的第一维大小为",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "2"
+   },
+   {
+    "key": "B",
+    "text": "3"
+   },
+   {
+    "key": "C",
+    "text": "4"
+   },
+   {
+    "key": "D",
+    "text": "无确定值"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-159",
+  "section": 2,
+  "number": 159,
+  "type": "choice",
+  "stem": "若fopen() 函数打开文件失败，其返回值是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "1"
+   },
+   {
+    "key": "B",
+    "text": "-1"
+   },
+   {
+    "key": "C",
+    "text": "NULL"
+   },
+   {
+    "key": "D",
+    "text": "ERROR"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-160",
+  "section": 2,
+  "number": 160,
+  "type": "choice",
+  "stem": "若执行fopen函数时发生错误，则函数的返回值是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "一个随机地址值"
+   },
+   {
+    "key": "B",
+    "text": "1"
+   },
+   {
+    "key": "C",
+    "text": "NULL"
+   },
+   {
+    "key": "D",
+    "text": "EOF"
+   }
+  ],
+  "answer": "C",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-161",
+  "section": 2,
+  "number": 161,
+  "type": "choice",
+  "stem": "在C语言中，下面关于文件的存取方式正确的叙述是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "可以顺序存取，也可以随机存取"
+   },
+   {
+    "key": "B",
+    "text": "不可以顺序存取，但可以随机存取"
+   },
+   {
+    "key": "C",
+    "text": "可以顺序存取，但不可以随机存取"
+   },
+   {
+    "key": "D",
+    "text": "只能从文件的开头存取"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-162",
+  "section": 2,
+  "number": 162,
+  "type": "choice",
+  "stem": "若以“a+”方式打开一个已存在的文件。则以下叙述正确的是()。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "文件打开时，原有文件内容不被删除，位置指针移到文件末尾，可做添加和读操作"
+   },
+   {
+    "key": "B",
+    "text": "文件打开时，原有文件内容不被删除，位置指针移到文件开头，可做重写和读操作"
+   },
+   {
+    "key": "C",
+    "text": "文件打开时，原有文件内容被删除，只可做写操作"
+   },
+   {
+    "key": "D",
+    "text": "以上各种说法都不正确"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-163",
+  "section": 2,
+  "number": 163,
+  "type": "choice",
+  "stem": "进行文件操作时，“写文件”的一般含义是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "将磁盘中的信息存入计算机内存"
+   },
+   {
+    "key": "B",
+    "text": "将计算机内存中的信息存入磁盘"
+   },
+   {
+    "key": "C",
+    "text": "将计算机CPU中的信息存入磁盘"
+   },
+   {
+    "key": "D",
+    "text": "将磁盘中的信息存入计算机CPU"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-164",
+  "section": 2,
+  "number": 164,
+  "type": "choice",
+  "stem": "函数调用“fputs(p1,p 2);”的功能是 。",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "从p1指向的文件中读一个字符串，存入p2指向的内存"
+   },
+   {
+    "key": "B",
+    "text": "从p2指向的文件中读一个字符串，存入p1指向的内存"
+   },
+   {
+    "key": "C",
+    "text": "从p1指向的内存中读一个字符串，写到p2指向的文件中"
+   },
+   {
+    "key": "D",
+    "text": "从p2指向的内存中读一个字符串，写到p1指向的文件中"
+   }
+  ],
+  "answer": "A",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-165",
+  "section": 2,
+  "number": 165,
+  "type": "choice",
+  "stem": "如果将文件型指针fp指向的文件内部指针置于文件尾，正确的语句是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "feof(fp);"
+   },
+   {
+    "key": "B",
+    "text": "rewind(fp);"
+   },
+   {
+    "key": "C",
+    "text": "fseek(fp,OL,0);"
+   },
+   {
+    "key": "D",
+    "text": "fseek(fp,OL,2);"
+   }
+  ],
+  "answer": "D",
+  "answer_source": "radio",
+  "points": null
+ },
+ {
+  "id": "2-166",
+  "section": 2,
+  "number": 166,
+  "type": "choice",
+  "stem": "从fp 所指向的文件中读取两个整数并分别赋给两个整型变量a和b, 正确的形式是",
+  "code": [],
+  "options": [
+   {
+    "key": "A",
+    "text": "fscanf(“%d%d”,&a,&b,fp);"
+   },
+   {
+    "key": "B",
+    "text": "fscanf(fp,“%d%d”,&a,&b);"
+   },
+   {
+    "key": "C",
+    "text": "fscanf(“%d%d”, a,b ,fp);"
+   },
+   {
+    "key": "D",
+    "text": "fscanf(fp,“%d%d”,a,b);"
+   }
+  ],
+  "answer": "B",
+  "answer_source": "radio",
+  "points": null
+ }
+]
