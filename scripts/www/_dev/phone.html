@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>preview harness</title>
+<style>
+  html,body{margin:0;background:#6d7069}
+  .wrap{display:flex;justify-content:center;padding:10px}
+  iframe{width:390px;height:812px;border:0;background:#f2f3f0}
+  #m{position:fixed;left:0;bottom:0;background:#000;color:#0f0;font:11px monospace;padding:2px 4px;z-index:9;white-space:pre}
+</style></head>
+<body>
+  <div class="wrap"><iframe id="f" src="../index.html"></iframe></div>
+  <div id="m">…</div>
+  <script>
+    const f = document.getElementById('f');
+    const notes = [];
+    const hq = new URLSearchParams(location.search).get('h');
+    if (hq) f.style.height = hq + 'px';
+    const out = (s) => { document.getElementById('m').textContent = s; };
+    const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+    function doc() { return f.contentWindow.document; }
+    window.addEventListener('error', (e) => { out('ERR ' + e.message + ' @' + (e.filename || '').split('/').pop() + ':' + e.lineno); });
+    window.addEventListener('unhandledrejection', (e) => { out('REJ ' + (e.reason && (e.reason.message || e.reason))); });
+    function click(sel) {
+      const e = doc().querySelector(sel);
+      if (!e) { out('missing ' + sel); return null; }
+      e.click();
+      return e;
+    }
+    function seed() {
+      const w = f.contentWindow;
+      const qs = w.QUIZ_DATA.questions;
+      const answers = {}, wrong = {};
+      const now = Date.now();
+      qs.slice(0, 180).forEach((q, i) => {
+        const ok = i % 4 !== 0;
+        answers[q.id] = { a: ok ? q.answer : (q.type === 'judge' ? (q.answer === 'T' ? 'F' : 'T') : 'A'), ok, t: now - i * 60000, n: 1 + (i % 3) };
+        if (!ok) wrong[q.id] = { a: 'B', t: now - i * 60000, n: 1 + (i % 2) };
+      });
+      localStorage.setItem('cquiz.v1', JSON.stringify({
+        v: 1, answers, wrong,
+        exams: [{ t: now - 86400000, right: 15, total: 20 }, { t: now - 3 * 86400000, right: 11, total: 20 }],
+        daily: {}, seen: {},
+      }));
+    }
+    async function viaSheet(sel, n) {
+      click(sel);
+      await sleep(70);
+      if (n === 'all') {
+        click('[data-act="cntset"][data-n="all"]');
+      } else if (typeof n === 'number') {
+        const preset = doc().querySelector('[data-act="cntset"][data-n="' + n + '"]');
+        if (preset) preset.click();
+        else {
+          const rng = doc().querySelector('#cnt-range');
+          if (rng) { rng.value = String(n); rng.dispatchEvent(new Event('input', { bubbles: true })); }
+        }
+      }
+      await sleep(50);
+      click('[data-act="cntgo"]');
+      await sleep(90);
+    }
+    const scenarios = {
+      async home() {},
+      async practice() { click('[data-act="daily"]'); },
+      async ok() {
+        click('[data-act="daily"]');
+        await sleep(60);
+        const w = f.contentWindow;
+        const id = doc().querySelector('.qno').textContent.trim();
+        const q = w.QUIZ_DATA.questions.find((x) => x.id === id);
+        const opt = doc().querySelector(`.opt[data-key="${q.answer}"]`);
+        opt.click();
+      },
+      async bad() {
+        click('[data-act="daily"]');
+        await sleep(60);
+        const w = f.contentWindow;
+        const id = doc().querySelector('.qno').textContent.trim();
+        const q = w.QUIZ_DATA.questions.find((x) => x.id === id);
+        const key = q.type === 'judge' ? (q.answer === 'T' ? 'F' : 'T') : (q.options.find((o) => o.key !== q.answer) || {}).key;
+        doc().querySelector(`.opt[data-key="${key}"]`).click();
+      },
+      async choice() {
+        await viaSheet('[data-act="drill"][data-type="choice"]');
+        await sleep(60);
+        const w = f.contentWindow;
+        const id = doc().querySelector('.qno').textContent.trim();
+        const q = w.QUIZ_DATA.questions.find((x) => x.id === id);
+        const key = (q.options.find((o) => o.key !== q.answer) || {}).key;
+        doc().querySelector(`.opt[data-key="${key}"]`).click();
+      },
+      async exam() { await viaSheet('[data-act="exam"]'); },
+      async result() {
+        await viaSheet('[data-act="exam"]');
+        await sleep(60);
+        const w = f.contentWindow;
+        const no = doc().querySelector('.qno').textContent.trim();
+        const q = w.QUIZ_DATA.questions.find((x) => x.id === no);
+        doc().querySelector(`.opt[data-key="${q.answer}"]`).click();
+        await sleep(300);
+        click('[data-act="submit"]'); await sleep(50); click('[data-act="submit"]');
+      },
+      async stats() {},
+      async wrongtab() {},
+      async about() {},
+      async seq() { await viaSheet('[data-act="seq"]'); },
+      async ids() {
+        click('[data-act="daily"]');
+        await sleep(80);
+        const cells = [...doc().querySelectorAll('.omr-cell')];
+        notes.push('daily=' + cells.length + ' first=' + (doc().querySelector('.qno') || {}).textContent);
+        click('[data-act="prev"]');
+      },
+      async fixwrong() {
+        if (!f.contentWindow.location.search.includes('seeded')) {
+          const q = f.contentWindow.QUIZ_DATA.questions.find((x) => x.id === '2-79');
+          localStorage.setItem('cquiz.v1', JSON.stringify({
+            v: 1,
+            answers: { '2-79': { a: 'B', ok: false, t: Date.now(), n: 1 } },
+            wrong: { '2-79': { a: 'B', t: Date.now(), n: 1 } },
+            exams: [], daily: {}, seen: {},
+          }));
+          f.src = '../index.html?seeded=1';
+          return;
+        }
+        click('[data-act="tab"][data-tab="wrong"]');
+        await sleep(80);
+        const before = doc().querySelectorAll('.row').length;
+        click('.row[data-id="2-79"]');
+        await sleep(100);
+        const q = f.contentWindow.QUIZ_DATA.questions.find((x) => x.id === '2-79');
+        doc().querySelector(`.opt[data-key="${q.answer}"]`).click();
+        await sleep(120);
+        click('[data-act="tab"][data-tab="wrong"]');
+        await sleep(80);
+        notes.push('wrong before=' + before + ' after=' + doc().querySelectorAll('.row').length);
+      },
+      async code() {
+        const w0 = f.contentWindow;
+        const q = w0.QUIZ_DATA.questions.find((x) => x.id === '2-79');
+        const answers = {}, wrong = {};
+        answers[q.id] = { a: 'B', ok: false, t: Date.now(), n: 1 };
+        wrong[q.id] = { a: 'B', t: Date.now(), n: 1 };
+        localStorage.setItem('cquiz.v1', JSON.stringify({ v: 1, answers, wrong, exams: [], daily: {}, seen: {} }));
+        f.src = '../index.html?seeded=1';
+      },
+      async review() {
+        await viaSheet('[data-act="exam"]');
+        await sleep(80);
+        click('[data-act="submit"]'); await sleep(50); click('[data-act="submit"]');
+        await sleep(120);
+        click('[data-act="review"]');
+      },
+      async chapters() { click('[data-act="chapters"]'); },
+      async chsel() {
+        click('[data-act="chapters"]');
+        await sleep(60);
+        for (const i of [0, 1, 2]) {
+          const c = doc().querySelectorAll('.ch')[i];
+          if (c) c.click();
+          await sleep(40);
+        }
+      },
+      async chjudge() {
+        click('[data-act="chapters"]');
+        await sleep(60);
+        click('[data-act="chtype"][data-type="judge"]');
+        await sleep(40);
+        for (const i of [0, 1]) {
+          const c = doc().querySelectorAll('.ch')[i];
+          if (c) c.click();
+          await sleep(40);
+        }
+      },
+      async chempty() { click('[data-act="chapters"]'); },
+      async chstart() {
+        click('[data-act="chapters"]');
+        await sleep(60);
+        for (const i of [0, 1, 2]) {
+          const c = doc().querySelectorAll('.ch')[i];
+          if (c) c.click();
+          await sleep(40);
+        }
+        click('[data-act="chstart"]'); await sleep(70); click('[data-act="cntgo"]');
+      },
+      async chdone() {
+        click('[data-act="chapters"]');
+        await sleep(60);
+        for (const i of [0]) {
+          const c = doc().querySelectorAll('.ch')[i];
+          if (c) c.click(); await sleep(40);
+        }
+        click('[data-act="chstart"]'); await sleep(70); click('[data-act="cntgo"]');
+        await sleep(120);
+        for (let k = 0; k < 30; k++) {
+          const opt = doc().querySelector('.opt[data-key][data-s=""]');
+          if (opt) { opt.click(); await sleep(40); }
+          const b = doc().querySelector('.btn[data-act="next"]');
+          if (!b) break;
+          b.click(); await sleep(40);
+        }
+      },
+      async chstats() {
+        if (!f.contentWindow.location.search.includes('seeded')) {
+          seed();
+          f.src = '../index.html?seeded=1&s=chstats';
+          return;
+        }
+        click('[data-act="tab"][data-tab="stats"]');
+        await sleep(80);
+        const d = doc().querySelector('.fold');
+        if (d) { d.open = true; await sleep(40); }
+        else notes.push('no fold');
+      },
+      async chpersist() {
+        if (!f.contentWindow.location.search.includes('seeded')) {
+          click('[data-act="chapters"]');
+          await sleep(60);
+          for (const i of [0, 1, 2]) {
+            const c = doc().querySelectorAll('.ch')[i];
+            if (c) c.click();
+            await sleep(40);
+          }
+          click('[data-act="chtype"][data-type="judge"]');
+          await sleep(40);
+          f.src = '../index.html?seeded=1&s=chpersist';
+          return;
+        }
+        click('[data-act="chapters"]');
+        await sleep(80);
+        const on = [...doc().querySelectorAll('.ch')].filter((e) => e.getAttribute('aria-pressed') === 'true').length;
+        const tab = (doc().querySelector('.seg-b[aria-selected="true"]') || {}).textContent;
+        notes.push('persist sel=' + on + ' type=' + (tab || '?') + ' savedKeys=' + Object.keys(JSON.parse(localStorage.getItem('cquiz.v1')).chap.sel).length);
+      },
+      async chhome() {
+        if (!f.contentWindow.location.search.includes('seeded')) {
+          click('[data-act="chapters"]');
+          await sleep(60);
+          for (const i of [0, 1, 2]) {
+            const c = doc().querySelectorAll('.ch')[i];
+            if (c) c.click();
+            await sleep(40);
+          }
+          f.src = '../index.html?seeded=1&s=chhome';
+          return;
+        }
+        click('[data-act="tab"][data-tab="home"]');
+      },
+      async chcode() {
+        click('[data-act="chapters"]');
+        await sleep(60);
+        const cells = [...doc().querySelectorAll('.ch')];
+        const i = cells.findIndex((c) => (c.textContent || '').includes('数组'));
+        if (i >= 0) cells[i].click();
+        await sleep(60);
+        click('[data-act="chstart"]'); await sleep(70); click('[data-act="cntgo"]');
+      },
+      async cnt() { click('[data-act="seq"]'); await sleep(80); },
+      async cntexam() { click('[data-act="exam"]'); await sleep(80); },
+      async cntsmall() {
+        await viaSheet('[data-act="exam"]', 4);
+        notes.push('exam cells=' + doc().querySelectorAll('.omr-cell').length + ' qpts=' + (doc().querySelector('.qpts') || {}).textContent);
+      },
+      async cntall() {
+        await viaSheet('[data-act="drill"][data-type="judge"]', 'all');
+        notes.push('all cells=' + doc().querySelectorAll('.omr-cell').length + ' qpts=' + (doc().querySelector('.qpts') || {}).textContent);
+      },
+      async cntpersist() {
+        if (!f.contentWindow.location.search.includes('seeded')) {
+          await viaSheet('[data-act="drill"][data-type="judge"]', 37);
+          notes.push('started=' + (doc().querySelector('.qpts') || {}).textContent);
+          f.src = '../index.html?seeded=1&s=cntpersist';
+          return;
+        }
+        click('[data-act="drill"][data-type="judge"]');
+        await sleep(80);
+        notes.push('remember=' + (doc().querySelector('#cnt-num') || {}).textContent + ' saved=' + JSON.stringify(JSON.parse(localStorage.getItem('cquiz.v1')).counts));
+      },
+      async cntops() {
+        click('[data-act="seq"]');
+        await sleep(80);
+        click('[data-act="cntdec"]');
+        await sleep(40);
+        notes.push('dec=' + (doc().querySelector('#cnt-num') || {}).textContent);
+        const rng = doc().querySelector('#cnt-range');
+        rng.value = '61'; rng.dispatchEvent(new Event('input', { bubbles: true }));
+        await sleep(40);
+        notes.push('range=' + (doc().querySelector('#cnt-num') || {}).textContent);
+        click('[data-act="cntset"][data-n="all"]');
+        await sleep(40);
+        notes.push('all=' + (doc().querySelector('#cnt-num') || {}).textContent);
+        click('[data-act="cntinc"]');
+        await sleep(40);
+        notes.push('inc=' + (doc().querySelector('#cnt-num') || {}).textContent + ' go=' + (doc().querySelector('#cnt-go') || {}).textContent);
+      },
+      async chsheet() {
+        click('[data-act="chapters"]');
+        await sleep(60);
+        for (const i of [3, 6]) {
+          const c = doc().querySelectorAll('.ch')[i];
+          if (c) c.click();
+          await sleep(40);
+        }
+        click('[data-act="chstart"]');
+        await sleep(80);
+        notes.push('sheet=' + (doc().querySelector('.pk-card') ? 'open' : 'none') + ' num=' + (doc().querySelector('#cnt-num') || {}).textContent + ' pool=' + (doc().querySelector('.pk-pool') || {}).textContent + ' hint=' + (doc().querySelector('#cnt-hint') || {}).textContent);
+      },
+      async cntexamall() {
+        click('[data-act="exam"]');
+        await sleep(70);
+        click('[data-act="cntset"][data-n="all"]');
+        await sleep(40);
+        notes.push('num=' + (doc().querySelector('#cnt-num') || {}).textContent + ' hint=' + (doc().querySelector('#cnt-hint') || {}).textContent);
+        click('[data-act="cntgo"]');
+        await sleep(140);
+        notes.push('cells=' + doc().querySelectorAll('.omr-cell').length + ' clock=' + (doc().querySelector('#clock') || {}).textContent + ' qpts=' + (doc().querySelector('.qpts') || {}).textContent);
+      },
+      async cntcancel() {
+        click('[data-act="seq"]');
+        await sleep(70);
+        notes.push('open=' + (doc().querySelector('.pk-card') ? 'yes' : 'no'));
+        click('[data-act="cntclose"]');
+        await sleep(60);
+        notes.push('afterCancel=' + (doc().querySelector('.pk-card') ? 'still' : 'closed') + ' saved=' + JSON.stringify(JSON.parse(localStorage.getItem('cquiz.v1') || '{}').counts || null));
+      },
+      async q() {
+        const id = new URLSearchParams(location.search).get('id') || '1-1';
+        const answers = {}, wrong = {};
+        answers[id] = { a: 'A', ok: false, t: Date.now() - 1000, n: 1 };
+        wrong[id] = { a: 'A', t: Date.now() - 1000, n: 1 };
+        localStorage.setItem('cquiz.v1', JSON.stringify({ v: 1, answers, wrong, exams: [], daily: {}, seen: {} }));
+        f.src = '../index.html?seeded=1&qid=' + encodeURIComponent(id);
+      },
+    };
+    f.addEventListener('load', async () => {
+      const s = new URLSearchParams(location.search).get('s') || 'home';
+      const w = f.contentWindow, d = w.document;
+      const seeded = w.location.search.includes('seeded');
+      if ((s === 'stats' || s === 'wrongtab') && !seeded) {
+        seed();
+        f.src = '../index.html?seeded=1';
+        return;
+      }
+      if (s === 'code' || s === 'fixwrong') {
+        if (!seeded) { await scenarios[s](); return; }
+        if (s === 'code') {
+          click('[data-act="tab"][data-tab="wrong"]');
+          await sleep(80);
+          click('.row[data-id="2-79"]');
+        } else {
+          await scenarios.fixwrong();
+        }
+      } else if (s === 'q') {
+        if (!seeded) { await scenarios.q(); return; }
+        const id = new URLSearchParams(location.search).get('id') || '1-1';
+        click('[data-act="tab"][data-tab="wrong"]');
+        await sleep(80);
+        const row = doc().querySelector('.row[data-id="' + id + '"]');
+        if (row) { row.click(); await sleep(80); } else notes.push('row missing ' + id);
+        const ans = new URLSearchParams(location.search).get('ans');
+        if (ans) {
+          const opt = doc().querySelector('.opt[data-key="' + ans + '"]');
+          if (opt) { opt.click(); await sleep(100); } else notes.push('opt missing ' + ans);
+        }
+      } else {
+        try { await scenarios[s](); } catch (e) { notes.push('ERR ' + (e && e.message)); }
+      }
+      if (s === 'stats') click('[data-act="tab"][data-tab="stats"]');
+      if (s === 'wrongtab') click('[data-act="tab"][data-tab="wrong"]');
+      if (s === 'about') click('[data-act="tab"][data-tab="about"]');
+      await sleep(80);
+      const g = (sel) => { const e = doc().querySelector(sel); return e ? Math.round(e.getBoundingClientRect().width) : -1; };
+      out('s=' + s + ' inner=' + f.contentWindow.innerWidth + ' scrollW=' + d.documentElement.scrollWidth +
+          ' sheet=' + g('.sheet') + ' tabbar=' + g('.tabbar') + ' opts=' + d.querySelectorAll('.opt').length +
+          (notes.length ? ' | ' + notes.join(' | ') : ''));
+    });
+  </script>
+</body>
+</html>
