@@ -1,0 +1,537 @@
+========
+id: 1-218   type: judge   answer: F
+stem: 如果使用数组时，元素下标出现越界。例如定义了有n个元素的整型数组s, 赋初值为全0,在程序中有s[n]=5的语句，编译环境就会检查出来并且报错。
+========
+id: 1-219   type: judge   answer: F
+stem: 对于一维数组，例如： int arr[3];则arr[3] 表示数组的第3个元素。
+========
+id: 1-220   type: judge   answer: T
+stem: 若有说明：int a[3][4]=o);数组a 中每个元素均可得到初值0。
+========
+id: 1-221   type: judge   answer: T
+stem: 数组的下标可以是一个表达式，但是表达式计算得到的值必须是一个整数。
+========
+id: 1-222   type: judge   answer: T
+stem: c语言对数组下标越界不作检查。
+========
+id: 1-224   type: judge   answer: F
+stem: 在C语言中，函数的参数可以是数组名，表示在函数中新建一个数组，并完成值的传递。
+========
+id: 1-225   type: judge   answer: T
+stem: 函数名代表该函数的入口地址。因此，可用函数名给指向函数的指针变量赋值。
+========
+id: 1-226   type: judge   answer: T
+stem: 执行语句int *p; 后 ，指针变量p 只能指向int 类型的变量。
+========
+id: 1-227   type: judge   answer: F
+stem: 只要将多个指针作为函数的参数，函数就一定会返回多个值。
+========
+id: 1-228   type: judge   answer: F
+stem: 对于定义int a[10],*p=a; 语句 p=a+1;和 a=a+1;都是合法的。
+========
+id: 1-229   type: judge   answer: T
+stem: 字符串常量在内存中的存放位置由系统自动安排。
+========
+id: 1-230   type: judge   answer: T
+stem: 字符串常量实质上是一个指向该字符串首字符的指针常量。
+========
+id: 1-231   type: judge   answer: T
+stem: 调用printf 函数，%s的格式输出字符串时，字符数组名、字符指针和字符串常量都可以作为输出参数。
+========
+id: 1-232   type: judge   answer: F
+stem: 语句 int *p[5]; 定义了一个指针数组p, 用于指向一个有5个元素的数组。 233
+========
+id: 1-234   type: judge   answer: T
+stem: 关于C语言指针的运算：指针只有加减操作，没有乘除操作。指针可以加常数、减常数；相同类型的指针可以相减，不可以相加。
+========
+id: 1-235   type: judge   answer: F
+stem: 可以将一个整型数据赋给一个指针变量，如p=3000。
+========
+id: 1-236   type: judge   answer: T
+stem: 指针变量中保存的肯定是一个地址。
+========
+id: 1-237   type: judge   answer: T
+stem: 对于定义int a[5],*p=a;后 ，*(p+1) 和 *(a+1) 的值是相同的。
+========
+id: 1-238   type: judge   answer: F
+stem: 它表示p是一个指针数组，它包含4个指针变量元素。
+========
+id: 1-239   type: judge   answer: T
+stem: 定义指针函数变量后，将一个函数名赋值该指针变量，要求函数的参数个数、类型一致。
+========
+id: 1-240   type: judge   answer: F
+stem: 不同类型的指针变量是可以直接相互赋值的。
+========
+id: 1-241   type: judge   answer: F
+stem: 在用数组名作函数参数时，下面两种函数声明是有区别的。
+code:
+  ①void fun(int arr[],int n);
+  ②void fun(int *arr,int n);
+========
+id: 1-242   type: judge   answer: T
+stem: 执行语句char *cp ;后，指针变量cp只能指向char 类型的变量。 的指针变量。
+========
+id: 1-244   type: judge   answer: T
+stem: 语句int(*pb)[6]; 定义了一个指针变量pb, 它是一个指向数组的指针，指向的是长度为6的int 型数组。
+========
+id: 1-245   type: judge   answer: F
+stem: 语句int*p[5]; 定义了一个指针数组p, 用于指向一个有5个元素的数组。
+========
+id: 1-246   type: judge   answer: F
+stem: 执行语句int *p=1000;后，指针变量p指向地址为1000的变量。
+========
+id: 1-247   type: judge   answer: F
+stem: 若有定义char*p="computer" ; 则表示p的值是字符串"computer"。 1- 字符串常量实质上是一个指向该字符串首字符的指针常量。 1分
+========
+id: 1-249   type: judge   answer: F
+stem: 执行代码段 int a=2,*p1=&a,*p2=&a;(*p2)++;a=*p1**p2;后 ，a中的值为6。
+========
+id: 1-250   type: judge   answer: F
+stem: char str[10]={“china”};等价于char str[10];str[]={“china”};
+========
+id: 1-251   type: judge   answer: T
+stem: 指针变量的使用方法与普通变量一致，都可以进行赋值和取值操作。
+========
+id: 1-252   type: judge   answer: T
+stem: 指针变量可以用来存储数组的地址，通过指针变量可以访问和操作数组元素。
+========
+id: 1-253   type: judge   answer: F
+stem: 这样对数组访问是否正确：
+code:
+  int a[3]={1,2,3},b[2],*p; p=a+1;
+b=p;
+========
+id: 1-254   type: judge   answer: T
+stem: 可以用一个函数指针变量指向一个函数，然后通过该指针变量调用此函数。
+========
+id: 1-255   type: judge   answer: T
+stem: 结构体类型本身不占用内存空间，结构体变量占用内存空间。
+========
+id: 1-256   type: judge   answer: T
+stem: 结构是变量的集合，可以按照对同类型变量的操作方法单独使用其成员变量。
+========
+id: 1-257   type: judge   answer: T
+stem: 一个结构类型变量所占的内存空间是其各个成员所占内存空间之和。 1- 不同类型的结构变量之间也可以直接赋值。 1分
+========
+id: 1-259   type: judge   answer: T
+stem: 对于结构数组s, 既可以引用数组的元素s[i], 也可以引用s[i] 中的结构成员。
+========
+id: 1-260   type: judge   answer: T
+stem: 结构指针就是指向结构类型变量的指针。
+========
+id: 1-261   type: judge   answer: T
+stem: C语言中的结构体类型属于一种构造类型。
+========
+id: 1-262   type: judge   answer: F
+stem: 一个结构体类型中的各个成员的类型必须是相同的。
+========
+id: 1-264   type: judge   answer: T
+stem: 结构体变量不能进行整体输入输出。
+========
+id: 1-265   type: judge   answer: T
+stem: 在对结构变量操作时， .被称为成员或者分量运算符。
+========
+id: 1-266   type: judge   answer: T
+stem: 在使用结构指针时，->被称为指向运算符。
+========
+id: 1-267   type: judge   answer: T
+stem: 结构体类型中的成员，可以是基本类型，也可以时候结构体类型。
+========
+id: 1-268   type: judge   answer: F
+stem: 对于结构数组s, 可以引用数组的元素s[i], 但不可以引用s[i]中的结构成员。
+========
+id: 1-269   type: judge   answer: T
+stem: 结构体中的成员变量可以是数组。
+========
+id: 1-270   type: judge   answer: T
+stem: 结构体成员的类型可以不是基本数据类型。
+========
+id: 1-271   type: judge   answer: T
+stem: 对于缓冲文件系统，在进行文件操作时，系统自动为每一个文件分配一块文件内存缓冲区(内存单元)。
+========
+id: 1-272   type: judge   answer: F
+stem: close(fp);表示关闭指针fp所指向的那个文件。
+========
+id: 1-273   type: judge   answer: T
+stem: C系统的标准输出文件stdout是指显示器。
+========
+id: 1-274   type: judge   answer: T
+stem: 有时候，打开文件方式"w+"和"r+"具有同样的作用。
+========
+id: 1-275   type: judge   answer: F
+stem: 从文件中读字符串的函数 fgets(), 是从当前文件位置指针开始读取字符，直到读到字符'\0'或EOF为止。 单选题
+========
+id: 2-1   type: choice   answer: C
+stem: C 语言程序中可以对程序进行注释，注释部分必须用什么符号括起来?
+  A. '{ 和‘}
+  B. [ ' 和'了
+  C. /* 和*/'
+  D. '*/'和/*'
+========
+id: 2-2   type: choice   answer: D
+stem: 已知字符'a' 的ASCII码为97,执行下列语句的输出是 302分 2分
+code:
+  printf("%d,%c",'b','b¹+1);
+  A. 98,b
+  B. 语法不合法
+  C. 98,99
+  D. 98,c
+========
+id: 2-3   type: choice   answer: A
+stem: 表达式 strcmp("box","boss") 的值是一个
+  A. 正数
+  B. 负数
+  C. 0
+  D. 不确定的数
+========
+id: 2-4   type: choice   answer: C
+stem: 要调用数学函数时，在#include 命令行中应包含
+  A. "stdio.h"
+  B. "string.h"
+  C. "math.h"
+  D. "ctype.h"
+========
+id: 2-5   type: choice   answer: C
+stem: 判断 i 和j 至少有一个值为非0的表达式是
+  A. i!= 0&& j!=0
+  B. i+j!=0
+  C. illj
+  D. i&&j
+========
+id: 2-6   type: choice   answer: D
+stem: 若a是基本整型变量， c 是单精度实型变量，输入语句 是错误的。
+  A. scanf("%d,%f",&a,&c);
+  B. scanf("d=%d,c=%f",&a,&c);
+  C. scanf("%d%f",&a,&c);
+  D. scanf("%d%f",a,c);
+========
+id: 2-8   type: choice   answer: B
+stem: 若变量已正确定义并赋值，符合C语言语法的表达式是_.
+  A. a=2++
+  B. a=3,5
+  C. a=a+1=3
+  D. 12.3%4
+========
+id: 2-9   type: choice   answer: C
+stem: 表达式_不能用于判断“x和y不同时为零”。
+  A. x!=OIly!=0
+  B. xlly
+  C. !(x==0lly==0)
+  D. !(x==0 &&y==0)
+========
+id: 2-10   type: choice   answer: A
+stem: 表达式5>3>1值是_.
+  A. 0
+  B. 1
+  C. 3
+  D. 表达式语法错误
+========
+id: 2-11   type: choice   answer: D
+stem: 若a 是基本整型变量，c 是单精度实型变量，则输入语句()是错误的。
+  A. scanf("%d,%f",&a,&c);
+  B. scanf("d=%d,c=%f",&a,&c);
+  C. scanf("%d%f",&a,&c);
+  D. scanf("%d%f",a,c);
+========
+id: 2-12   type: choice   answer: D
+stem: 以下选项中不正确的整型常量是()。
+  A. 12L
+  B. -10
+  C. 012
+  D. 2,900
+========
+id: 2-13   type: choice   answer: B
+stem: 若变量已正确定义并赋值，表达式()不符合C语言语法。
+  A. 5&&3
+  B. int(5.5)
+  C. +a
+  D. a=b=c=3
+========
+id: 2-14   type: choice   answer: A
+stem: 若变量已正确定义并赋值，表达式-k++ 等价于 ( ) 。
+  A. -(k++)
+  B. -(k+1)
+  C. - (++k)
+  D. (-k)++
+========
+id: 2-16   type: choice   answer: D
+stem: 下列选项中用于判断ch是否是字符的表达式是()。
+  A. ('a'<= ch<= 'z')I('A'<= ch<= 'Z')
+  B. ('a'<= ch<=Iz')&&('A'<= ch<= IZ')
+  C. (ch >= 'a!&& ch<='z')&&(ch >= 'A'&& ch <='Z')
+  D. (ch >= 'a!&& ch<= 'z')I(ch >= 'A'&& ch<= 'Z')
+========
+id: 2-17   type: choice   answer: A
+stem: 以下标识符中，不合法的是()。
+  A. 4d
+  B. _8_d
+  C. Int
+  D. key
+========
+id: 2-18   type: choice   answer: A
+stem: 为表示关系x≥y≥z, 应使用C语言表达式()。
+  A. (x>=y)&&(y>=z)
+  B. (x>=y)AND(y>=z)
+  C. (x>=y>=z)
+  D. (x>=y)&(y>=z)
+========
+id: 2-19   type: choice   answer: C
+stem: 已知int i,a; 执行语句i=(a=2*3,a*5),a+6; 后，变量i 的值是 ( ) 。
+  A. 6
+  B. 12
+  C. 30
+  D. 36
+========
+id: 2-20   type: choice   answer: A
+stem: 在C语言中，要求运算数必须是整型的运算符是()。
+  A. %
+  B. /
+  C. <
+  D. !
+========
+id: 2-21   type: choice   answer: A
+stem: 表达式()的值是0。
+  A. 3/5
+  B. 3<5
+  C. 3%5
+  D. 3/5.0
+========
+id: 2-22   type: choice   answer: D
+stem: 在C语言中，数字029是一个()。
+  A. 八进制数
+  B. 十进制数
+  C. 十六进制数
+  D. 非法数
+========
+id: 2-23   type: choice   answer: A
+stem: 表达式8>6>3值是()。
+  A. 0
+  B. 1
+  C. 3
+  D. 表达式语法错
+========
+id: 2-25   type: choice   answer: C
+stem: 以下scanf函数调用语句中不正确的是_。
+code:
+  struct pupil{ char name[20]; int age;
+int sex;
+}pup[5],*p=pup;
+  A. scanf("%s", pup[0].n ame);
+  B. scanf("%d",&pup[0].age);
+  C. scanf("%d",p->age);
+  D. scanf("%d",&(p->sex));
+========
+id: 2-26   type: choice   answer: C
+stem: 若a 为int 类型、且其值为3.则执行完表达式a+=a-=a*a 后 ，a 的值是 。
+  A. -3
+  B. 9
+  C. -12
+  D. 6
+========
+id: 2-27   type: choice   answer: B
+stem: 设 x、y、t 均为int 型变量，则执行语句：x=y=3;t=++x l++y;后 ，y 的值为 o
+  A. 不定值
+  B. 3
+  C. 4
+  D. 1
+========
+id: 2-28   type: choice   answer: C
+stem: 以下名字，不能作为C语言标识符的是：
+  A. ThislsQingdaoUniversity
+  B. $$
+  C. monkey~1
+  D. _
+========
+id: 2-29   type: choice   answer: D
+stem: 要定义一个做减法运算的宏，以下最恰当的是：
+  A. #define SUB(X,Y) X-Y
+  B. #define SUB(X,Y) (X-Y)
+  C. #define SUB(X,Y) (X)-(Y)
+  D. #define SUB(X,Y) ((X)-(Y))
+========
+id: 2-30   type: choice   answer: C
+stem: 对下列代码的描述： 正确的是：
+code:
+  #include "stdio.h" int main(){
+long num=1;
+while(num++>0)for(Long i=num;i>=0;i-- )printf("i:=\n \t %Ld \n" ,i);
+return 0; }
+  A. 程序有编译错误，不能执行
+  B. 循环条件永为真，循环无限次，程序根本停不下来，打印输出无限行
+  C. 循环有限次，程序正常结束，打印输出有限行
+  D. 程序运行过程必定会出错(崩溃),结果打印输出有限行
+========
+id: 2-31   type: choice   answer: A
+stem: 定义变量 int a;. 则表达式 a =3,5;执行过后 .a 的值和表达式的值分别是：
+  A. 3,5
+  B. 5,3
+  C. 3,3
+  D. 5,5
+========
+id: 2-32   type: choice   answer: C
+stem: 假设有变量定义如下 int a,k; 则以下哪条语句不能确保将变量k 变为0:
+  A. k=a +~a +1;
+  B. k^=k;
+  C. k =k>>(sizeof(int)*8-1);
+  D. k=k&~k;
+========
+id: 2-33   type: choice   answer: A
+stem: 表达式下面的程序段将输出.
+code:
+  int a =-5,b=-3,c; C =a /b;
+printf("%d\n",c);
+  A. 1
+  B. -1
+  C. 2
+  D. - 2
+========
+id: 2-34   type: choice   answer: C
+stem: 输出整数 printf 函数输出整数时不能使用. 格式限定符。
+  A. %d
+  B. %X
+  C. %f
+  D. %o
+========
+id: 2-35   type: choice   answer: B
+stem: 输入整数 scanf 函数输入整数时可使用格式限定符。
+  A. %c
+  B. %d
+  C. %e
+  D. %s
+========
+id: 2-36   type: choice   answer: D
+stem: 设变量已正确定义并赋值，以下正确的表达式是
+  A. x=y*5=x+Z
+  B. int(15.8%5)
+  C. x= 25%5.0
+  D. x=y+z+5,++y
+========
+id: 2-37   type: choice   answer: A
+stem: 若有说明语句：char s='\42'; 则变量 s
+  A. 包含一个字符
+  B. 包含两个字符
+  C. 包含三个字符
+  D. 说明不合法，s的值不确定
+========
+id: 2-38   type: choice   answer: A
+stem: 若a是整型变量，c 是浮点型变量，则输入语句()是不安全的。
+  A. scanf("%d%f",a,c);
+  B. scanf("a=%d,c=%f",&a,&c);
+  C. scanf("%d,%f",&a,&c);
+  D. scanf("%d%f",&a,&c);
+========
+id: 2-40   type: choice   answer: A
+stem: 为表示x≥y≥z, 须用的C语言表达式为()。
+  A. (x>=y)&&(y>=z)
+  B. (x>=y)AND(y>=x)
+  C. x>=y>=z
+  D. (x≥y)&&(y≥z)
+========
+id: 2-41   type: choice   answer: C
+stem: 函数调用语句function((a,b),c)中含有的实参个数为()。
+  A. 1
+  B. 3
+  C. 2
+  D. 语法有误
+========
+id: 2-43   type: choice   answer: C
+stem: 以下运算符优先级按从高到低排列正确的是()。
+  A. 算术运算、赋值运算、关系运算
+  B. 关系运算、赋值运算、算术运算
+  C. 算术运算、关系运算、赋值运算
+  D. 关系运算、算术运算、赋值运算
+========
+id: 2-44   type: choice   answer: A
+stem: 判断a、b中有且仅有1个值为0的表达式是()。
+  A. !(a*b)&&a+b
+  B. (a*b)&&a+b
+  C. a*b==0
+  D. a!=0&&!b
+========
+id: 2-45   type: choice   answer: C
+stem: 根据下面的定义，能打印出字母M的语句是()。
+code:
+  Struct person{
+  Char name[10];
+  int age;}
+  c[10]={"John",17,"Paul",19,"Mary",18,"Adam",16};
+  A. printf(“%c”,c[3].name);
+  B. printf(“%c”,c[3].name[1]);
+  C. printf(“%c”,c[2].name[0]);
+  D. printf(“%c”,c[2].name[1]);
+========
+id: 2-46   type: choice   answer: A
+stem: 下述代码执行后，a,b的值各为多少?
+code:
+  int a =0,b=0; a =(b++,4);
+  A. a=4,b=1
+  B. a=0,b=1
+  C. a=1,b=1
+  D. a=4,b=0
+========
+id: 2-47   type: choice   answer: C
+stem: scanf()函数在读不到数据时返回 ()
+  A. NULL
+  B. 0
+  C. EOF
+  D. 1
+========
+id: 2-49   type: choice   answer: C
+stem: 能正确表示逻辑关系：“10≤x≤20” 的C语言表达式是()。
+  A. x>=10 and x<=20
+  B. x>=10 or x<=20
+  C. x>=10 &&x<=20
+  D. x>=10 x<= 20
+========
+id: 2-50   type: choice   answer: D
+stem: 若有变量定义： char c;int i;double x;则表达式c+5*i-x 的最终计算结果为()类型。
+  A. char
+  B. int
+  C. float
+  D. double
+========
+id: 2-51   type: choice   answer: A
+stem: 下列程序执行后的输出结果是
+code:
+  main() {
+int x='f';
+printf("%c \n",'A'+(x-'a'+1)); }
+  A. G
+  B. H
+  C. I
+  D. J
+========
+id: 2-52   type: choice   answer: B
+stem: putchar()函数的功能是向终端输出
+  A. 多个字符
+  B. 一个字符
+  C. 一个实型变量值
+  D. 一个整型变量表达式
+========
+id: 2-53   type: choice   answer: B
+stem: 设有定义“int a=1,b=2,c=3,d=4,m=2,n=2;”,则执行表达式“(m=a>b)&& (n=c>d)”后，n的值为()。
+  A. 1
+  B. 2
+  C. 3
+  D. 0
+========
+id: 2-54   type: choice   answer: C
+stem: 已知字符“A”的 ASCII代码值是65,字符变量c1的值是“A”,c2的值是“D”。执行语句“printf("%d,%d",cl,c2-2);” 后，输出结果是()。
+  A. A,B
+  B. A,68
+  C. 65,66
+  D. 65,68
+========
+id: 2-55   type: choice   answer: C
+stem: 在以下一组运算符中，优先级最高的运算符是()。
+  A. <=
+  B. =
+  C. %
+  D. &&
+========
+id: 2-57   type: choice   answer: C
+stem: 在嵌套使用if 语句时，C语言规定else总是()。
+  A. 和之前与其具有相同缩进位置的if 配对
+  B. 和之前与其最近的if 配对
+  C. 和之前与其最近的且不带else的if 配对
+  D. 和之前的第一个if 配对
