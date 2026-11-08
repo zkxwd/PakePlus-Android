@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>SW probe</title>
+<style>
+  body { font: 13px/1.6 Consolas, monospace; margin: 12px; }
+  pre { white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<pre id="out">pending</pre>
+<script>
+const lines = [];
+const out = document.getElementById('out');
+const log = (k, v) => { lines.push(k + '=' + v); out.textContent = lines.join('\n'); };
+const timeout = (p, ms, tag) => Promise.race([
+  p,
+  new Promise((_, rej) => setTimeout(() => rej(new Error('timeout:' + tag)), ms)),
+]);
+const safe = async (tag, fn) => {
+  try { log(tag, await timeout(Promise.resolve().then(fn), 3000, tag)); }
+  catch (e) { log(tag + '.err', (e && e.message) || String(e)); }
+};
+
+(async () => {
+  log('secure', window.isSecureContext ? 'yes' : 'no');
+  await safe('sw.support', () => ('serviceWorker' in navigator) ? 'yes' : 'no');
+  await safe('reg', async () => {
+    const r = await navigator.serviceWorker.getRegistration('./');
+    return r ? (r.active ? 'active' : r.installing ? 'installing' : r.waiting ? 'waiting' : 'registered') : 'none';
+  });
+  await safe('controller', () => navigator.serviceWorker.controller ? 'yes' : 'no');
+  await safe('caches', async () => (await caches.keys()).join(',') || 'none');
+  await safe('entries', async () => {
+    let total = 0; const detail = [];
+    for (const k of await caches.keys()) {
+      const n = (await (await caches.open(k)).keys()).length;
+      total += n; detail.push(k + ':' + n);
+    }
+    return total + ' [' + detail.join(' ') + ']';
+  });
+  await safe('style.cached', async () => {
+    const r = await caches.match(new Request(location.origin + '/style.css'), { ignoreSearch: true });
+    return r ? r.status : 'miss';
+  });
+  await safe('data.cached', async () => {
+    const r = await caches.match(new Request(location.origin + '/data.js'), { ignoreSearch: true });
+    return r ? r.status : 'miss';
+  });
+  await safe('manifest', async () => {
+    const m = await (await fetch(location.origin + '/manifest.json')).json();
+    return m.display + ' / ' + m.name + ' / icons:' + m.icons.length;
+  });
+  await safe('display-mode', () => matchMedia('(display-mode: standalone)').matches ? 'standalone' : 'browser');
+  log('done', 'yes');
+})();
+</script>
+</body>
+</html>
