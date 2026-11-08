@@ -1,0 +1,367 @@
+========
+id: 1-112   type: judge   answer: F
+stem: 在对数组全部元素赋初值时，不可以省略行数，但能省略列数。
+========
+id: 1-113   type: judge   answer: T
+stem: 数组定义中，数组名后是用方括号括起来的常量表达式，不能用圆括号。
+========
+id: 1-114   type: judge   answer: T
+stem: 函数strcmp 从头至尾顺序地将其对应字符比较，遇到两个字符不等时，两个字符相减得到一个int 型值，两个字符串完全相同时，则返回0。
+========
+id: 1-115   type: judge   answer: F
+stem: 指向数组元素的指针只可指向数组的首元素。 0
+========
+id: 1-116   type: judge   answer: T
+stem: 对于已正确定义的二维数组a,*(a[i]+j)与a[i][j] 的含义相同。
+========
+id: 1-117   type: judge   answer: F
+stem: 如果strcmp(s1,s2)返回的结果为0,表示字符串s1和s2不相同。
+========
+id: 1-118   type: judge   answer: T
+stem: c语言的数组下标从0开始。
+========
+id: 1-119   type: judge   answer: F
+stem: 数组初始化时，初始值个数小于数组元素的个数， C语言自动将剩余的元素初始化为初始化列表中的最后一个初始值。
+========
+id: 1-120   type: judge   answer: F
+stem: 对于定义int a[5];可以通过语句scanf("%d",a);输入全部元素的值。
+========
+id: 1-121   type: judge   answer: F
+stem: char s1[80],s2[80];s1=s2;这样赋值是正确的。
+========
+id: 1-122   type: judge   answer: T
+stem: 数组定义后，数组名表示该数组所分配连续内存空间中第一个单元的地址，即首地址，是一个常量，不能被修改。
+========
+id: 1-123   type: judge   answer: T
+stem: 一个数组中的每个成员都必须具有相同的数据类型，用数组名加不同的序号即下标来区分数组中的各元素。
+========
+id: 1-124   type: judge   answer: T
+stem: C语言里，一维数组元素的下标是从0开始的。
+========
+id: 1-125   type: judge   answer: F
+stem: C语言里数组元素的下标是从1开始的。
+========
+id: 1-126   type: judge   answer: T
+stem: 直接访问就是直接利用变量的地址直接进行访问。
+========
+id: 1-127   type: judge   answer: T
+stem: 可以用一个指针变量指向一个函数，然后通过该指针变量调用此函数。
+========
+id: 1-128   type: judge   answer: T
+stem: 指向结构体变量的指针可以作函数参数，实现传址调用。
+========
+id: 1-129   type: judge   answer: F
+stem: 结构体成员的类型必须是基本数据类型。
+========
+id: 1-130   type: judge   answer: T
+stem: 在C语言中，数组名是不可改变的，不能对它进行赋值运算。
+========
+id: 1-131   type: judge   answer: F
+stem: 链表是动态存储分配的数据结构。根据需要动态地开辟内存空间，可以比较自由方便地插入新元素(结点),支持随机访问，故使用链表可以节省内存，操作效率高。
+========
+id: 1-132   type: judge   answer: T
+stem: 专门存放地址的变量，称为指针变量。
+========
+id: 1-133   type: judge   answer: T
+stem: 结构体类型可用于表示复杂构造类型，假设想要跟踪图书馆中书本的动态，需要跟踪每本书的某些属性：
+code:
+  BookID、Title、Author、Price,可定义Book结构体类型用来封装这些属性： struct Book{ int id;
+char title[50];
+char author[20];
+double price;
+};
+下面定义该类型的变量或数组是否正确? struct Book b1,b2,c[10];
+========
+id: 1-134   type: judge   answer: F
+stem: typedef可以简化声明：比如定义 typedef unsigned long long*Ulp t;之后 unsigned long Long*a,b;可以简写成 uLp t a,b;
+========
+id: 1-135   type: judge   answer: F
+stem: 文件指针和位置指针都是随着文件的读写操作在不断改变。
+========
+id: 1-136   type: judge   answer: F
+stem: 随机操作只适用于文本文件。
+========
+id: 1-137   type: judge   answer: F
+stem: 随机操作只适用于二进制文件。
+========
+id: 1-138   type: judge   answer: F
+stem: 以“a”方式打开一个文件时，文件指针指向文件首。
+========
+id: 1-139   type: judge   answer: T
+stem: 文件的读函数是从输入文件中读取信息，并存放在内存中。
+========
+id: 1-140   type: judge   answer: T
+stem: 一般不能用任何一个文本编辑器打开二进制文件进行阅读。
+========
+id: 1-141   type: judge   answer: F
+stem: 二进制文件名不能用.txt 作为扩展名，否则二进制文件读写函数fread和fwrite 将出错。
+========
+id: 1-142   type: judge   answer: T
+stem: 假设运算符'*和'%'都是右结合的，则表达式 (3*5%3) 的值为6。
+========
+id: 1-143   type: judge   answer: F
+stem: 增1减1运算符的前缀运算和后缀运算的表达式值是相同的。
+========
+id: 1-144   type: judge   answer: T
+stem: 关系运算符“<“优先级高于关系运算符”==”。
+========
+id: 1-146   type: judge   answer: T
+stem: C语言中，大于运算符的优先级比赋值运算符的优先级高
+========
+id: 1-147   type: judge   answer: F
+stem: 执行语句putchar('S'); 后，在屏幕上显示的输出结果是'S'。 下面这段代码，用%d格式打印输出double型变量，将会进行取整，输出为了。
+========
+id: 1-149   type: judge   answer: T
+stem: 下面这段代码，用%.2f格式打印输出int 型变量，不会进行类型转换，打印输出的结果不会是2019.00。
+code:
+  #include <stdio.h> int main(){
+int k=2019;
+printf("%.2f",k);
+  return 0;
+  }
+========
+id: 1-150   type: judge   answer: F
+stem: 下面这段代码，打印输出变量e的值，将会进行取整，输出为2。
+code:
+  #include <stdio.h> int main(){
+double e =2.71828; printf("%d",e);
+return ; }
+========
+id: 1-151   type: judge   answer: F
+stem: printf 函数输出数据时会根据格式控制符自动进行数据类型转换。
+========
+id: 1-152   type: judge   answer: T
+stem: C语言中，字符型数据可以和整型数据进行相互转换。
+========
+id: 1-153   type: judge   answer: T
+stem: 省略else的if 语句的一般形式如下，若表达式的值为“真”,则执行语句1;否则，就什么也不做。
+code:
+  if(表达式) 语句1
+========
+id: 1-154   type: judge   answer: T
+stem: 为了检查以下嵌套的if 语句的三个分支是否正确，至少需要设计3组测试用例，即
+code:
+  yournumber的取值至少有3组(等于mynumber、大于mynumber、小于mynumber)。 if(yournumber ==mynumber){
+printf("Good Guess!\n");
+}else if(yournumber>mynumber ){ printf("Too big!\n");
+}else{
+printf("Too small!\n");
+}
+========
+id: 1-155   type: judge   answer: F
+stem: C语言中在else之后可以直接跟条件。
+========
+id: 1-156   type: judge   answer: T
+stem: 在c程序中，else的个数不能多于if的个数。
+========
+id: 1-157   type: judge   answer: F
+stem: switch 语句中，switch(E) 中的表达式E没有数据类型限制。
+========
+id: 1-158   type: judge   answer: T
+stem: 使用switch语句时，各case和default子句的先后顺序可以变动，而不会影响程序执行结果。
+========
+id: 1-159   type: judge   answer: F
+stem: switch语句中的case标签可以是任意字符串。
+========
+id: 1-160   type: judge   answer: F
+stem: C程序使用switch 语句实现多分支选择结构时，必须包含default 标号。
+========
+id: 1-161   type: judge   answer: T
+stem: break语句可以用在循环体和switch语句中，但continue语句只可以用在循环体中。
+========
+id: 1-162   type: judge   answer: T
+stem: 对于for(表达式1;表达式2;表达式3)语句来说，若循环体有continue 语句且执行，意味着跳过循环体余下语句转去执行表达式3。
+========
+id: 1-163   type: judge   answer: F
+stem: for循环语句只能用于循环次数已知的情况。
+========
+id: 1-164   type: judge   answer: F
+stem: 以下for(;;) 循环书写错误。
+========
+id: 1-165   type: judge   answer: F
+stem: while 循环和for 循环的执行次数时没有限制的，需要手动用break 语句来结束循环。
+========
+id: 1-166   type: judge   answer: F
+stem: for 循环的三个表达式都必须要明确的写出来。
+========
+id: 1-167   type: judge   answer: T
+stem: continue语句一般放在条件语句中，条件成立时结束本次循环，直接进入下一次循环。
+========
+id: 1-168   type: judge   answer: T
+stem: while循环条件将会比循环体多执行一次。
+========
+id: 1-169   type: judge   answer: F
+stem: break和continue都可以从循环中退出
+========
+id: 1-170   type: judge   answer: F
+stem: 在嵌套循环语句中，里层的循环语句里有break语句，那执行该语句时，是跳出全部循环。
+========
+id: 1-171   type: judge   answer: F
+stem: sizeof() 是 C语言的一个函数，可以计算参量所占内存的字节数。如sizeof(int) 可计算整型所占的内存字节数。
+========
+id: 1-172   type: judge   answer: F
+stem: C语言中，通过函数调用只能获得一个返回值。
+========
+id: 1-173   type: judge   answer: T
+stem: 指向结构体变量的指针可以作函数参数，实现传址调用。
+========
+id: 1-174   type: judge   answer: T
+stem: 在代码中，对于某个自己设计的函数，那么该函数声明、函数调用、函数定义(亦称函数的实现)三者在代码中的先后位置关系通常为：“函数声明”先于“函数调用”,“函数调用”先于“函数定义”。
+========
+id: 1-175   type: judge   answer: F
+stem: 函数一次可以返回两个以上的值。
+========
+id: 1-176   type: judge   answer: T
+stem: 函数可以嵌套调用但不能嵌套定义。
+========
+id: 1-178   type: judge   answer: F
+stem: c语言每个函数的返回值都是int 型的。
+========
+id: 1-179   type: judge   answer: T
+stem: 函数的递归调用是嵌套调用的特例。
+========
+id: 1-180   type: judge   answer: F
+stem: 语句是C 语言程序的基本结构模块。
+========
+id: 1-181   type: judge   answer: T
+stem: 函数声明时，可以不声明形参的变量名，但不能不声明类型。
+========
+id: 1-182   type: judge   answer: T
+stem: sizeof() 不是函数。
+========
+id: 1-183   type: judge   answer: T
+stem: 函数的形参必须为变量，而实参可以是变量，常量或表达式，且实参和形参可以同名。
+========
+id: 1-184   type: judge   answer: F
+stem: 对于用户自己定义的函数，在使用前必须加以说明。
+========
+id: 1-185   type: judge   answer: T
+stem: 调用函数时，只能把实参的值传送给形参，形参的值不能传送给实参
+========
+id: 1-186   type: judge   answer: F
+stem: C程序在调用有参数函数时，既可以将实参的值传递给形参，也可以反过来将形参的值传递给实参。
+========
+id: 1-187   type: judge   answer: F
+stem: 自动变量如果没有赋值，其值被自动赋为0。
+========
+id: 1-188   type: judge   answer: F
+stem: 静态局部变量如果没有赋值，其存储单元中将是随机值。
+========
+id: 1-189   type: judge   answer: F
+stem: C语言中定义的局部变量存放在堆区，动态分配的内存空间位于栈区。
+========
+id: 1-190   type: judge   answer: T
+stem: 下面这段代码，打印输出的结果是k=3,k=4,
+code:
+  #include <stdio.h> void hoho(){
+static int k =2; k++;
+printf("k=%d,",k); }
+int main(){
+hoho();
+hoho();
+return 0; }
+========
+id: 1-191   type: judge   answer: F
+stem: 全局变量不可以和函数内的局部变量同名。
+========
+id: 1-192   type: judge   answer: F
+stem: 以下代码中，参量n 与变量t、sum 都是函数hehe() 的局部变量。函数hehe() 执行
+code:
+  结束后,释放变量n、t、sum的内存空间。 #include <stdio.h>
+void hehe(int n){
+static int t;
+int sum=0;
+sum =t+n;
+printf("%d%d%d\n",sum,t,n);
+}
+int main(){ hehe(5);
+printf("Good Day!\n");
+return 0; }
+========
+id: 1-193   type: judge   answer: F
+stem: 以下这段代码有编译错误，因为C语言不允许重复定义同名变量，两处int k的定义是冲突的。
+code:
+  #include <stdio.h>
+int main(){ int k=3;
+int i=1;
+while(i<5){ int k;
+k =i+5;
+i++;
+printf("%d",k); }
+printf("%d\n",k); return 0;
+}
+========
+id: 1-194   type: judge   answer: F
+stem: 当一个C语言程序由多个文件模块组成时，整个程序可以包含多个main() 函数。
+========
+id: 1-195   type: judge   answer: F
+stem: 宏名必须用大写字母表示。
+========
+id: 1-196   type: judge   answer: F
+stem: 函数内部定义了一个与全局变量同名的局部变量，该局部变量会变更全局变量的值。
+========
+id: 1-197   type: judge   answer: T
+stem: 函数执行完以后，其内部定义的静态变量不会被回收。
+========
+id: 1-198   type: judge   answer: T
+stem: 递归调用算法与相同功能的非递归算法相比，主要问题在于重复计算太多，而且调用本身需要分配额外的空间、传递数据和控制，所以时间和空间开销通常都比较大。
+========
+id: 1-199   type: judge   answer: T
+stem: 函数递归调用自身时，每次调用都会得到一个与以前的变量集合不同的新的变量集合。
+========
+id: 1-200   type: judge   answer: T
+stem: 递归的执行速度并不快，但递归代码比较紧凑，并且比相应的非递归代码更易于编写与理解。
+========
+id: 1-201   type: judge   answer: T
+stem: 递归并不节省存储器的开销，因为递归调用过程中必须在某个地方维护一个存储处理值的栈。
+========
+id: 1-202   type: judge   answer: T
+stem: 二维数组定义的一般形式如下，其中的行长度和列长度都是整型常量表达式。
+code:
+  类型名数组名[行长度][列长度];
+========
+id: 1-203   type: judge   answer: T
+stem: 以下定义了一个三维数组array day 。
+code:
+  int array_day[10][10][10];
+========
+id: 1-204   type: judge   answer: F
+stem: 引用二维数组的元素要指定两个下标，即行下标和列下标， 一般形式如下。 数组名[列下标][行下标]
+========
+id: 1-205   type: judge   answer: T
+stem: char s[80],*p=s;p="hello";这样赋值是可以的。
+========
+id: 1-206   type: judge   answer: F
+stem: 语句char*pstr="lalala!"的含义是将字符串存入到变量pstr中。
+========
+id: 1-207   type: judge   answer: T
+stem: 字符串比较的规则是对两个字符串自左至右逐个字符相比(按ASCII码值大小比较), 直到出现不同的字符或遇到'\ '为止。
+========
+id: 1-208   type: judge   answer: T
+stem: 已知'A'的ASCII代码值为65,则'D' 的ASCII代码值为68
+========
+id: 1-209   type: judge   answer: T
+stem: 判断字符串a是否大于b, 可以表示为 if(strcmp(a,b)>0)
+========
+id: 1-210   type: judge   answer: F
+stem: "a" 和 'a'是等价的。
+========
+id: 1-211   type: judge   answer: F
+stem: 语句printf("%d",strlen("China");的输出结果为6
+========
+id: 1-212   type: judge   answer: F
+stem: char*str; 一定是表示定义一个字符串。
+========
+id: 1-214   type: judge   answer: T
+stem: 以下定义了一个一维数组str,该数组可以存放81个字符型数据。
+code:
+  char str[81];
+========
+id: 1-215   type: judge   answer: T
+stem: 数组定义后，数组名表示该数组所分配连续内存空间中第一个单元的地址，即首地址。
+========
+id: 1-216   type: judge   answer: F
+stem: 数组定义后，数组名的值是一个地址，可以被修改。
+========
+id: 1-217   type: judge   answer: T
+stem: 在对全部数组元素赋初值时，可以不指定数组长度。
