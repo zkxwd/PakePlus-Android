@@ -1,0 +1,912 @@
+========
+id: 2-58   type: choice   answer: D
+stem: 下列叙述中正确的是()。
+  A. break语句只能用于switch语句
+  B. 在switch语句中必须使用default
+  C. break 语句必须与switch语句中的case配对使用
+  D. 在switch语句中，不一定使用break语句
+========
+id: 2-59   type: choice   answer: C
+stem: 下列程序段的输出结果是()。
+code:
+  int main(void)
+  {
+  int a =2,b=-1,c =2;
+  if(a<b)
+  if(b<0)
+  else c++;
+  printf("%d\n",c);
+  return 0; }
+  A. 0
+  B. 1
+  C. 2
+  D. 3
+========
+id: 2-60   type: choice   answer: A
+stem: 下列程序段的输出结果是()。
+code:
+  int main(void) {
+int x=1,a =0,b=0;
+switch(x)
+{
+case 0: b++;
+case 1: a++;
+case 2: a++;b++; }
+printf("a=%d,b=%d\n",a,b);
+return 0; }
+  A. a=2,b=1
+  B. a=1,b=1
+  C. a=1,b=0
+  D. a=2,b=2
+========
+id: 2-61   type: choice   answer: D
+stem: 能正确表示逻辑关系"a≥10 或 a≤0"的C语言表达式是()。
+  A. a>=10 or a<=0
+  B. a>=0 a<=10
+  C. a>=10&&a<=0
+  D. a>=10 a<=0
+========
+id: 2-62   type: choice   answer: C
+stem: 能正确表示“当x的取值在[-58,-40]和[40,58]范围内为真，否则为假”的表达式是 ()。
+  A. (x>=-58)&&(x<=-40)&&(x>=40)&&(x<=58)
+  B. (x>=-58)II(x<=-40)Ⅱ(x>=40)I(x<=58)
+  C. (x>=-58)&&(x<=-40)II(x>=40)&&(x<=58)
+  D. (x>=-58) I(x<=-40)&&(x>=40)II(x<=58)
+========
+id: 2-63   type: choice   answer: D
+stem: 已知int a=7,b=9,c=6;则c的结果是().
+code:
+  {
+if(a<b)
+if(b<0)c=0; else c+=1;
+  printf("%d\n",c);
+  }
+  A. 9
+  B. 6
+  C. 0
+  D. 7
+========
+id: 2-64   type: choice   answer: B
+stem: 当字符型变量ch 取何值(或何范围)时输出“YES”
+code:
+  char ch;
+scanf("%C",&ch);
+if(ch<='A'&&ch>='Z') printf("NO");
+else printf("YES");
+  A. 大写字母A~Z
+  B. 任何字符
+  C. 除大写字母以外
+  D. 大写字母B~Y
+========
+id: 2-65   type: choice   answer: A
+stem: 当字符型变量ch取何值(或何范围)时输出“YES”
+code:
+  char ch;
+scanf("%c",&ch);
+if(ch>='A'&&ch<='Z')
+if(ch!='I'&&ch!='K')printf("NO"); else printf("YES");
+  A. I 和K
+  B. 除l和K以外的大写字母
+  C. 除大写字母外的其他字符
+  D. 大写字母
+========
+id: 2-66   type: choice   answer: D
+stem: 若int i=10;执行下列程序后，变量i的正确结果是()。
+code:
+  switch(i){
+case 9:i+=1;
+case 10:i+=1;
+case 11:i+=1;
+default :i+=1; }
+  A. 10
+  B. 11
+  C. 12
+  D. 13
+========
+id: 2-67   type: choice   answer: B
+stem: 有以下程序： 程序运行时，输入的值在哪个范围才会有输出结果()
+code:
+  void main()
+{int x,t=1;
+scanf("%d",&x);
+if(x<=5)t++;
+else if(x!=20)
+printf("%d\n",x); }
+  A. 不等于20的整数
+  B. 6
+  C. 大于5或等于20的整数 main() {
+int x;
+scanf("%d",&x);
+if(x++>5)printf("%d\n",x); else printf("%d\n",x--);
+}
+  D. 4
+========
+id: 2-69   type: choice   answer: C
+stem: 在嵌套使用if 语句时，C语言规定else总是
+  A. 和之前与其具有相同缩进位置的if配对
+  B. 和之前与其最近的if 配对
+  C. 和之前与其最近的且不带else的if 配对
+  D. 和之前的第一个if 配对
+========
+id: 2-70   type: choice   answer: D
+stem: 下列程序段执行后s的值为()。
+code:
+  int i=5,s=0;
+while(i--)
+if(i%2)continue; else s+=i;
+  A. 15
+  B. 10
+  C. 9
+  D. 6
+========
+id: 2-72   type: choice   answer: A
+stem: C语言中while和do-while循环的主要区别是()。
+  A. do-while 的循环体至少无条件执行一次
+  B. while 的循环控制条件比do-while 的循环控制条件严格
+  C. do-while 允许从外部转到循环体内
+  D. do-while 的循环体不能是复合语句
+========
+id: 2-73   type: choice   answer: A
+stem: 执行以下循环语句时，下列说法正确的是()。
+code:
+  x = -1;
+  do {
+  x = x * x;
+  } while (x == 0);
+  A. 循环体将执行一次
+  B. 循环体将执行两次
+  C. 循环体将执行无限次
+  D. 系统将提示有语法错误
+========
+id: 2-74   type: choice   answer: C
+stem: 运行以下程序后，如果从键盘上输入 65 14<回车>,则输出结果为()。
+code:
+  int main(void)
+  {
+  int m,n;
+  printf("Enter m,n;");
+  scanf("%d%d",&m,&n);
+  while(m !=n)
+  { while(m >n) m =m-n;
+  while(n>m) n =n -m;
+  }
+  printf("m=%d\n",m);
+  return 0; }
+  A. m=3
+  B. m=2
+  C. m=1
+  D. m=0
+========
+id: 2-76   type: choice   answer: C
+stem: 下列程序段执行后s值为_。
+code:
+  int i=5,s=0; while(--i!=0){ if(i%2==1)
+  continue; S+=i;
+}
+  A. 15
+  B. 9
+  C. 6
+  D. 4
+========
+id: 2-77   type: choice   answer: A
+stem: 下列程序段中，非死循环的是()。
+  A. int i=100;
+while(1)
+{i=i%100+1;
+if(i>=100)
+break; }
+  B. int k=0; do{
+++k;
+}while(k>=0);
+  C. int s=10;
+while(s)
+S++;
+  D. for( ; ; )
+========
+id: 2-78   type: choice   answer: D
+stem: 下面有关for循环的正确描述是()。
+  A. for 循环只能用于循环次数确定的情况
+  B. for 循环先执行循环体语句，后判断循环条件
+  C. 在for 循环中，不能用break 语句跳出循环体
+  D. for 循环的循环体可以包含多条语句，但多条语句必须构成复合语句
+========
+id: 2-79   type: choice   answer: A
+stem: 当执行以下程序段时，以下答案正确的是?
+code:
+  x=-1; do {
+x=x*x;
+}while(!x);
+  A. 循环体将执行一次
+  B. 循环体将执行两次
+  C. 循环体将执行无限次
+  D. 系统将提示有语法错误
+========
+id: 2-81   type: choice   answer: C
+stem: 下面程序计算100之内能被3整除的整数之和。阅读程序，从4个选项中选出合适的选项填到【1】处，使程序功能完整。
+code:
+  #include <stdio.h>
+  int main()
+  {
+  int i,sum =0;
+  for(i =1;i<100;i++)
+  {
+  if(i%3)
+  【1】;
+  sum +=i;
+  }
+  printf("%d\n",sum);
+  }
+  A. break
+  B. return
+  C. continue
+  D. return 0
+========
+id: 2-82   type: choice   answer: B
+stem: 阅读下面程序，从给出的4个选项中选出程序的运行结果。
+code:
+  #include <stdio.h> int main()
+{
+int k =1,m =0;
+do{
+k +=2;
+m +=k;
+if(m >50)
+  break; }while(1);
+printf("sum=%d\n",m); return 0;
+}
+  A. m=48
+  B. sum=63
+  C. sum=48
+  D. m=63
+========
+id: 2-83   type: choice   answer: C
+stem: 以下有关C语言while 循环和do-while 循环的描述中正确的是
+  A. while 和do-while结束循环只能靠break语句
+  B. do-while 的循环控制条件比while 的循环控制条件严格
+  C. do-while 的循环体可以无条件执行一次
+  D. 在任何情况下，while 循环的程序都不能用do-while 循环来实现
+========
+id: 2-84   type: choice   answer: B
+stem: 以下程序段的输出结果是()。
+code:
+  int i,j;
+  for(i=1;i<4;i++)
+  {for( j=i;j<4;j++)printf("%d*%d=%d",i ,j,i*j); printf("\n");}
+  A. 1*1=11*2=21*3=3 2*1=22*2=4 3*1=3
+  B. 1*1=11*2=21*3=3 2*2=42*3=6 3*3=9
+  C. 1*1=1 1*2=22*2=4 1*3=32*3=63*3=9
+  D. 1*1=1 2*1=22*2=4 3*1=33*2=63*3=9
+========
+id: 2-85   type: choice   answer: D
+stem: C语言中函数返回值的类型是由()决定的。
+  A. return 语句中的表达式类型
+  B. 调用该函数的主调函数的类型
+  C. 调用函数时临时决定
+  D. 定义函数时所指定的函数类型
+========
+id: 2-86   type: choice   answer: D
+stem: 在一个被调用函数中，关于 return 语句使用的描述，错误的是()。
+  A. 被调用函数中可以不用return 语句
+  B. 被调用函数中可以使用多个 return 语句
+  C. 被调用函数中，如果有返回值，就一定要有return 语句
+  D. 被调用函数中，一个return 语句可以返回多个值给调用函数
+========
+id: 2-87   type: choice   answer: C
+stem: 将两个字符串连接起来组成一个字符串时，选用函数()。
+  A. strlen()
+  B. strcpy()
+  C. strcat()
+  D. strcmp()
+========
+id: 2-88   type: choice   answer: A
+stem: 对于以下递归函数f,调用f(4),其返回值为()。
+code:
+  int {
+} f(int n)
+if(n)return f(n -1)+n; else return n;
+  A. 10
+  B. 4
+  C. 0
+  D. 以上均不是
+========
+id: 2-89   type: choice   answer: C
+stem: 数组名作为参数时，以下叙述正确的是()。
+  A. 函数调用时是将实参数组的所有元素值传给形参。
+  B. 函数调用时是将实参数组的第一个元素值传给形参。
+  C. 函数调用时是将实参数组的首地址传给形参。
+  D. 函数调用时是将实参数组的所有元素的地址传给形参。
+========
+id: 2-90   type: choice   answer: B
+stem: 关于递归函数以下叙述错误的是()。
+  A. 递归函数是自己调用自己。
+  B. 递归函数的运行速度很快。
+  C. 递归函数占用较多的存储空间。
+  D. 递归函数的运行速度一般比较慢。
+========
+id: 2-92   type: choice   answer: C
+stem: 以下程序的运行结果是()。
+code:
+  int x=5,y =6;
+void incxy() {
+X++;
+y++;
+}
+int main(void) {
+int x=3;
+incxy();
+printf("%d,%d\n",x,y);
+return 0; }
+  A. 3,6
+  B. 4,7
+  C. 3,7
+  D. 6,7
+========
+id: 2-93   type: choice   answer: D
+stem: 函数调用程序如下： 相关说法错误的是：
+code:
+  void f(int a[],int n) {
+int i;
+for(i=0;i<n;i++)
+a[i]=i; }
+  int main()
+{
+int a[100],n=30; f(a,n); }
+  将 f(a,n);改为f(p,n);, 效果完全一样。
+  A. f 函数头改为int f(int*a,int n),无需其它改变，效果完全一样。
+  B. main函数中增加int*p=a;
+  C. 用数组名作f()的参数，则main() 中的数组与f() 中的数组是同一数组。
+  D. 用数组名作f()的参数，实现了实参与形参双向的值传递。
+========
+id: 2-94   type: choice   answer: C
+stem: 不正确的赋值或赋初值的方式是
+  A. char str[]="string";
+  B. char str[7]={'s','t','r',i, 'n','g'};
+  C. char str[10];str="string";
+  D. char str[7]={'s','t','r',i,'n','g','IO'};
+========
+id: 2-95   type: choice   answer: B
+stem: 以下数组定义中错误的是()。
+  A. i nt x[][3]={0};
+  B. int x[2][3]={{1,2},{3,4},{5,6)};
+  C. int x[][3]={{1,2,3},(4,5,6)};
+  D. int x[2][3]={1,2,3,4,5,6};
+========
+id: 2-96   type: choice   answer: B
+stem: 数组定义为 int a[3][2]={1,2,3,4,5,6}, 数组元素()的值为6。
+  A. a[3][2]
+  B. a[2][1]
+  C. a[1][2]
+  D. a[2][3]
+========
+id: 2-97   type: choice   answer: C
+stem: 以下不正确的赋值或赋初值的方式是()。
+  A. char str[]="string";
+  B. char str[7]={'s','t','r','i','n','g'};
+  C. char str[10];str="string";
+  D. char str[7]={'s','t','r','i','n','g',\0'};
+========
+id: 2-98   type: choice   answer: D
+stem: 假设scanf 语句执行时输入ABCDE<回车> . 能使puts(s) 语句正确输出ABCDE字符串的 2分程序段是 。
+  A. char s[5]={"ABCDE"};puts(s);
+  B. char s[5]={'A','B','C','D','E'};puts(s);
+  C. char *s;scanf("%s",s);puts(s);
+  D. char *s;s="ABCDE";puts(s);
+========
+id: 2-99   type: choice   answer: A
+stem: 有说明语句int a[4][5];,则a[2]+3 表示_ 。
+  A. a 数组行下标为2、列下标为3的元素的地址
+  B. a 数组行下标为2、列下标为3的元素的值
+  C. a 数组第2行的首地址
+  D. a 数组第3行的首地址
+========
+id: 2-101   type: choice   answer: C
+stem: 对于定义 char str[]="abc\00Odef\n" ( 注：其中0为数字零),求字符串str的长度len和数组str的大小size,len 和size分别是：
+  A. 12,13
+  B. 3,11
+  C. 3,9
+  D. 3,4
+========
+id: 2-102   type: choice   answer: D
+stem: 下面描述正确的是
+  A. 两个字符串所包含的字符个数相同时才能比较字符串
+  B. 字符个数多的字符串比字符个数少的字符串大
+  C. 字符串“STOP”和“STOP”相等
+  D. 字符串“That” 小于字符串“The”
+========
+id: 2-103   type: choice   answer: B
+stem: 有两个字符数组a,b, 则以下正确的输入语句是()
+  A. qets(a,b);
+  B. scanf("%s%s",a,b);
+  C. scanf("%s%s",&a,&b);
+  D. gets("a"),gets("b");
+========
+id: 2-104   type: choice   answer: A
+stem: 若有以下定义： 则不能代表字符o 的表达式是
+  A. ps+2
+  B. s[2]
+  C. ps[2]
+  D. ps+=2,*ps
+========
+id: 2-105   type: choice   answer: D
+stem: 以下能正确定义数组并正确赋初值的语句是()。注：C语言编译器为c99以前的版本。
+  A. int N=5,b[N][N];
+  B. int a[1][2]={{1},{3}};
+  C. int c[2][]={{1,2},{3,4}};
+  D. int d[3][2]={{1,2},{34}};
+========
+id: 2-106   type: choice   answer: D
+stem: 以下对一维数组a的正确说明是()。
+  A. char a(10);
+  B. int a[];
+  C. int k=5,a[k];
+  D. char a[3]={'a',’b’,'c’};
+========
+id: 2-107   type: choice   answer: A
+stem: 下列数据中属于C语言的“字符串常量”的是()。
+  A. “a”
+  B. {ABC}
+  C. ‘abc\0'
+  D. 'a'
+========
+id: 2-108   type: choice   answer: D
+stem: 以下程序的执行功能是()。
+code:
+  void main() {
+int a[5]={66,78,82,53,91},b[5]={70,58,81,65,90},i,n=0; for(i=0;i<5;i++)
+{
+if(a[i]>b[i])
+n++;
+}
+  printf("n=%d\n",n); }
+  A. 统计数组a各元素值等于数组b 对应元素值的个数
+  B. 统计数组a各元素值小于数组b对应元素值的个数
+  C. 统计数组a各元素值大于60的个数
+  D. 统计数组a各元素值大于数组b对应元素值的个数
+========
+id: 2-109   type: choice   answer: B
+stem: 下列定义数组正确的是
+  A. double a[6]=(1,2,3,4,5,6);
+  B. int b[5]={0};
+  C. float c[5]={1,2,3,4,5,6};
+  D. char d[5]={"China"};
+========
+id: 2-110   type: choice   answer: D
+stem: 以下叙述错误的是()。
+  A. 指针可以进行加、减等算术运算；
+  B. 指针中存放的是地址值
+  C. 指针是一个变量
+  D. 指针变量不占用存储空间
+========
+id: 2-111   type: choice   answer: C
+stem: 下列程序的执行结果是()。
+code:
+  void fun(int *p) {(*p)++;
+}
+main()
+{int a=5;
+fun(&a);
+printf("%d",a);
+}
+  A. 5
+  B. a
+  C. 6
+  D. 程序有误
+========
+id: 2-112   type: choice   answer: D
+stem: 若有定义int a[4][5]:下列语句中()是存在语法错误的。
+  A. *a
+  B. *(*(a+2)+3)
+  C. &a[2][3]
+  D. ++a
+========
+id: 2-113   type: choice   answer: B
+stem: 执行下面程序段后，变量a的值为()。
+code:
+  int a=10,b=1; int *p=&a;
+a=*p+b;
+  A. 12
+  B. 11
+  C. 10
+  D. 编译错误
+========
+id: 2-114   type: choice   answer: B
+stem: 下列语句定义px为指向int类型变量x的指针，正确的是()
+  A. int x,*px=x;
+  B. int x,*px=&x;
+  C. int*px=&x,x;
+  D. int x,px=x;
+========
+id: 2-115   type: choice   answer: C
+stem: 有以下程序段： 输出结果为()。
+code:
+  int a[]={10,9,8,7,6,5,4,3,2,1},*p;
+p=a;
+printf("%d,%d",*p+9,*(p+9));
+  A. 1,1
+  B. 19,10
+  C. 19,1
+  D. 19,19
+========
+id: 2-116   type: choice   answer: B
+stem: 定义下列结构体数组： 执行语句printf("%d,%s",a[2].age,a[1].name)的输出结果为()。
+code:
+  struct stu
+{char name[10];
+int age;
+}a[5]={"ZHA0",14,"WANG",15,"LIU",16,"ZHANG",17};
+  A. 15,ZHAO
+  B. 16,WANG
+  C. 17,LIU
+  D. 17,ZHAO
+========
+id: 2-117   type: choice   answer: C
+stem: 直接使文件指针重新定位到文件读写的首地址的函数是()。
+  A. ftell()函数
+  B. fseek() 函数
+  C. rewind()函数
+  D. ferror() 函数
+========
+id: 2-118   type: choice   answer: C
+stem: 函数fgetc 的作用是从指定文件读入一个字符，该文件的打开方式可以是()。
+  A. 只写
+  B. 追加
+  C. 读或读写
+  D. 和C都正确
+========
+id: 2-120   type: choice   answer: B
+stem: 假设已经定义了文件指针 FILE*fp, 并指向了temp.txt文件，即： 下列可以实现将“China”这一字符串写入到temp.txt文件的语句是
+code:
+  FILE*fp=fopen("temp.txt","w");
+  A. fscanf(fp,"%s","China");
+  B. fprintf(fp,"%s","China");
+  C. fscanf("%s","China",fp);
+  D. fprintf("%s","China",fp);
+========
+id: 2-121   type: choice   answer: C
+stem: 以下声明与()中的声明等价。
+code:
+  int *p[4];
+  A. int p[4];
+  B. int*p;
+  C. int*(p[4]);
+  D. int(*p)[4];
+========
+id: 2-123   type: choice   answer: A
+stem: 下列程序的运行结果是()。
+code:
+  #include<stdio.h>
+void ast(int x,int y,int *cp,int *dp) {
+*cp=x+y;*dp=x-y;
+}
+int main() {
+int a=4,b=3,c,d;
+ast(a,b,&c,&d);
+printf("%d,%d\n",c,d);
+return 0; }
+  A. 7,1
+  B. 1,7
+  C. 7,- 1
+  D. c、d 未赋值，编译出错
+========
+id: 2-124   type: choice   answer: D
+stem: 设有如下语句： 则()是对 a 数组元素的不正确引用，其中0≤i<10。
+code:
+  int a[10]={0,1,2,3,4,5,6,7,8,9},*p=a;
+  A. a [p-a]
+  B. *(&a [i])
+  C. p[i]
+  D. *(*(a+i))
+========
+id: 2-125   type: choice   answer: B
+stem: 以下几段代码中，按照C标准可以预测运行结果的是：
+  A. int a=0;printf("%d %d\n",++a,++a);
+  B. int a=0,*b=&a,*c=b+1;printf("%d\n",*(c-1));
+  C. int f(){printf("hello world\n");}int main(){f();return 0;}
+  D. int a=1,b=2;printf("%d\n",b/--a);
+========
+id: 2-126   type: choice   answer: D
+stem: 若有声明“char*p="123";int c;", 则执行语句“c=sizeof(p);”后 ，c的值是。
+  A. 1
+  B. 2
+  C. 3
+  D. 4
+========
+id: 2-127   type: choice   answer: C
+stem: 若有声明"int x[10]={0,1,2,3,4,5,6,7,8,9},*p;",则值不为4的表达式是。
+  A. p=x,*(p+4)
+  B. p=x+4,*p++
+  C. p=x+3,*(p++)
+  D. p=x+3,*++p
+========
+id: 2-128   type: choice   answer: B
+stem: 已有声明"int a[5];",以下表达式中不能正确取得a[1]指针的是。
+  A. &a[1]
+  B. ++a
+  C. &a[0]+1
+  D. a+l
+========
+id: 2-129   type: choice   answer: D
+stem: 若有函数定义为“int f(int x,int*y){return x/*y;}”,下面声明该函数的正确形式是。
+  A. void f(int,int);
+  B. int *f(int,int*);
+  C. int f(int*,int*);
+  D. int f(int,int*);
+========
+id: 2-130   type: choice   answer: D
+stem: 如有语句"int x,y=0,z,*p[3];p[0]=&x;p[1]=&y;p[2]=&z;", 以下表达式中有语法错误的是。
+  A. y++
+  B. (*p[0])++
+  C. (**(p+1))++
+  D. p++
+========
+id: 2-131   type: choice   answer: C
+stem: 若有函数int func(int a,int b),函数指针变量p已经指向func函数，那么下列用指针方式调用函数的正确方法是( )。
+  A. (*p)func(2,3);
+  B. *func(2,3);
+  C. p(2,3);
+  D. *p(2,3);
+========
+id: 2-132   type: choice   answer: D
+stem: 在 int a=3,*p=&a;中 ， *p 的值是()。
+  A. &a
+  B. 无意义
+  C. &p
+  D. 3
+========
+id: 2-133   type: choice   answer: D
+stem: 若有以下定义语句，则引用方式错误的是()。
+  A. s.no
+  B. (*p).no
+  C. p->no
+  D. s->no
+========
+id: 2-134   type: choice   answer: C
+stem: 若有定义char s1[]="string1",s2[8],*s3,*s4="string2";则对库函数strcpy 错误调用的是 ( ) 。
+  A. strcpy(s1,"string2");
+  B. strcpy(s2,"string1");
+  C. strcpy(s3,"string1");
+  D. strcpy(s2,s1);
+========
+id: 2-135   type: choice   answer: C
+stem: 若有定义char s[6],*ps=s;则正确的赋值语句是()。
+  A. s="12345";
+  B. *s="12345";
+  C. ps="12345";
+  D. *ps="12345";
+========
+id: 2-136   type: choice   answer: A
+stem: 对于以下结构定义，p->str++中的++加在()。
+code:
+  struct {int len;char*str;}*p;
+  A. 指针str 上
+  B. 指针p上
+  C. str 指针指向的内容上
+  D. 语法错误
+========
+id: 2-137   type: choice   answer: C
+stem: 若有函数max(a,b) . 并且已使函数指针变量p 指向函数max, 当调用函数时，正确的调用方法是
+  A. (*p)max(a+b);
+  B. *pmax(a,b);
+  C. (*p)(a,b);
+  D. *p(a,b);
+========
+id: 2-138   type: choice   answer: A
+stem: 程序中已构成如下图所示的单向链表结构，指针变量s、p、q均已正确定义，并用于指向链表结点，指针变量s总是作为头指针指向链表的第一个结点。 若有下列程序段：
+code:
+  q=s;s=s->next;p=s;
+  while(p->next)p=p->next;
+  p->next =q;q->next =NULL; 该程序段实现的功能是()。
+  A. 首结点成为尾结点
+  B. 尾结点成为首结点
+  C. 删除首结点
+  D. 删除尾结点
+========
+id: 2-139   type: choice   answer: A
+stem: 设有如下函数定义：
+code:
+  int fun(char*str) {char*p=str;
+  while(*p!='\0')p++; return(p-str);
+  }
+  则以下语句执行后的输出结果是()。 printf("%d\n",fun("Student");
+  A. 7
+  B. 8
+  C. 9
+  D. 10
+========
+id: 2-140   type: choice   answer: B
+stem: 变量的指针 ， 其含义是指该变量的 o
+  A. 值
+  B. 地址
+  C. 名
+  D. 一个标志
+========
+id: 2-141   type: choice   answer: C
+stem: 对于基类型相同的两个指针变量，不能进行的运算是
+  A. <
+  B. =
+  C. +
+  D. -
+========
+id: 2-142   type: choice   answer: C
+stem: 如果所有的变量按照下面的程序进行定义和声明，那么在main() 函数中所有可用的变量为()。
+code:
+  void fun(int x) {
+static int y; return; }
+int z;
+void main() {
+int a,b; fun(a); }
+  A. X,y
+  B. x,y,Z
+  C. a,b,z
+  D. a,b,x,y,Z
+========
+id: 2-143   type: choice   answer: A
+stem: 在函数内，定义变量时存储类型符可省略的是()。
+  A. auto
+  B. static
+  C. extern
+  D. register
+========
+id: 2-144   type: choice   answer: D
+stem: 下面程序a,b值为()
+code:
+  #include <stdio.h> int main(void)
+{
+int a;
+a =1;
+{
+int b=2;
+b=a +b;
+a =a +b; }
+printf("%d,%d",a,b); return 0;
+}
+  A. 1,2
+  B. 1,0
+  C. 1, 不认识b
+  D. 4, 不认识b
+========
+id: 2-146   type: choice   answer: C
+stem: *字符数组(1-3) 下面的程序段将输出. 0
+  A. 0
+  B. 1
+  C. 4
+  D. 5
+========
+id: 2-148   type: choice   answer: C
+stem: 以下错误的字符数组的赋值方式是：
+  A. char string[]=“Iam a student.”;
+  B. const char*p=“I am a student”;
+  C. char str[20];str=“I am a student.”;
+  D. strcpy(str,"I am a student.");
+========
+id: 2-149   type: choice   answer: D
+stem: 判断字符串ca和字符串cb是否相等，应当使用()
+  A. if(ca==cb)
+  B. if(ca=cb)
+  C. if(strcpy(ca,cb))
+  D. if(strcmp(ca,cb)==0)
+========
+id: 2-150   type: choice   answer: A
+stem: 有两个字符数组char a[50],b[50];则以下正确的输入语句是()
+  A. scanf("%s%s",a,b);
+  B. scanf(“%s%s”,&a,&b);
+  C. gets(a,b);
+  D. gets(“a”),gets(“b”);
+========
+id: 2-151   type: choice   answer: A
+stem: 下列属于字符串常量的是
+  A. "a"
+  B. {ABC}
+  C. 'abc\0'
+  D. 'a'
+========
+id: 2-152   type: choice   answer: B
+stem: 判断字符串s1的长度是否大于字符串s2的长度，应使用 0
+  A. if(s1>s2)
+  B. if(strcmp(s1,s2))
+  C. if(strlen(s1)>strlen(s2))
+  D. if(strcat(s1)>strcat(s2))
+========
+id: 2-153   type: choice   answer: B
+stem: 对两个数组a和b进行如下初始化： 则以下叙述正确的是 o
+code:
+  char a[]="abcd";
+  char b[]={'a','b','c','d'};
+  A. a 与b 数组完全相同
+  B. 数组a比数组b长度大
+  C. a 与b中存放的都是字符串
+  D. a 与b长度相同
+========
+id: 2-154   type: choice   answer: C
+stem: 若有定义"char s1[50],s2[50];",则以下函数调用中，正确的是 _o
+  A. scanf("%s%s",&s1,&s2);
+  B. gets(s1, s2);
+  C. scanf("%s%s",s1,s2);
+  D. gets("%s%s",s1,s2);
+========
+id: 2-155   type: choice   answer: B
+stem: 以下不能正确赋值的语句是()。
+  A. char str[8]=“good!”;
+  B. char str[5]="good!";
+  C. char str[]="good!";
+  D. char str[5]={‘g’,'o’,'o’,'d'};
+========
+id: 2-156   type: choice   answer: B
+stem: 已知 char x[]="hello", y[]={'h','e','a','b','e'};,则关于两个数组长度的正确描述是
+  A. 相同
+  B. x大于y
+  C. x小于y
+  D. 以上答案都不对
+========
+id: 2-157   type: choice   answer: D
+stem: 按如下方式定义字符数组并初始化： 则数组s1和s2所占用的存储空间分别为()。
+code:
+  char s1[] ="Hello!";
+char s2[10]="Hello!";
+  A. 66
+  B. 610
+  C. 77
+  D. 710
+========
+id: 2-158   type: choice   answer: B
+stem: 若有说明：int a[][3]={{1,2,3},{4,5},{6,7}};则数组a的第一维大小为
+  A. 2
+  B. 3
+  C. 4
+  D. 无确定值
+========
+id: 2-159   type: choice   answer: C
+stem: 若fopen() 函数打开文件失败，其返回值是()。
+  A. 1
+  B. -1
+  C. NULL
+  D. ERROR
+========
+id: 2-160   type: choice   answer: C
+stem: 若执行fopen函数时发生错误，则函数的返回值是()。
+  A. 一个随机地址值
+  B. 1
+  C. NULL
+  D. EOF
+========
+id: 2-161   type: choice   answer: A
+stem: 在C语言中，下面关于文件的存取方式正确的叙述是()。
+  A. 可以顺序存取，也可以随机存取
+  B. 不可以顺序存取，但可以随机存取
+  C. 可以顺序存取，但不可以随机存取
+  D. 只能从文件的开头存取
+========
+id: 2-162   type: choice   answer: A
+stem: 若以“a+”方式打开一个已存在的文件。则以下叙述正确的是()。
+  A. 文件打开时，原有文件内容不被删除，位置指针移到文件末尾，可做添加和读操作
+  B. 文件打开时，原有文件内容不被删除，位置指针移到文件开头，可做重写和读操作
+  C. 文件打开时，原有文件内容被删除，只可做写操作
+  D. 以上各种说法都不正确
+========
+id: 2-163   type: choice   answer: B
+stem: 进行文件操作时，“写文件”的一般含义是
+  A. 将磁盘中的信息存入计算机内存
+  B. 将计算机内存中的信息存入磁盘
+  C. 将计算机CPU中的信息存入磁盘
+  D. 将磁盘中的信息存入计算机CPU
+========
+id: 2-164   type: choice   answer: A
+stem: 函数调用“fputs(p1,p 2);”的功能是 。
+  A. 从p1指向的文件中读一个字符串，存入p2指向的内存
+  B. 从p2指向的文件中读一个字符串，存入p1指向的内存
+  C. 从p1指向的内存中读一个字符串，写到p2指向的文件中
+  D. 从p2指向的内存中读一个字符串，写到p1指向的文件中
+========
+id: 2-165   type: choice   answer: D
+stem: 如果将文件型指针fp指向的文件内部指针置于文件尾，正确的语句是
+  A. feof(fp);
+  B. rewind(fp);
+  C. fseek(fp,OL,0);
+  D. fseek(fp,OL,2);
+========
+id: 2-166   type: choice   answer: B
+stem: 从fp 所指向的文件中读取两个整数并分别赋给两个整型变量a和b, 正确的形式是
+  A. fscanf(“%d%d”,&a,&b,fp);
+  B. fscanf(fp,“%d%d”,&a,&b);
+  C. fscanf(“%d%d”, a,b ,fp);
+  D. fscanf(fp,“%d%d”,a,b);
